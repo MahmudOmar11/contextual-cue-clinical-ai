@@ -1,0 +1,11 @@
+Clinical vignette:
+{vignette}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+
+Return exactly this JSON shape:
+{json_shape}

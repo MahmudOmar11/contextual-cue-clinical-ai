@@ -1,0 +1,4 @@
+{
+  "main_runs": "{\"selected_option\":\"A|B|C|D\",\"selected_diagnosis\":\"diagnosis text\"}",
+  "explanation_run": "{\"selected_option\":\"A|B|C|D\",\"selected_diagnosis\":\"diagnosis text\",\"short_explanation\":\"one sentence, <=35 words\",\"confidence\":0}"
+}

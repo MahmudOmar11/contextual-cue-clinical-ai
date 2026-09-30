@@ -1,0 +1,23 @@
+model,provider,tier,panel,run_dates,returned_version
+Qwen3.6 Flash,Alibaba,Open efficient,Core-20,7-8 June 2026,qwen3.6-flash
+DeepSeek V4 Flash,DeepSeek,Open efficient,Core-20,7-8 June 2026,deepseek-v4-flash-20260423
+Gemma 4 26B,Google,Open efficient,Core-20,7-8 June 2026,gemma-4-26b-a4b-it-20260403
+Llama 4 Scout,Meta,Open efficient,Core-20,7-8 June 2026,llama-4-scout-17b-16e-instruct
+Mistral Small,Mistral,Open efficient,Core-20,7-8 June 2026,mistral-small-2603
+GPT-OSS 20B,OpenAI,Open efficient,Core-20,7-8 June 2026,gpt-oss-20b
+Qwen3.7 Max,Alibaba,Open strong,Core-20,7-8 June 2026,qwen3.7-max-20260520
+Qwen3.7 Plus,Alibaba,Open strong,Core-20,7-8 June 2026,qwen3.7-plus-20260602
+DeepSeek V4 Pro,DeepSeek,Open strong,Core-20,7-8 June 2026,deepseek-v4-pro-20260423
+Llama 4 Maverick,Meta,Open strong,Core-20,7-8 June 2026,llama-4-maverick-17b-128e-instruct
+Mistral Large,Mistral,Open strong,Core-20,7-8 June 2026,mistral-large-2512
+GPT-OSS 120B,OpenAI,Open strong,Core-20,7-8 June 2026,gpt-oss-120b
+Gemini 3.1 Flash Lite,Google,Closed efficient,Core-20,7-8 June 2026,gemini-3.1-flash-lite-20260507
+Gemini 3.5 Flash,Google,Closed efficient,Core-20,7-8 June 2026,gemini-3.5-flash-20260519
+GPT-5.4 Mini,OpenAI,Closed efficient,Core-20,7-8 June 2026,gpt-5.4-mini-20260317
+GPT-5.4 Nano,OpenAI,Closed efficient,Core-20,7-8 June 2026,gpt-5.4-nano-20260317
+Claude Sonnet 4.6,Anthropic,Closed flagship,Core-20,7-8 June 2026,claude-4.6-sonnet-20260217
+Gemini 3.1 Pro,Google,Closed flagship,Core-20 and Frontier-3,7-8 and 21 June 2026,gemini-3.1-pro-preview-20260219
+GPT-5.4,OpenAI,Closed flagship,Core-20,7-8 June 2026,gpt-5.4-20260305
+Grok 4.3,xAI,Closed flagship,Core-20,7-8 June 2026,grok-4.3-20260430
+Claude Opus 4.8,Anthropic,Frontier,Frontier-3,21 June 2026,claude-4.8-opus-20260528
+GPT-5.5,OpenAI,Frontier,Frontier-3,21 June 2026,gpt-5.5-20260423

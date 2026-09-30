@@ -1,0 +1,15 @@
+measure,no_cue,no_cue_ci_low,no_cue_ci_high,cue,cue_ci_low,cue_ci_high
+Physicians completing all 100 cases,8,,,8,,
+Assessments,400,,,400,,
+Versions with 2 ratings,6,,,5,,
+Versions with 3 ratings,26,,,28,,
+Versions with 4 ratings,35,,,35,,
+Versions with 5 ratings,28,,,26,,
+Versions with 6 ratings,5,,,6,,
+"Exact pairwise agreement on the top diagnosis, %",63.6,57.4,69.8,53.9,47.9,60.2
+"Krippendorff's alpha, intended versus other diagnosis",0.23,0.1,0.35,0.17,0.05,0.28
+"Krippendorff's alpha, probability of the intended diagnosis",0.29,0.18,0.39,0.18,0.07,0.28
+"Krippendorff's alpha, probability of the cue-associated diagnosis",0.25,0.09,0.41,0.09,0.0,0.18
+"Leading diagnoses judged approximately equal, or undecided",89,,,98,,
+Top two probabilities numerically equal,24,,,23,,
+Problem flagged with the case,9,,,13,,

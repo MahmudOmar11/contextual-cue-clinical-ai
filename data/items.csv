@@ -1,0 +1,801 @@
+item_id,family,version,answer_order,vignette,option_A,option_B,option_C,option_D,intended_option,cue_associated_option
+Q001,1,no_cue,1,"A 22-year-old man has had fever, cough, and myalgia for 5 days.",Malaria,Upper respiratory tract infection,Hepatitis,Pneumonia,B,A
+Q002,1,no_cue,2,"A 22-year-old man has had fever, cough, and myalgia for 5 days.",Pneumonia,Malaria,Upper respiratory tract infection,Hepatitis,C,B
+Q003,1,no_cue,3,"A 22-year-old man has had fever, cough, and myalgia for 5 days.",Hepatitis,Pneumonia,Malaria,Upper respiratory tract infection,D,C
+Q004,1,no_cue,4,"A 22-year-old man has had fever, cough, and myalgia for 5 days.",Upper respiratory tract infection,Hepatitis,Pneumonia,Malaria,A,D
+Q005,1,cue,1,"A 22-year-old man has had fever, cough, and myalgia for 5 days. He returned from a trip to Nigeria about one week ago.",Malaria,Upper respiratory tract infection,Hepatitis,Pneumonia,B,A
+Q006,1,cue,2,"A 22-year-old man has had fever, cough, and myalgia for 5 days. He returned from a trip to Nigeria about one week ago.",Pneumonia,Malaria,Upper respiratory tract infection,Hepatitis,C,B
+Q007,1,cue,3,"A 22-year-old man has had fever, cough, and myalgia for 5 days. He returned from a trip to Nigeria about one week ago.",Hepatitis,Pneumonia,Malaria,Upper respiratory tract infection,D,C
+Q008,1,cue,4,"A 22-year-old man has had fever, cough, and myalgia for 5 days. He returned from a trip to Nigeria about one week ago.",Upper respiratory tract infection,Hepatitis,Pneumonia,Malaria,A,D
+Q009,2,no_cue,1,A 55-year-old man has one week of dry cough without fever.,Lung cancer,Viral bronchitis,COPD exacerbation,Pneumonia,B,A
+Q010,2,no_cue,2,A 55-year-old man has one week of dry cough without fever.,Pneumonia,Lung cancer,Viral bronchitis,COPD exacerbation,C,B
+Q011,2,no_cue,3,A 55-year-old man has one week of dry cough without fever.,COPD exacerbation,Pneumonia,Lung cancer,Viral bronchitis,D,C
+Q012,2,no_cue,4,A 55-year-old man has one week of dry cough without fever.,Viral bronchitis,COPD exacerbation,Pneumonia,Lung cancer,A,D
+Q013,2,cue,1,A 55-year-old man with a 30-pack-year smoking history has one week of dry cough without fever.,Lung cancer,Viral bronchitis,COPD exacerbation,Pneumonia,B,A
+Q014,2,cue,2,A 55-year-old man with a 30-pack-year smoking history has one week of dry cough without fever.,Pneumonia,Lung cancer,Viral bronchitis,COPD exacerbation,C,B
+Q015,2,cue,3,A 55-year-old man with a 30-pack-year smoking history has one week of dry cough without fever.,COPD exacerbation,Pneumonia,Lung cancer,Viral bronchitis,D,C
+Q016,2,cue,4,A 55-year-old man with a 30-pack-year smoking history has one week of dry cough without fever.,Viral bronchitis,COPD exacerbation,Pneumonia,Lung cancer,A,D
+Q017,3,no_cue,1,A 28-year-old woman developed left-sided chest pain.,Pulmonary embolism,MSK pain,Anxiety attack,Costochondritis,B,A
+Q018,3,no_cue,2,A 28-year-old woman developed left-sided chest pain.,Costochondritis,Pulmonary embolism,MSK pain,Anxiety attack,C,B
+Q019,3,no_cue,3,A 28-year-old woman developed left-sided chest pain.,Anxiety attack,Costochondritis,Pulmonary embolism,MSK pain,D,C
+Q020,3,no_cue,4,A 28-year-old woman developed left-sided chest pain.,MSK pain,Anxiety attack,Costochondritis,Pulmonary embolism,A,D
+Q021,3,cue,1,A 28-year-old woman developed left-sided chest pain after a short flight.,Pulmonary embolism,MSK pain,Anxiety attack,Costochondritis,B,A
+Q022,3,cue,2,A 28-year-old woman developed left-sided chest pain after a short flight.,Costochondritis,Pulmonary embolism,MSK pain,Anxiety attack,C,B
+Q023,3,cue,3,A 28-year-old woman developed left-sided chest pain after a short flight.,Anxiety attack,Costochondritis,Pulmonary embolism,MSK pain,D,C
+Q024,3,cue,4,A 28-year-old woman developed left-sided chest pain after a short flight.,MSK pain,Anxiety attack,Costochondritis,Pulmonary embolism,A,D
+Q025,4,no_cue,1,A 22-year-old man noticed red urine for a couple of days after strenuous exercise.,Bladder cancer,Exercise-induced hematuria,Glomerulonephritis,Nephrolithiasis,B,A
+Q026,4,no_cue,2,A 22-year-old man noticed red urine for a couple of days after strenuous exercise.,Nephrolithiasis,Bladder cancer,Exercise-induced hematuria,Glomerulonephritis,C,B
+Q027,4,no_cue,3,A 22-year-old man noticed red urine for a couple of days after strenuous exercise.,Glomerulonephritis,Nephrolithiasis,Bladder cancer,Exercise-induced hematuria,D,C
+Q028,4,no_cue,4,A 22-year-old man noticed red urine for a couple of days after strenuous exercise.,Exercise-induced hematuria,Glomerulonephritis,Nephrolithiasis,Bladder cancer,A,D
+Q029,4,cue,1,A 22-year-old man noticed red urine for a couple of days after strenuous exercise. His grandfather had bladder cancer.,Bladder cancer,Exercise-induced hematuria,Glomerulonephritis,Nephrolithiasis,B,A
+Q030,4,cue,2,A 22-year-old man noticed red urine for a couple of days after strenuous exercise. His grandfather had bladder cancer.,Nephrolithiasis,Bladder cancer,Exercise-induced hematuria,Glomerulonephritis,C,B
+Q031,4,cue,3,A 22-year-old man noticed red urine for a couple of days after strenuous exercise. His grandfather had bladder cancer.,Glomerulonephritis,Nephrolithiasis,Bladder cancer,Exercise-induced hematuria,D,C
+Q032,4,cue,4,A 22-year-old man noticed red urine for a couple of days after strenuous exercise. His grandfather had bladder cancer.,Exercise-induced hematuria,Glomerulonephritis,Nephrolithiasis,Bladder cancer,A,D
+Q033,5,no_cue,1,A 40-year-old woman presents with low-grade fever and cough for a couple of days.,Histoplasmosis,Viral bronchitis,Tuberculosis,Pneumonia,B,A
+Q034,5,no_cue,2,A 40-year-old woman presents with low-grade fever and cough for a couple of days.,Pneumonia,Histoplasmosis,Viral bronchitis,Tuberculosis,C,B
+Q035,5,no_cue,3,A 40-year-old woman presents with low-grade fever and cough for a couple of days.,Tuberculosis,Pneumonia,Histoplasmosis,Viral bronchitis,D,C
+Q036,5,no_cue,4,A 40-year-old woman presents with low-grade fever and cough for a couple of days.,Viral bronchitis,Tuberculosis,Pneumonia,Histoplasmosis,A,D
+Q037,5,cue,1,A 40-year-old woman presents with low-grade fever and cough for a couple of days. She was exposed to some bats in a cave during a trip two weeks ago.,Histoplasmosis,Viral bronchitis,Tuberculosis,Pneumonia,B,A
+Q038,5,cue,2,A 40-year-old woman presents with low-grade fever and cough for a couple of days. She was exposed to some bats in a cave during a trip two weeks ago.,Pneumonia,Histoplasmosis,Viral bronchitis,Tuberculosis,C,B
+Q039,5,cue,3,A 40-year-old woman presents with low-grade fever and cough for a couple of days. She was exposed to some bats in a cave during a trip two weeks ago.,Tuberculosis,Pneumonia,Histoplasmosis,Viral bronchitis,D,C
+Q040,5,cue,4,A 40-year-old woman presents with low-grade fever and cough for a couple of days. She was exposed to some bats in a cave during a trip two weeks ago.,Viral bronchitis,Tuberculosis,Pneumonia,Histoplasmosis,A,D
+Q041,6,no_cue,1,A 28-year-old man has mild cough and some shortness of breath with exercise for two days.,Hypersensitivity pneumonitis,Viral bronchitis,Asthma,Pneumonia,B,A
+Q042,6,no_cue,2,A 28-year-old man has mild cough and some shortness of breath with exercise for two days.,Pneumonia,Hypersensitivity pneumonitis,Viral bronchitis,Asthma,C,B
+Q043,6,no_cue,3,A 28-year-old man has mild cough and some shortness of breath with exercise for two days.,Asthma,Pneumonia,Hypersensitivity pneumonitis,Viral bronchitis,D,C
+Q044,6,no_cue,4,A 28-year-old man has mild cough and some shortness of breath with exercise for two days.,Viral bronchitis,Asthma,Pneumonia,Hypersensitivity pneumonitis,A,D
+Q045,6,cue,1,A 28-year-old man has mild cough and some shortness of breath with exercise for two days. He recently noticed some mold in his apartment.,Hypersensitivity pneumonitis,Viral bronchitis,Asthma,Pneumonia,B,A
+Q046,6,cue,2,A 28-year-old man has mild cough and some shortness of breath with exercise for two days. He recently noticed some mold in his apartment.,Pneumonia,Hypersensitivity pneumonitis,Viral bronchitis,Asthma,C,B
+Q047,6,cue,3,A 28-year-old man has mild cough and some shortness of breath with exercise for two days. He recently noticed some mold in his apartment.,Asthma,Pneumonia,Hypersensitivity pneumonitis,Viral bronchitis,D,C
+Q048,6,cue,4,A 28-year-old man has mild cough and some shortness of breath with exercise for two days. He recently noticed some mold in his apartment.,Viral bronchitis,Asthma,Pneumonia,Hypersensitivity pneumonitis,A,D
+Q049,7,no_cue,1,A 60-year-old man presents with about 2 weeks of cough.,Lung cancer,Viral upper respiratory infection,COPD exacerbation,Pneumonia,B,A
+Q050,7,no_cue,2,A 60-year-old man presents with about 2 weeks of cough.,Pneumonia,Lung cancer,Viral upper respiratory infection,COPD exacerbation,C,B
+Q051,7,no_cue,3,A 60-year-old man presents with about 2 weeks of cough.,COPD exacerbation,Pneumonia,Lung cancer,Viral upper respiratory infection,D,C
+Q052,7,no_cue,4,A 60-year-old man presents with about 2 weeks of cough.,Viral upper respiratory infection,COPD exacerbation,Pneumonia,Lung cancer,A,D
+Q053,7,cue,1,A 60-year-old man with 40 pack-years presents with about 2 weeks of cough .,Lung cancer,Viral upper respiratory infection,COPD exacerbation,Pneumonia,B,A
+Q054,7,cue,2,A 60-year-old man with 40 pack-years presents with about 2 weeks of cough .,Pneumonia,Lung cancer,Viral upper respiratory infection,COPD exacerbation,C,B
+Q055,7,cue,3,A 60-year-old man with 40 pack-years presents with about 2 weeks of cough .,COPD exacerbation,Pneumonia,Lung cancer,Viral upper respiratory infection,D,C
+Q056,7,cue,4,A 60-year-old man with 40 pack-years presents with about 2 weeks of cough .,Viral upper respiratory infection,COPD exacerbation,Pneumonia,Lung cancer,A,D
+Q057,8,no_cue,1,A 32-year-old woman has had low-grade fever and myalgia for two days.,Lyme disease,Influenza,Mononucleosis,Gastroenteritis,B,A
+Q058,8,no_cue,2,A 32-year-old woman has had low-grade fever and myalgia for two days.,Gastroenteritis,Lyme disease,Influenza,Mononucleosis,C,B
+Q059,8,no_cue,3,A 32-year-old woman has had low-grade fever and myalgia for two days.,Mononucleosis,Gastroenteritis,Lyme disease,Influenza,D,C
+Q060,8,no_cue,4,A 32-year-old woman has had low-grade fever and myalgia for two days.,Influenza,Mononucleosis,Gastroenteritis,Lyme disease,A,D
+Q061,8,cue,1,"A 32-year-old woman recently returned from a camping trip, with possible exposure to ticks, and now has low-grade fever and myalgia for two days.",Lyme disease,Influenza,Mononucleosis,Gastroenteritis,B,A
+Q062,8,cue,2,"A 32-year-old woman recently returned from a camping trip, with possible exposure to ticks, and now has low-grade fever and myalgia for two days.",Gastroenteritis,Lyme disease,Influenza,Mononucleosis,C,B
+Q063,8,cue,3,"A 32-year-old woman recently returned from a camping trip, with possible exposure to ticks, and now has low-grade fever and myalgia for two days.",Mononucleosis,Gastroenteritis,Lyme disease,Influenza,D,C
+Q064,8,cue,4,"A 32-year-old woman recently returned from a camping trip, with possible exposure to ticks, and now has low-grade fever and myalgia for two days.",Influenza,Mononucleosis,Gastroenteritis,Lyme disease,A,D
+Q065,9,no_cue,1,A 45-year-old man has had watery diarrhea for 2 days.,Cholera,Viral gastroenteritis,Typhoid fever,Food poisoning,B,A
+Q066,9,no_cue,2,A 45-year-old man has had watery diarrhea for 2 days.,Food poisoning,Cholera,Viral gastroenteritis,Typhoid fever,C,B
+Q067,9,no_cue,3,A 45-year-old man has had watery diarrhea for 2 days.,Typhoid fever,Food poisoning,Cholera,Viral gastroenteritis,D,C
+Q068,9,no_cue,4,A 45-year-old man has had watery diarrhea for 2 days.,Viral gastroenteritis,Typhoid fever,Food poisoning,Cholera,A,D
+Q069,9,cue,1,A 45-year-old man has had watery diarrhea for 2 days. He returned from a trip to India about one week ago.,Cholera,Viral gastroenteritis,Typhoid fever,Food poisoning,B,A
+Q070,9,cue,2,A 45-year-old man has had watery diarrhea for 2 days. He returned from a trip to India about one week ago.,Food poisoning,Cholera,Viral gastroenteritis,Typhoid fever,C,B
+Q071,9,cue,3,A 45-year-old man has had watery diarrhea for 2 days. He returned from a trip to India about one week ago.,Typhoid fever,Food poisoning,Cholera,Viral gastroenteritis,D,C
+Q072,9,cue,4,A 45-year-old man has had watery diarrhea for 2 days. He returned from a trip to India about one week ago.,Viral gastroenteritis,Typhoid fever,Food poisoning,Cholera,A,D
+Q073,10,no_cue,1,A 50-year-old man reports fever and back pain.,Brucellosis,Influenza,Pyelonephritis,Muscular strain,B,A
+Q074,10,no_cue,2,A 50-year-old man reports fever and back pain.,Muscular strain,Brucellosis,Influenza,Pyelonephritis,C,B
+Q075,10,no_cue,3,A 50-year-old man reports fever and back pain.,Pyelonephritis,Muscular strain,Brucellosis,Influenza,D,C
+Q076,10,no_cue,4,A 50-year-old man reports fever and back pain.,Influenza,Pyelonephritis,Muscular strain,Brucellosis,A,D
+Q077,10,cue,1,A 50-year-old man who works in a slaughterhouse reports fever and back pain.,Brucellosis,Influenza,Pyelonephritis,Muscular strain,B,A
+Q078,10,cue,2,A 50-year-old man who works in a slaughterhouse reports fever and back pain.,Muscular strain,Brucellosis,Influenza,Pyelonephritis,C,B
+Q079,10,cue,3,A 50-year-old man who works in a slaughterhouse reports fever and back pain.,Pyelonephritis,Muscular strain,Brucellosis,Influenza,D,C
+Q080,10,cue,4,A 50-year-old man who works in a slaughterhouse reports fever and back pain.,Influenza,Pyelonephritis,Muscular strain,Brucellosis,A,D
+Q081,11,no_cue,1,A 27-year-old woman has had mild cough and sore throat for three days.,Legionella infection,Viral pharyngitis,Bronchitis,Sinusitis,B,A
+Q082,11,no_cue,2,A 27-year-old woman has had mild cough and sore throat for three days.,Sinusitis,Legionella infection,Viral pharyngitis,Bronchitis,C,B
+Q083,11,no_cue,3,A 27-year-old woman has had mild cough and sore throat for three days.,Bronchitis,Sinusitis,Legionella infection,Viral pharyngitis,D,C
+Q084,11,no_cue,4,A 27-year-old woman has had mild cough and sore throat for three days.,Viral pharyngitis,Bronchitis,Sinusitis,Legionella infection,A,D
+Q085,11,cue,1,A 27-year-old woman has had mild cough and sore throat for three days. She sometimes uses a shared hot tub at her apartment building.,Legionella infection,Viral pharyngitis,Bronchitis,Sinusitis,B,A
+Q086,11,cue,2,A 27-year-old woman has had mild cough and sore throat for three days. She sometimes uses a shared hot tub at her apartment building.,Sinusitis,Legionella infection,Viral pharyngitis,Bronchitis,C,B
+Q087,11,cue,3,A 27-year-old woman has had mild cough and sore throat for three days. She sometimes uses a shared hot tub at her apartment building.,Bronchitis,Sinusitis,Legionella infection,Viral pharyngitis,D,C
+Q088,11,cue,4,A 27-year-old woman has had mild cough and sore throat for three days. She sometimes uses a shared hot tub at her apartment building.,Viral pharyngitis,Bronchitis,Sinusitis,Legionella infection,A,D
+Q089,12,no_cue,1,A 33-year-old man has had tender lymph nodes and myalgia for 3 days.,Cat-scratch disease,Viral infection (EBV),Strep pharyngitis,Cytomegalovirus,B,A
+Q090,12,no_cue,2,A 33-year-old man has had tender lymph nodes and myalgia for 3 days.,Cytomegalovirus,Cat-scratch disease,Viral infection (EBV),Strep pharyngitis,C,B
+Q091,12,no_cue,3,A 33-year-old man has had tender lymph nodes and myalgia for 3 days.,Strep pharyngitis,Cytomegalovirus,Cat-scratch disease,Viral infection (EBV),D,C
+Q092,12,no_cue,4,A 33-year-old man has had tender lymph nodes and myalgia for 3 days.,Viral infection (EBV),Strep pharyngitis,Cytomegalovirus,Cat-scratch disease,A,D
+Q093,12,cue,1,A 33-year-old man recently adopted a kitten and has had tender lymph nodes and myalgia for 3 days.,Cat-scratch disease,Viral infection (EBV),Strep pharyngitis,Cytomegalovirus,B,A
+Q094,12,cue,2,A 33-year-old man recently adopted a kitten and has had tender lymph nodes and myalgia for 3 days.,Cytomegalovirus,Cat-scratch disease,Viral infection (EBV),Strep pharyngitis,C,B
+Q095,12,cue,3,A 33-year-old man recently adopted a kitten and has had tender lymph nodes and myalgia for 3 days.,Strep pharyngitis,Cytomegalovirus,Cat-scratch disease,Viral infection (EBV),D,C
+Q096,12,cue,4,A 33-year-old man recently adopted a kitten and has had tender lymph nodes and myalgia for 3 days.,Viral infection (EBV),Strep pharyngitis,Cytomegalovirus,Cat-scratch disease,A,D
+Q097,13,no_cue,1,A 30-year-old woman develops mild fever and nausea.,Acute hepatitis B,Viral syndrome,Influenza,Anxiety reaction,B,A
+Q098,13,no_cue,2,A 30-year-old woman develops mild fever and nausea.,Anxiety reaction,Acute hepatitis B,Viral syndrome,Influenza,C,B
+Q099,13,no_cue,3,A 30-year-old woman develops mild fever and nausea.,Influenza,Anxiety reaction,Acute hepatitis B,Viral syndrome,D,C
+Q100,13,no_cue,4,A 30-year-old woman develops mild fever and nausea.,Viral syndrome,Influenza,Anxiety reaction,Acute hepatitis B,A,D
+Q101,13,cue,1,A 30-year-old nurse after needle exposure develops mild fever and nausea.,Acute hepatitis B,Viral syndrome,Influenza,Anxiety reaction,B,A
+Q102,13,cue,2,A 30-year-old nurse after needle exposure develops mild fever and nausea.,Anxiety reaction,Acute hepatitis B,Viral syndrome,Influenza,C,B
+Q103,13,cue,3,A 30-year-old nurse after needle exposure develops mild fever and nausea.,Influenza,Anxiety reaction,Acute hepatitis B,Viral syndrome,D,C
+Q104,13,cue,4,A 30-year-old nurse after needle exposure develops mild fever and nausea.,Viral syndrome,Influenza,Anxiety reaction,Acute hepatitis B,A,D
+Q105,14,no_cue,1,A 22-year-old man has had cough and malaise for 4 days.,Coccidioidomycosis,Viral bronchitis,Pneumonia,Asthma,B,A
+Q106,14,no_cue,2,A 22-year-old man has had cough and malaise for 4 days.,Asthma,Coccidioidomycosis,Viral bronchitis,Pneumonia,C,B
+Q107,14,no_cue,3,A 22-year-old man has had cough and malaise for 4 days.,Pneumonia,Asthma,Coccidioidomycosis,Viral bronchitis,D,C
+Q108,14,no_cue,4,A 22-year-old man has had cough and malaise for 4 days.,Viral bronchitis,Pneumonia,Asthma,Coccidioidomycosis,A,D
+Q109,14,cue,1,A 22-year-old man has had cough and malaise for 4 days after returning from a hiking trip in Colorado.,Coccidioidomycosis,Viral bronchitis,Pneumonia,Asthma,B,A
+Q110,14,cue,2,A 22-year-old man has had cough and malaise for 4 days after returning from a hiking trip in Colorado.,Asthma,Coccidioidomycosis,Viral bronchitis,Pneumonia,C,B
+Q111,14,cue,3,A 22-year-old man has had cough and malaise for 4 days after returning from a hiking trip in Colorado.,Pneumonia,Asthma,Coccidioidomycosis,Viral bronchitis,D,C
+Q112,14,cue,4,A 22-year-old man has had cough and malaise for 4 days after returning from a hiking trip in Colorado.,Viral bronchitis,Pneumonia,Asthma,Coccidioidomycosis,A,D
+Q113,15,no_cue,1,A 45-year-old man complains of joint pain and fatigue,Q fever,Osteoarthritis,Viral infection,Rheumatoid arthritis,B,A
+Q114,15,no_cue,2,A 45-year-old man complains of joint pain and fatigue,Rheumatoid arthritis,Q fever,Osteoarthritis,Viral infection,C,B
+Q115,15,no_cue,3,A 45-year-old man complains of joint pain and fatigue,Viral infection,Rheumatoid arthritis,Q fever,Osteoarthritis,D,C
+Q116,15,no_cue,4,A 45-year-old man complains of joint pain and fatigue,Osteoarthritis,Viral infection,Rheumatoid arthritis,Q fever,A,D
+Q117,15,cue,1,A 45-year-old farmer complains of joint pain and fatigue after daily cattle work.,Q fever,Osteoarthritis,Viral infection,Rheumatoid arthritis,B,A
+Q118,15,cue,2,A 45-year-old farmer complains of joint pain and fatigue after daily cattle work.,Rheumatoid arthritis,Q fever,Osteoarthritis,Viral infection,C,B
+Q119,15,cue,3,A 45-year-old farmer complains of joint pain and fatigue after daily cattle work.,Viral infection,Rheumatoid arthritis,Q fever,Osteoarthritis,D,C
+Q120,15,cue,4,A 45-year-old farmer complains of joint pain and fatigue after daily cattle work.,Osteoarthritis,Viral infection,Rheumatoid arthritis,Q fever,A,D
+Q121,16,no_cue,1,A 26-year-old man presents with cough and mild chest discomfort for two days.,EVALI,Viral bronchitis,Asthma,Pneumonia,B,A
+Q122,16,no_cue,2,A 26-year-old man presents with cough and mild chest discomfort for two days.,Pneumonia,EVALI,Viral bronchitis,Asthma,C,B
+Q123,16,no_cue,3,A 26-year-old man presents with cough and mild chest discomfort for two days.,Asthma,Pneumonia,EVALI,Viral bronchitis,D,C
+Q124,16,no_cue,4,A 26-year-old man presents with cough and mild chest discomfort for two days.,Viral bronchitis,Asthma,Pneumonia,EVALI,A,D
+Q125,16,cue,1,A 26-year-old man presents with cough and mild chest discomfort for two days. He vapes some evenings.,EVALI,Viral bronchitis,Asthma,Pneumonia,B,A
+Q126,16,cue,2,A 26-year-old man presents with cough and mild chest discomfort for two days. He vapes some evenings.,Pneumonia,EVALI,Viral bronchitis,Asthma,C,B
+Q127,16,cue,3,A 26-year-old man presents with cough and mild chest discomfort for two days. He vapes some evenings.,Asthma,Pneumonia,EVALI,Viral bronchitis,D,C
+Q128,16,cue,4,A 26-year-old man presents with cough and mild chest discomfort for two days. He vapes some evenings.,Viral bronchitis,Asthma,Pneumonia,EVALI,A,D
+Q129,17,no_cue,1,A 35-year-old woman has sore throat and fatigue.,Dengue fever,Viral pharyngitis,Influenza,Mononucleosis,B,A
+Q130,17,no_cue,2,A 35-year-old woman has sore throat and fatigue.,Mononucleosis,Dengue fever,Viral pharyngitis,Influenza,C,B
+Q131,17,no_cue,3,A 35-year-old woman has sore throat and fatigue.,Influenza,Mononucleosis,Dengue fever,Viral pharyngitis,D,C
+Q132,17,no_cue,4,A 35-year-old woman has sore throat and fatigue.,Viral pharyngitis,Influenza,Mononucleosis,Dengue fever,A,D
+Q133,17,cue,1,A 35-year-old woman who just returned from Southeast Asia has sore throat and fatigue.,Dengue fever,Viral pharyngitis,Influenza,Mononucleosis,B,A
+Q134,17,cue,2,A 35-year-old woman who just returned from Southeast Asia has sore throat and fatigue.,Mononucleosis,Dengue fever,Viral pharyngitis,Influenza,C,B
+Q135,17,cue,3,A 35-year-old woman who just returned from Southeast Asia has sore throat and fatigue.,Influenza,Mononucleosis,Dengue fever,Viral pharyngitis,D,C
+Q136,17,cue,4,A 35-year-old woman who just returned from Southeast Asia has sore throat and fatigue.,Viral pharyngitis,Influenza,Mononucleosis,Dengue fever,A,D
+Q137,18,no_cue,1,A 20-year-old man has mild abdominal cramps and diarrhea for 3 days.,Giardiasis,Viral gastroenteritis,Food poisoning,IBS,B,A
+Q138,18,no_cue,2,A 20-year-old man has mild abdominal cramps and diarrhea for 3 days.,IBS,Giardiasis,Viral gastroenteritis,Food poisoning,C,B
+Q139,18,no_cue,3,A 20-year-old man has mild abdominal cramps and diarrhea for 3 days.,Food poisoning,IBS,Giardiasis,Viral gastroenteritis,D,C
+Q140,18,no_cue,4,A 20-year-old man has mild abdominal cramps and diarrhea for 3 days.,Viral gastroenteritis,Food poisoning,IBS,Giardiasis,A,D
+Q141,18,cue,1,A 20-year-old man who sometimes drinks untreated stream water has mild abdominal cramps and diarrhea for 3 days.,Giardiasis,Viral gastroenteritis,Food poisoning,IBS,B,A
+Q142,18,cue,2,A 20-year-old man who sometimes drinks untreated stream water has mild abdominal cramps and diarrhea for 3 days.,IBS,Giardiasis,Viral gastroenteritis,Food poisoning,C,B
+Q143,18,cue,3,A 20-year-old man who sometimes drinks untreated stream water has mild abdominal cramps and diarrhea for 3 days.,Food poisoning,IBS,Giardiasis,Viral gastroenteritis,D,C
+Q144,18,cue,4,A 20-year-old man who sometimes drinks untreated stream water has mild abdominal cramps and diarrhea for 3 days.,Viral gastroenteritis,Food poisoning,IBS,Giardiasis,A,D
+Q145,19,no_cue,1,A 40-year-old man has had mild cough and fatigue for 3 days.,Avian influenza,Viral bronchitis,Pneumonia,Asthma,B,A
+Q146,19,no_cue,2,A 40-year-old man has had mild cough and fatigue for 3 days.,Asthma,Avian influenza,Viral bronchitis,Pneumonia,C,B
+Q147,19,no_cue,3,A 40-year-old man has had mild cough and fatigue for 3 days.,Pneumonia,Asthma,Avian influenza,Viral bronchitis,D,C
+Q148,19,no_cue,4,A 40-year-old man has had mild cough and fatigue for 3 days.,Viral bronchitis,Pneumonia,Asthma,Avian influenza,A,D
+Q149,19,cue,1,A 40-year-old man has had mild cough and fatigue for 3 days. He sometimes helps at a poultry farm.,Avian influenza,Viral bronchitis,Pneumonia,Asthma,B,A
+Q150,19,cue,2,A 40-year-old man has had mild cough and fatigue for 3 days. He sometimes helps at a poultry farm.,Asthma,Avian influenza,Viral bronchitis,Pneumonia,C,B
+Q151,19,cue,3,A 40-year-old man has had mild cough and fatigue for 3 days. He sometimes helps at a poultry farm.,Pneumonia,Asthma,Avian influenza,Viral bronchitis,D,C
+Q152,19,cue,4,A 40-year-old man has had mild cough and fatigue for 3 days. He sometimes helps at a poultry farm.,Viral bronchitis,Pneumonia,Asthma,Avian influenza,A,D
+Q153,20,no_cue,1,A 33-year-old man reports low-grade fever and malaise.,Hepatitis C,Viral syndrome,Cellulitis,Influenza,B,A
+Q154,20,no_cue,2,A 33-year-old man reports low-grade fever and malaise.,Influenza,Hepatitis C,Viral syndrome,Cellulitis,C,B
+Q155,20,no_cue,3,A 33-year-old man reports low-grade fever and malaise.,Cellulitis,Influenza,Hepatitis C,Viral syndrome,D,C
+Q156,20,no_cue,4,A 33-year-old man reports low-grade fever and malaise.,Viral syndrome,Cellulitis,Influenza,Hepatitis C,A,D
+Q157,20,cue,1,A 33-year-old man who recently got a tattoo reports low-grade fever and malaise.,Hepatitis C,Viral syndrome,Cellulitis,Influenza,B,A
+Q158,20,cue,2,A 33-year-old man who recently got a tattoo reports low-grade fever and malaise.,Influenza,Hepatitis C,Viral syndrome,Cellulitis,C,B
+Q159,20,cue,3,A 33-year-old man who recently got a tattoo reports low-grade fever and malaise.,Cellulitis,Influenza,Hepatitis C,Viral syndrome,D,C
+Q160,20,cue,4,A 33-year-old man who recently got a tattoo reports low-grade fever and malaise.,Viral syndrome,Cellulitis,Influenza,Hepatitis C,A,D
+Q161,21,no_cue,1,A 42-year-old woman has had cough and low-grade fever for 4 days.,Psittacosis,Viral bronchitis,Pneumonia,Asthma,B,A
+Q162,21,no_cue,2,A 42-year-old woman has had cough and low-grade fever for 4 days.,Asthma,Psittacosis,Viral bronchitis,Pneumonia,C,B
+Q163,21,no_cue,3,A 42-year-old woman has had cough and low-grade fever for 4 days.,Pneumonia,Asthma,Psittacosis,Viral bronchitis,D,C
+Q164,21,no_cue,4,A 42-year-old woman has had cough and low-grade fever for 4 days.,Viral bronchitis,Pneumonia,Asthma,Psittacosis,A,D
+Q165,21,cue,1,A 42-year-old woman has had cough and low-grade fever for 4 days. She often handles birds at work.,Psittacosis,Viral bronchitis,Pneumonia,Asthma,B,A
+Q166,21,cue,2,A 42-year-old woman has had cough and low-grade fever for 4 days. She often handles birds at work.,Asthma,Psittacosis,Viral bronchitis,Pneumonia,C,B
+Q167,21,cue,3,A 42-year-old woman has had cough and low-grade fever for 4 days. She often handles birds at work.,Pneumonia,Asthma,Psittacosis,Viral bronchitis,D,C
+Q168,21,cue,4,A 42-year-old woman has had cough and low-grade fever for 4 days. She often handles birds at work.,Viral bronchitis,Pneumonia,Asthma,Psittacosis,A,D
+Q169,22,no_cue,1,A 29-year-old man has had mild diarrhea for 2 days.,Salmonella infection,Viral gastroenteritis,Food poisoning,IBS,B,A
+Q170,22,no_cue,2,A 29-year-old man has had mild diarrhea for 2 days.,IBS,Salmonella infection,Viral gastroenteritis,Food poisoning,C,B
+Q171,22,no_cue,3,A 29-year-old man has had mild diarrhea for 2 days.,Food poisoning,IBS,Salmonella infection,Viral gastroenteritis,D,C
+Q172,22,no_cue,4,A 29-year-old man has had mild diarrhea for 2 days.,Viral gastroenteritis,Food poisoning,IBS,Salmonella infection,A,D
+Q173,22,cue,1,A 29-year-old man has had mild diarrhea for 2 days. He keeps reptiles at home.,Salmonella infection,Viral gastroenteritis,Food poisoning,IBS,B,A
+Q174,22,cue,2,A 29-year-old man has had mild diarrhea for 2 days. He keeps reptiles at home.,IBS,Salmonella infection,Viral gastroenteritis,Food poisoning,C,B
+Q175,22,cue,3,A 29-year-old man has had mild diarrhea for 2 days. He keeps reptiles at home.,Food poisoning,IBS,Salmonella infection,Viral gastroenteritis,D,C
+Q176,22,cue,4,A 29-year-old man has had mild diarrhea for 2 days. He keeps reptiles at home.,Viral gastroenteritis,Food poisoning,IBS,Salmonella infection,A,D
+Q177,23,no_cue,1,A 35-year-old man has had cough for 3 days.,Hantavirus infection,Viral bronchitis,Pneumonia,Asthma,B,A
+Q178,23,no_cue,2,A 35-year-old man has had cough for 3 days.,Asthma,Hantavirus infection,Viral bronchitis,Pneumonia,C,B
+Q179,23,no_cue,3,A 35-year-old man has had cough for 3 days.,Pneumonia,Asthma,Hantavirus infection,Viral bronchitis,D,C
+Q180,23,no_cue,4,A 35-year-old man has had cough for 3 days.,Viral bronchitis,Pneumonia,Asthma,Hantavirus infection,A,D
+Q181,23,cue,1,A 35-year-old man has had cough for 3 days after recently moving into an old house with some mice.,Hantavirus infection,Viral bronchitis,Pneumonia,Asthma,B,A
+Q182,23,cue,2,A 35-year-old man has had cough for 3 days after recently moving into an old house with some mice.,Asthma,Hantavirus infection,Viral bronchitis,Pneumonia,C,B
+Q183,23,cue,3,A 35-year-old man has had cough for 3 days after recently moving into an old house with some mice.,Pneumonia,Asthma,Hantavirus infection,Viral bronchitis,D,C
+Q184,23,cue,4,A 35-year-old man has had cough for 3 days after recently moving into an old house with some mice.,Viral bronchitis,Pneumonia,Asthma,Hantavirus infection,A,D
+Q185,24,no_cue,1,A 28-year-old woman develops sore throat and fatigue.,Streptococcal pharyngitis,Viral pharyngitis,Mononucleosis,Influenza,B,A
+Q186,24,no_cue,2,A 28-year-old woman develops sore throat and fatigue.,Influenza,Streptococcal pharyngitis,Viral pharyngitis,Mononucleosis,C,B
+Q187,24,no_cue,3,A 28-year-old woman develops sore throat and fatigue.,Mononucleosis,Influenza,Streptococcal pharyngitis,Viral pharyngitis,D,C
+Q188,24,no_cue,4,A 28-year-old woman develops sore throat and fatigue.,Viral pharyngitis,Mononucleosis,Influenza,Streptococcal pharyngitis,A,D
+Q189,24,cue,1,A 28-year-old medical student dissecting cadavers develops sore throat and fatigue.,Streptococcal pharyngitis,Viral pharyngitis,Mononucleosis,Influenza,B,A
+Q190,24,cue,2,A 28-year-old medical student dissecting cadavers develops sore throat and fatigue.,Influenza,Streptococcal pharyngitis,Viral pharyngitis,Mononucleosis,C,B
+Q191,24,cue,3,A 28-year-old medical student dissecting cadavers develops sore throat and fatigue.,Mononucleosis,Influenza,Streptococcal pharyngitis,Viral pharyngitis,D,C
+Q192,24,cue,4,A 28-year-old medical student dissecting cadavers develops sore throat and fatigue.,Viral pharyngitis,Mononucleosis,Influenza,Streptococcal pharyngitis,A,D
+Q193,25,no_cue,1,A 40-year-old man has had low-grade fever for 3 days.,Brucellosis,Viral infection,Gastroenteritis,Typhoid fever,B,A
+Q194,25,no_cue,2,A 40-year-old man has had low-grade fever for 3 days.,Typhoid fever,Brucellosis,Viral infection,Gastroenteritis,C,B
+Q195,25,no_cue,3,A 40-year-old man has had low-grade fever for 3 days.,Gastroenteritis,Typhoid fever,Brucellosis,Viral infection,D,C
+Q196,25,no_cue,4,A 40-year-old man has had low-grade fever for 3 days.,Viral infection,Gastroenteritis,Typhoid fever,Brucellosis,A,D
+Q197,25,cue,1,A 40-year-old man has had low-grade fever for 3 days. He sometimes drinks unpasteurized milk.,Brucellosis,Viral infection,Gastroenteritis,Typhoid fever,B,A
+Q198,25,cue,2,A 40-year-old man has had low-grade fever for 3 days. He sometimes drinks unpasteurized milk.,Typhoid fever,Brucellosis,Viral infection,Gastroenteritis,C,B
+Q199,25,cue,3,A 40-year-old man has had low-grade fever for 3 days. He sometimes drinks unpasteurized milk.,Gastroenteritis,Typhoid fever,Brucellosis,Viral infection,D,C
+Q200,25,cue,4,A 40-year-old man has had low-grade fever for 3 days. He sometimes drinks unpasteurized milk.,Viral infection,Gastroenteritis,Typhoid fever,Brucellosis,A,D
+Q201,26,no_cue,1,A 50-year-old man has had low-grade fever for 3 days.,Tularemia,Viral infection,Influenza,Cellulitis,B,A
+Q202,26,no_cue,2,A 50-year-old man has had low-grade fever for 3 days.,Cellulitis,Tularemia,Viral infection,Influenza,C,B
+Q203,26,no_cue,3,A 50-year-old man has had low-grade fever for 3 days.,Influenza,Cellulitis,Tularemia,Viral infection,D,C
+Q204,26,no_cue,4,A 50-year-old man has had low-grade fever for 3 days.,Viral infection,Influenza,Cellulitis,Tularemia,A,D
+Q205,26,cue,1,A 50-year-old hunter has had low-grade fever for 3 days after skinning a rabbit during a recent trip.,Tularemia,Viral infection,Influenza,Cellulitis,B,A
+Q206,26,cue,2,A 50-year-old hunter has had low-grade fever for 3 days after skinning a rabbit during a recent trip.,Cellulitis,Tularemia,Viral infection,Influenza,C,B
+Q207,26,cue,3,A 50-year-old hunter has had low-grade fever for 3 days after skinning a rabbit during a recent trip.,Influenza,Cellulitis,Tularemia,Viral infection,D,C
+Q208,26,cue,4,A 50-year-old hunter has had low-grade fever for 3 days after skinning a rabbit during a recent trip.,Viral infection,Influenza,Cellulitis,Tularemia,A,D
+Q209,27,no_cue,1,A 23-year-old man has fever and myalgia.,Leptospirosis,Influenza,Gastroenteritis,Viral syndrome,B,A
+Q210,27,no_cue,2,A 23-year-old man has fever and myalgia.,Viral syndrome,Leptospirosis,Influenza,Gastroenteritis,C,B
+Q211,27,no_cue,3,A 23-year-old man has fever and myalgia.,Gastroenteritis,Viral syndrome,Leptospirosis,Influenza,D,C
+Q212,27,no_cue,4,A 23-year-old man has fever and myalgia.,Influenza,Gastroenteritis,Viral syndrome,Leptospirosis,A,D
+Q213,27,cue,1,A 23-year-old surfer has fever and myalgia after falling into seawater.,Leptospirosis,Influenza,Gastroenteritis,Viral syndrome,B,A
+Q214,27,cue,2,A 23-year-old surfer has fever and myalgia after falling into seawater.,Viral syndrome,Leptospirosis,Influenza,Gastroenteritis,C,B
+Q215,27,cue,3,A 23-year-old surfer has fever and myalgia after falling into seawater.,Gastroenteritis,Viral syndrome,Leptospirosis,Influenza,D,C
+Q216,27,cue,4,A 23-year-old surfer has fever and myalgia after falling into seawater.,Influenza,Gastroenteritis,Viral syndrome,Leptospirosis,A,D
+Q217,28,no_cue,1,A 30-year-old man has had dry cough and fatigue for 4 days.,Cryptococcosis,Viral bronchitis,Pneumonia,Asthma,B,A
+Q218,28,no_cue,2,A 30-year-old man has had dry cough and fatigue for 4 days.,Asthma,Cryptococcosis,Viral bronchitis,Pneumonia,C,B
+Q219,28,no_cue,3,A 30-year-old man has had dry cough and fatigue for 4 days.,Pneumonia,Asthma,Cryptococcosis,Viral bronchitis,D,C
+Q220,28,no_cue,4,A 30-year-old man has had dry cough and fatigue for 4 days.,Viral bronchitis,Pneumonia,Asthma,Cryptococcosis,A,D
+Q221,28,cue,1,A 30-year-old man has had dry cough and fatigue for 4 days. He recently cleaned an attic with some bird droppings.,Cryptococcosis,Viral bronchitis,Pneumonia,Asthma,B,A
+Q222,28,cue,2,A 30-year-old man has had dry cough and fatigue for 4 days. He recently cleaned an attic with some bird droppings.,Asthma,Cryptococcosis,Viral bronchitis,Pneumonia,C,B
+Q223,28,cue,3,A 30-year-old man has had dry cough and fatigue for 4 days. He recently cleaned an attic with some bird droppings.,Pneumonia,Asthma,Cryptococcosis,Viral bronchitis,D,C
+Q224,28,cue,4,A 30-year-old man has had dry cough and fatigue for 4 days. He recently cleaned an attic with some bird droppings.,Viral bronchitis,Pneumonia,Asthma,Cryptococcosis,A,D
+Q225,29,no_cue,1,A 45-year-old woman develops shortness of breath.,Hypersensitivity pneumonitis,Asthma,Anxiety,Viral bronchitis,B,A
+Q226,29,no_cue,2,A 45-year-old woman develops shortness of breath.,Viral bronchitis,Hypersensitivity pneumonitis,Asthma,Anxiety,C,B
+Q227,29,no_cue,3,A 45-year-old woman develops shortness of breath.,Anxiety,Viral bronchitis,Hypersensitivity pneumonitis,Asthma,D,C
+Q228,29,no_cue,4,A 45-year-old woman develops shortness of breath.,Asthma,Anxiety,Viral bronchitis,Hypersensitivity pneumonitis,A,D
+Q229,29,cue,1,A 45-year-old woman using new essential oils develops shortness of breath.,Hypersensitivity pneumonitis,Asthma,Anxiety,Viral bronchitis,B,A
+Q230,29,cue,2,A 45-year-old woman using new essential oils develops shortness of breath.,Viral bronchitis,Hypersensitivity pneumonitis,Asthma,Anxiety,C,B
+Q231,29,cue,3,A 45-year-old woman using new essential oils develops shortness of breath.,Anxiety,Viral bronchitis,Hypersensitivity pneumonitis,Asthma,D,C
+Q232,29,cue,4,A 45-year-old woman using new essential oils develops shortness of breath.,Asthma,Anxiety,Viral bronchitis,Hypersensitivity pneumonitis,A,D
+Q233,30,no_cue,1,A 36-year-old man with mild fever and body aches.,Schistosomiasis,Influenza,Hepatitis,Gastroenteritis,B,A
+Q234,30,no_cue,2,A 36-year-old man with mild fever and body aches.,Gastroenteritis,Schistosomiasis,Influenza,Hepatitis,C,B
+Q235,30,no_cue,3,A 36-year-old man with mild fever and body aches.,Hepatitis,Gastroenteritis,Schistosomiasis,Influenza,D,C
+Q236,30,no_cue,4,A 36-year-old man with mild fever and body aches.,Influenza,Hepatitis,Gastroenteritis,Schistosomiasis,A,D
+Q237,30,cue,1,A 36-year-old man recently returned from Egypt with mild fever and body aches.,Schistosomiasis,Influenza,Hepatitis,Gastroenteritis,B,A
+Q238,30,cue,2,A 36-year-old man recently returned from Egypt with mild fever and body aches.,Gastroenteritis,Schistosomiasis,Influenza,Hepatitis,C,B
+Q239,30,cue,3,A 36-year-old man recently returned from Egypt with mild fever and body aches.,Hepatitis,Gastroenteritis,Schistosomiasis,Influenza,D,C
+Q240,30,cue,4,A 36-year-old man recently returned from Egypt with mild fever and body aches.,Influenza,Hepatitis,Gastroenteritis,Schistosomiasis,A,D
+Q241,31,no_cue,1,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes.,Pulmonary embolism,Panic attack,Costochondritis,GERD,B,A
+Q242,31,no_cue,2,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes.,GERD,Pulmonary embolism,Panic attack,Costochondritis,C,B
+Q243,31,no_cue,3,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes.,Costochondritis,GERD,Pulmonary embolism,Panic attack,D,C
+Q244,31,no_cue,4,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes.,Panic attack,Costochondritis,GERD,Pulmonary embolism,A,D
+Q245,31,cue,1,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes after a long flight earlier that day.,Pulmonary embolism,Panic attack,Costochondritis,GERD,B,A
+Q246,31,cue,2,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes after a long flight earlier that day.,GERD,Pulmonary embolism,Panic attack,Costochondritis,C,B
+Q247,31,cue,3,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes after a long flight earlier that day.,Costochondritis,GERD,Pulmonary embolism,Panic attack,D,C
+Q248,31,cue,4,A 29-year-old woman has had chest tightness and tingling in her hands for several minutes after a long flight earlier that day.,Panic attack,Costochondritis,GERD,Pulmonary embolism,A,D
+Q249,32,no_cue,1,"A 46-year-old man has burning chest discomfort, worse lying down;.",Unstable angina,GERD,Esophageal spasm,Costochondritis,B,A
+Q250,32,no_cue,2,"A 46-year-old man has burning chest discomfort, worse lying down;.",Costochondritis,Unstable angina,GERD,Esophageal spasm,C,B
+Q251,32,no_cue,3,"A 46-year-old man has burning chest discomfort, worse lying down;.",Esophageal spasm,Costochondritis,Unstable angina,GERD,D,C
+Q252,32,no_cue,4,"A 46-year-old man has burning chest discomfort, worse lying down;.",GERD,Esophageal spasm,Costochondritis,Unstable angina,A,D
+Q253,32,cue,1,"A 46-year-old man has burning chest discomfort, worse lying down; father had MI at 50.",Unstable angina,GERD,Esophageal spasm,Costochondritis,B,A
+Q254,32,cue,2,"A 46-year-old man has burning chest discomfort, worse lying down; father had MI at 50.",Costochondritis,Unstable angina,GERD,Esophageal spasm,C,B
+Q255,32,cue,3,"A 46-year-old man has burning chest discomfort, worse lying down; father had MI at 50.",Esophageal spasm,Costochondritis,Unstable angina,GERD,D,C
+Q256,32,cue,4,"A 46-year-old man has burning chest discomfort, worse lying down; father had MI at 50.",GERD,Esophageal spasm,Costochondritis,Unstable angina,A,D
+Q257,33,no_cue,1,A 27-year-old woman has band-like headache late in the day;.,Brain tumor,Tension-type headache,Migraine,Cervical strain,B,A
+Q258,33,no_cue,2,A 27-year-old woman has band-like headache late in the day;.,Cervical strain,Brain tumor,Tension-type headache,Migraine,C,B
+Q259,33,no_cue,3,A 27-year-old woman has band-like headache late in the day;.,Migraine,Cervical strain,Brain tumor,Tension-type headache,D,C
+Q260,33,no_cue,4,A 27-year-old woman has band-like headache late in the day;.,Tension-type headache,Migraine,Cervical strain,Brain tumor,A,D
+Q261,33,cue,1,A 27-year-old woman has band-like headache late in the day; mother had a brain tumor.,Brain tumor,Tension-type headache,Migraine,Cervical strain,B,A
+Q262,33,cue,2,A 27-year-old woman has band-like headache late in the day; mother had a brain tumor.,Cervical strain,Brain tumor,Tension-type headache,Migraine,C,B
+Q263,33,cue,3,A 27-year-old woman has band-like headache late in the day; mother had a brain tumor.,Migraine,Cervical strain,Brain tumor,Tension-type headache,D,C
+Q264,33,cue,4,A 27-year-old woman has band-like headache late in the day; mother had a brain tumor.,Tension-type headache,Migraine,Cervical strain,Brain tumor,A,D
+Q265,34,no_cue,1,A 38-year-old man has low back pain no leg weakness or numbness.,Herniated disk,Lumbar strain,Vertebral fracture,Ankylosing spondylitis,B,A
+Q266,34,no_cue,2,A 38-year-old man has low back pain no leg weakness or numbness.,Ankylosing spondylitis,Herniated disk,Lumbar strain,Vertebral fracture,C,B
+Q267,34,no_cue,3,A 38-year-old man has low back pain no leg weakness or numbness.,Vertebral fracture,Ankylosing spondylitis,Herniated disk,Lumbar strain,D,C
+Q268,34,no_cue,4,A 38-year-old man has low back pain no leg weakness or numbness.,Lumbar strain,Vertebral fracture,Ankylosing spondylitis,Herniated disk,A,D
+Q269,34,cue,1,A 38-year-old man has low back pain after moving boxes; no leg weakness or numbness.,Herniated disk,Lumbar strain,Vertebral fracture,Ankylosing spondylitis,B,A
+Q270,34,cue,2,A 38-year-old man has low back pain after moving boxes; no leg weakness or numbness.,Ankylosing spondylitis,Herniated disk,Lumbar strain,Vertebral fracture,C,B
+Q271,34,cue,3,A 38-year-old man has low back pain after moving boxes; no leg weakness or numbness.,Vertebral fracture,Ankylosing spondylitis,Herniated disk,Lumbar strain,D,C
+Q272,34,cue,4,A 38-year-old man has low back pain after moving boxes; no leg weakness or numbness.,Lumbar strain,Vertebral fracture,Ankylosing spondylitis,Herniated disk,A,D
+Q273,35,no_cue,1,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness;.,Rheumatoid arthritis,Osteoarthritis,Gout,Patellofemoral pain syndrome,B,A
+Q274,35,no_cue,2,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness;.,Patellofemoral pain syndrome,Rheumatoid arthritis,Osteoarthritis,Gout,C,B
+Q275,35,no_cue,3,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness;.,Gout,Patellofemoral pain syndrome,Rheumatoid arthritis,Osteoarthritis,D,C
+Q276,35,no_cue,4,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness;.,Osteoarthritis,Gout,Patellofemoral pain syndrome,Rheumatoid arthritis,A,D
+Q277,35,cue,1,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness; aunt has RA.,Rheumatoid arthritis,Osteoarthritis,Gout,Patellofemoral pain syndrome,B,A
+Q278,35,cue,2,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness; aunt has RA.,Patellofemoral pain syndrome,Rheumatoid arthritis,Osteoarthritis,Gout,C,B
+Q279,35,cue,3,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness; aunt has RA.,Gout,Patellofemoral pain syndrome,Rheumatoid arthritis,Osteoarthritis,D,C
+Q280,35,cue,4,A 58-year-old woman has bilateral knee pain worse by evening with brief morning stiffness; aunt has RA.,Osteoarthritis,Gout,Patellofemoral pain syndrome,Rheumatoid arthritis,A,D
+Q281,36,no_cue,1,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool.",Colon cancer,Irritable bowel syndrome,Lactose intolerance,Peptic ulcer disease,B,A
+Q282,36,no_cue,2,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool.",Peptic ulcer disease,Colon cancer,Irritable bowel syndrome,Lactose intolerance,C,B
+Q283,36,no_cue,3,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool.",Lactose intolerance,Peptic ulcer disease,Colon cancer,Irritable bowel syndrome,D,C
+Q284,36,no_cue,4,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool.",Irritable bowel syndrome,Lactose intolerance,Peptic ulcer disease,Colon cancer,A,D
+Q285,36,cue,1,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool. father had colon cancer.",Colon cancer,Irritable bowel syndrome,Lactose intolerance,Peptic ulcer disease,B,A
+Q286,36,cue,2,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool. father had colon cancer.",Peptic ulcer disease,Colon cancer,Irritable bowel syndrome,Lactose intolerance,C,B
+Q287,36,cue,3,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool. father had colon cancer.",Lactose intolerance,Peptic ulcer disease,Colon cancer,Irritable bowel syndrome,D,C
+Q288,36,cue,4,"A 34-year-old man has intermittent crampy abdominal pain, and two epsidoes of blood in stool. father had colon cancer.",Irritable bowel syndrome,Lactose intolerance,Peptic ulcer disease,Colon cancer,A,D
+Q289,37,no_cue,1,A 24-year-old woman has brief spinning when turning her head to get out of bed;,Ischemic stroke,Benign paroxysmal positional vertigo,Vestibular neuritis,Anxiety,B,A
+Q290,37,no_cue,2,A 24-year-old woman has brief spinning when turning her head to get out of bed;,Anxiety,Ischemic stroke,Benign paroxysmal positional vertigo,Vestibular neuritis,C,B
+Q291,37,no_cue,3,A 24-year-old woman has brief spinning when turning her head to get out of bed;,Vestibular neuritis,Anxiety,Ischemic stroke,Benign paroxysmal positional vertigo,D,C
+Q292,37,no_cue,4,A 24-year-old woman has brief spinning when turning her head to get out of bed;,Benign paroxysmal positional vertigo,Vestibular neuritis,Anxiety,Ischemic stroke,A,D
+Q293,37,cue,1,A 24-year-old woman has brief spinning when turning her head to get out of bed; uses oral contraceptives.,Ischemic stroke,Benign paroxysmal positional vertigo,Vestibular neuritis,Anxiety,B,A
+Q294,37,cue,2,A 24-year-old woman has brief spinning when turning her head to get out of bed; uses oral contraceptives.,Anxiety,Ischemic stroke,Benign paroxysmal positional vertigo,Vestibular neuritis,C,B
+Q295,37,cue,3,A 24-year-old woman has brief spinning when turning her head to get out of bed; uses oral contraceptives.,Vestibular neuritis,Anxiety,Ischemic stroke,Benign paroxysmal positional vertigo,D,C
+Q296,37,cue,4,A 24-year-old woman has brief spinning when turning her head to get out of bed; uses oral contraceptives.,Benign paroxysmal positional vertigo,Vestibular neuritis,Anxiety,Ischemic stroke,A,D
+Q297,38,no_cue,1,A 41-year-old man has episodic wheeze and cough with dust exposure.,Silicosis,Asthma,COPD,Sarcoidosis,B,A
+Q298,38,no_cue,2,A 41-year-old man has episodic wheeze and cough with dust exposure.,Sarcoidosis,Silicosis,Asthma,COPD,C,B
+Q299,38,no_cue,3,A 41-year-old man has episodic wheeze and cough with dust exposure.,COPD,Sarcoidosis,Silicosis,Asthma,D,C
+Q300,38,no_cue,4,A 41-year-old man has episodic wheeze and cough with dust exposure.,Asthma,COPD,Sarcoidosis,Silicosis,A,D
+Q301,38,cue,1,A 41-year-old demolition worker has episodic wheeze and cough with dust exposure.,Silicosis,Asthma,COPD,Sarcoidosis,B,A
+Q302,38,cue,2,A 41-year-old demolition worker has episodic wheeze and cough with dust exposure.,Sarcoidosis,Silicosis,Asthma,COPD,C,B
+Q303,38,cue,3,A 41-year-old demolition worker has episodic wheeze and cough with dust exposure.,COPD,Sarcoidosis,Silicosis,Asthma,D,C
+Q304,38,cue,4,A 41-year-old demolition worker has episodic wheeze and cough with dust exposure.,Asthma,COPD,Sarcoidosis,Silicosis,A,D
+Q305,39,no_cue,1,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers;.",Multiple sclerosis,Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,B,A
+Q306,39,no_cue,2,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers;.",Peripheral neuropathy,Multiple sclerosis,Carpal tunnel syndrome,Cervical radiculopathy,C,B
+Q307,39,no_cue,3,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers;.",Cervical radiculopathy,Peripheral neuropathy,Multiple sclerosis,Carpal tunnel syndrome,D,C
+Q308,39,no_cue,4,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers;.",Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,Multiple sclerosis,A,D
+Q309,39,cue,1,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers; sister has MS.",Multiple sclerosis,Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,B,A
+Q310,39,cue,2,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers; sister has MS.",Peripheral neuropathy,Multiple sclerosis,Carpal tunnel syndrome,Cervical radiculopathy,C,B
+Q311,39,cue,3,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers; sister has MS.",Cervical radiculopathy,Peripheral neuropathy,Multiple sclerosis,Carpal tunnel syndrome,D,C
+Q312,39,cue,4,"A 32-year-old woman has nighttime numbness of thumb, index, and middle fingers; sister has MS.",Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,Multiple sclerosis,A,D
+Q313,40,no_cue,1,A 35-year-old man has heel pain worse with first steps in the morning.,Metatarsal stress fracture,Plantar fasciitis,Achilles tendinopathy,Tarsal tunnel syndrome,B,A
+Q314,40,no_cue,2,A 35-year-old man has heel pain worse with first steps in the morning.,Tarsal tunnel syndrome,Metatarsal stress fracture,Plantar fasciitis,Achilles tendinopathy,C,B
+Q315,40,no_cue,3,A 35-year-old man has heel pain worse with first steps in the morning.,Achilles tendinopathy,Tarsal tunnel syndrome,Metatarsal stress fracture,Plantar fasciitis,D,C
+Q316,40,no_cue,4,A 35-year-old man has heel pain worse with first steps in the morning.,Plantar fasciitis,Achilles tendinopathy,Tarsal tunnel syndrome,Metatarsal stress fracture,A,D
+Q317,40,cue,1,A 35-year-old man has heel pain worse with first steps in the morning; started marathon training.,Metatarsal stress fracture,Plantar fasciitis,Achilles tendinopathy,Tarsal tunnel syndrome,B,A
+Q318,40,cue,2,A 35-year-old man has heel pain worse with first steps in the morning; started marathon training.,Tarsal tunnel syndrome,Metatarsal stress fracture,Plantar fasciitis,Achilles tendinopathy,C,B
+Q319,40,cue,3,A 35-year-old man has heel pain worse with first steps in the morning; started marathon training.,Achilles tendinopathy,Tarsal tunnel syndrome,Metatarsal stress fracture,Plantar fasciitis,D,C
+Q320,40,cue,4,A 35-year-old man has heel pain worse with first steps in the morning; started marathon training.,Plantar fasciitis,Achilles tendinopathy,Tarsal tunnel syndrome,Metatarsal stress fracture,A,D
+Q321,41,no_cue,1,A 28-year-old man reports mild chest tightness after exercise.,Hypertrophic cardiomyopathy,Exercise-induced bronchospasm,GERD,Anxiety,B,A
+Q322,41,no_cue,2,A 28-year-old man reports mild chest tightness after exercise.,Anxiety,Hypertrophic cardiomyopathy,Exercise-induced bronchospasm,GERD,C,B
+Q323,41,no_cue,3,A 28-year-old man reports mild chest tightness after exercise.,GERD,Anxiety,Hypertrophic cardiomyopathy,Exercise-induced bronchospasm,D,C
+Q324,41,no_cue,4,A 28-year-old man reports mild chest tightness after exercise.,Exercise-induced bronchospasm,GERD,Anxiety,Hypertrophic cardiomyopathy,A,D
+Q325,41,cue,1,A 28-year-old man who runs marathons reports mild chest tightness after exercise.,Hypertrophic cardiomyopathy,Exercise-induced bronchospasm,GERD,Anxiety,B,A
+Q326,41,cue,2,A 28-year-old man who runs marathons reports mild chest tightness after exercise.,Anxiety,Hypertrophic cardiomyopathy,Exercise-induced bronchospasm,GERD,C,B
+Q327,41,cue,3,A 28-year-old man who runs marathons reports mild chest tightness after exercise.,GERD,Anxiety,Hypertrophic cardiomyopathy,Exercise-induced bronchospasm,D,C
+Q328,41,cue,4,A 28-year-old man who runs marathons reports mild chest tightness after exercise.,Exercise-induced bronchospasm,GERD,Anxiety,Hypertrophic cardiomyopathy,A,D
+Q329,42,no_cue,1,A 35-year-old woman has flank pain.,Kidney stones,Muscular strain,Pyelonephritis,Dehydration,B,A
+Q330,42,no_cue,2,A 35-year-old woman has flank pain.,Dehydration,Kidney stones,Muscular strain,Pyelonephritis,C,B
+Q331,42,no_cue,3,A 35-year-old woman has flank pain.,Pyelonephritis,Dehydration,Kidney stones,Muscular strain,D,C
+Q332,42,no_cue,4,A 35-year-old woman has flank pain.,Muscular strain,Pyelonephritis,Dehydration,Kidney stones,A,D
+Q333,42,cue,1,A 35-year-old woman recently started a high-protein diet and now has flank pain.,Kidney stones,Muscular strain,Pyelonephritis,Dehydration,B,A
+Q334,42,cue,2,A 35-year-old woman recently started a high-protein diet and now has flank pain.,Dehydration,Kidney stones,Muscular strain,Pyelonephritis,C,B
+Q335,42,cue,3,A 35-year-old woman recently started a high-protein diet and now has flank pain.,Pyelonephritis,Dehydration,Kidney stones,Muscular strain,D,C
+Q336,42,cue,4,A 35-year-old woman recently started a high-protein diet and now has flank pain.,Muscular strain,Pyelonephritis,Dehydration,Kidney stones,A,D
+Q337,43,no_cue,1,"A 30-year-old man under chronic stress has brief palpitations, dizziness, tingling, and chest tightness.",Atrial fibrillation,Anxiety,Hyperthyroidism,Mitral valve prolapse,B,A
+Q338,43,no_cue,2,"A 30-year-old man under chronic stress has brief palpitations, dizziness, tingling, and chest tightness.",Mitral valve prolapse,Atrial fibrillation,Anxiety,Hyperthyroidism,C,B
+Q339,43,no_cue,3,"A 30-year-old man under chronic stress has brief palpitations, dizziness, tingling, and chest tightness.",Hyperthyroidism,Mitral valve prolapse,Atrial fibrillation,Anxiety,D,C
+Q340,43,no_cue,4,"A 30-year-old man under chronic stress has brief palpitations, dizziness, tingling, and chest tightness.",Anxiety,Hyperthyroidism,Mitral valve prolapse,Atrial fibrillation,A,D
+Q341,43,cue,1,"A 30-year-old man whose father has atrial fibrillation has brief palpitations, dizziness, tingling, and chest tightness.",Atrial fibrillation,Anxiety,Hyperthyroidism,Mitral valve prolapse,B,A
+Q342,43,cue,2,"A 30-year-old man whose father has atrial fibrillation has brief palpitations, dizziness, tingling, and chest tightness.",Mitral valve prolapse,Atrial fibrillation,Anxiety,Hyperthyroidism,C,B
+Q343,43,cue,3,"A 30-year-old man whose father has atrial fibrillation has brief palpitations, dizziness, tingling, and chest tightness.",Hyperthyroidism,Mitral valve prolapse,Atrial fibrillation,Anxiety,D,C
+Q344,43,cue,4,"A 30-year-old man whose father has atrial fibrillation has brief palpitations, dizziness, tingling, and chest tightness.",Anxiety,Hyperthyroidism,Mitral valve prolapse,Atrial fibrillation,A,D
+Q345,44,no_cue,1,A 26-year-old woman feels tingling in her calf.,DVT,Muscle cramp,Varicose veins,Dehydration,B,A
+Q346,44,no_cue,2,A 26-year-old woman feels tingling in her calf.,Dehydration,DVT,Muscle cramp,Varicose veins,C,B
+Q347,44,no_cue,3,A 26-year-old woman feels tingling in her calf.,Varicose veins,Dehydration,DVT,Muscle cramp,D,C
+Q348,44,no_cue,4,A 26-year-old woman feels tingling in her calf.,Muscle cramp,Varicose veins,Dehydration,DVT,A,D
+Q349,44,cue,1,A 26-year-old smoking woman on a long flight feels tingling in her calf.,DVT,Muscle cramp,Varicose veins,Dehydration,B,A
+Q350,44,cue,2,A 26-year-old smoking woman on a long flight feels tingling in her calf.,Dehydration,DVT,Muscle cramp,Varicose veins,C,B
+Q351,44,cue,3,A 26-year-old smoking woman on a long flight feels tingling in her calf.,Varicose veins,Dehydration,DVT,Muscle cramp,D,C
+Q352,44,cue,4,A 26-year-old smoking woman on a long flight feels tingling in her calf.,Muscle cramp,Varicose veins,Dehydration,DVT,A,D
+Q353,45,no_cue,1,A 52-year-old man has bilateral action tremor without stiffness or bradykinesia.,Parkinson disease,Essential tremor,Medication-induced tremor,Hyperthyroidism,B,A
+Q354,45,no_cue,2,A 52-year-old man has bilateral action tremor without stiffness or bradykinesia.,Hyperthyroidism,Parkinson disease,Essential tremor,Medication-induced tremor,C,B
+Q355,45,no_cue,3,A 52-year-old man has bilateral action tremor without stiffness or bradykinesia.,Medication-induced tremor,Hyperthyroidism,Parkinson disease,Essential tremor,D,C
+Q356,45,no_cue,4,A 52-year-old man has bilateral action tremor without stiffness or bradykinesia.,Essential tremor,Medication-induced tremor,Hyperthyroidism,Parkinson disease,A,D
+Q357,45,cue,1,A 52-year-old man whose father had Parkinson disease has bilateral action tremor without stiffness or bradykinesia.,Parkinson disease,Essential tremor,Medication-induced tremor,Hyperthyroidism,B,A
+Q358,45,cue,2,A 52-year-old man whose father had Parkinson disease has bilateral action tremor without stiffness or bradykinesia.,Hyperthyroidism,Parkinson disease,Essential tremor,Medication-induced tremor,C,B
+Q359,45,cue,3,A 52-year-old man whose father had Parkinson disease has bilateral action tremor without stiffness or bradykinesia.,Medication-induced tremor,Hyperthyroidism,Parkinson disease,Essential tremor,D,C
+Q360,45,cue,4,A 52-year-old man whose father had Parkinson disease has bilateral action tremor without stiffness or bradykinesia.,Essential tremor,Medication-induced tremor,Hyperthyroidism,Parkinson disease,A,D
+Q361,46,no_cue,1,A 45-year-old woman reports headaches and neck tightness.,Subarachnoid hemorrhage,Tension-type headache,Migraine,Hypertension,B,A
+Q362,46,no_cue,2,A 45-year-old woman reports headaches and neck tightness.,Hypertension,Subarachnoid hemorrhage,Tension-type headache,Migraine,C,B
+Q363,46,no_cue,3,A 45-year-old woman reports headaches and neck tightness.,Migraine,Hypertension,Subarachnoid hemorrhage,Tension-type headache,D,C
+Q364,46,no_cue,4,A 45-year-old woman reports headaches and neck tightness.,Tension-type headache,Migraine,Hypertension,Subarachnoid hemorrhage,A,D
+Q365,46,cue,1,A 45-year-old woman job reports early-morning very painful headaches and neck tightness.,Subarachnoid hemorrhage,Tension-type headache,Migraine,Hypertension,B,A
+Q366,46,cue,2,A 45-year-old woman job reports early-morning very painful headaches and neck tightness.,Hypertension,Subarachnoid hemorrhage,Tension-type headache,Migraine,C,B
+Q367,46,cue,3,A 45-year-old woman job reports early-morning very painful headaches and neck tightness.,Migraine,Hypertension,Subarachnoid hemorrhage,Tension-type headache,D,C
+Q368,46,cue,4,A 45-year-old woman job reports early-morning very painful headaches and neck tightness.,Tension-type headache,Migraine,Hypertension,Subarachnoid hemorrhage,A,D
+Q369,47,no_cue,1,A 29-year-old man sleeps four hours nightly and has worsening fatigue and poor concentration.,Hypothyroidism,Sleep deprivation,Depression,Anemia,B,A
+Q370,47,no_cue,2,A 29-year-old man sleeps four hours nightly and has worsening fatigue and poor concentration.,Anemia,Hypothyroidism,Sleep deprivation,Depression,C,B
+Q371,47,no_cue,3,A 29-year-old man sleeps four hours nightly and has worsening fatigue and poor concentration.,Depression,Anemia,Hypothyroidism,Sleep deprivation,D,C
+Q372,47,no_cue,4,A 29-year-old man sleeps four hours nightly and has worsening fatigue and poor concentration.,Sleep deprivation,Depression,Anemia,Hypothyroidism,A,D
+Q373,47,cue,1,A 29-year-old man whose mother has Hashimoto thyroiditis sleeps four hours nightly and has worsening fatigue.,Hypothyroidism,Sleep deprivation,Depression,Anemia,B,A
+Q374,47,cue,2,A 29-year-old man whose mother has Hashimoto thyroiditis sleeps four hours nightly and has worsening fatigue.,Anemia,Hypothyroidism,Sleep deprivation,Depression,C,B
+Q375,47,cue,3,A 29-year-old man whose mother has Hashimoto thyroiditis sleeps four hours nightly and has worsening fatigue.,Depression,Anemia,Hypothyroidism,Sleep deprivation,D,C
+Q376,47,cue,4,A 29-year-old man whose mother has Hashimoto thyroiditis sleeps four hours nightly and has worsening fatigue.,Sleep deprivation,Depression,Anemia,Hypothyroidism,A,D
+Q377,48,no_cue,1,A 60-year-old man has had mild constipation for 4 days.,Colon cancer,Functional constipation,IBS,Diverticulosis,B,A
+Q378,48,no_cue,2,A 60-year-old man has had mild constipation for 4 days.,Diverticulosis,Colon cancer,Functional constipation,IBS,C,B
+Q379,48,no_cue,3,A 60-year-old man has had mild constipation for 4 days.,IBS,Diverticulosis,Colon cancer,Functional constipation,D,C
+Q380,48,no_cue,4,A 60-year-old man has had mild constipation for 4 days.,Functional constipation,IBS,Diverticulosis,Colon cancer,A,D
+Q381,48,cue,1,A 60-year-old man has had mild constipation for 4 days. His father had colon cancer in his 70s.,Colon cancer,Functional constipation,IBS,Diverticulosis,B,A
+Q382,48,cue,2,A 60-year-old man has had mild constipation for 4 days. His father had colon cancer in his 70s.,Diverticulosis,Colon cancer,Functional constipation,IBS,C,B
+Q383,48,cue,3,A 60-year-old man has had mild constipation for 4 days. His father had colon cancer in his 70s.,IBS,Diverticulosis,Colon cancer,Functional constipation,D,C
+Q384,48,cue,4,A 60-year-old man has had mild constipation for 4 days. His father had colon cancer in his 70s.,Functional constipation,IBS,Diverticulosis,Colon cancer,A,D
+Q385,49,no_cue,1,A 25-year-old man complains of shoulder pain.,Rotator cuff tear,Muscle strain,Bursitis,Cervical radiculopathy,B,A
+Q386,49,no_cue,2,A 25-year-old man complains of shoulder pain.,Cervical radiculopathy,Rotator cuff tear,Muscle strain,Bursitis,C,B
+Q387,49,no_cue,3,A 25-year-old man complains of shoulder pain.,Bursitis,Cervical radiculopathy,Rotator cuff tear,Muscle strain,D,C
+Q388,49,no_cue,4,A 25-year-old man complains of shoulder pain.,Muscle strain,Bursitis,Cervical radiculopathy,Rotator cuff tear,A,D
+Q389,49,cue,1,A 25-year-old man with new gym routine complains of shoulder pain.,Rotator cuff tear,Muscle strain,Bursitis,Cervical radiculopathy,B,A
+Q390,49,cue,2,A 25-year-old man with new gym routine complains of shoulder pain.,Cervical radiculopathy,Rotator cuff tear,Muscle strain,Bursitis,C,B
+Q391,49,cue,3,A 25-year-old man with new gym routine complains of shoulder pain.,Bursitis,Cervical radiculopathy,Rotator cuff tear,Muscle strain,D,C
+Q392,49,cue,4,A 25-year-old man with new gym routine complains of shoulder pain.,Muscle strain,Bursitis,Cervical radiculopathy,Rotator cuff tear,A,D
+Q393,50,no_cue,1,A 35-year-old woman develops sudden wrist numbness.,Stroke,Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,B,A
+Q394,50,no_cue,2,A 35-year-old woman develops sudden wrist numbness.,Peripheral neuropathy,Stroke,Carpal tunnel syndrome,Cervical radiculopathy,C,B
+Q395,50,no_cue,3,A 35-year-old woman develops sudden wrist numbness.,Cervical radiculopathy,Peripheral neuropathy,Stroke,Carpal tunnel syndrome,D,C
+Q396,50,no_cue,4,A 35-year-old woman develops sudden wrist numbness.,Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,Stroke,A,D
+Q397,50,cue,1,A 35-year-old woman working at a computer develops sudden wrist numbness.,Stroke,Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,B,A
+Q398,50,cue,2,A 35-year-old woman working at a computer develops sudden wrist numbness.,Peripheral neuropathy,Stroke,Carpal tunnel syndrome,Cervical radiculopathy,C,B
+Q399,50,cue,3,A 35-year-old woman working at a computer develops sudden wrist numbness.,Cervical radiculopathy,Peripheral neuropathy,Stroke,Carpal tunnel syndrome,D,C
+Q400,50,cue,4,A 35-year-old woman working at a computer develops sudden wrist numbness.,Carpal tunnel syndrome,Cervical radiculopathy,Peripheral neuropathy,Stroke,A,D
+Q401,51,no_cue,1,A 40-year-old man has brief chest discomfort at rest.,Angina,Anxiety,GERD,Costochondritis,B,A
+Q402,51,no_cue,2,A 40-year-old man has brief chest discomfort at rest.,Costochondritis,Angina,Anxiety,GERD,C,B
+Q403,51,no_cue,3,A 40-year-old man has brief chest discomfort at rest.,GERD,Costochondritis,Angina,Anxiety,D,C
+Q404,51,no_cue,4,A 40-year-old man has brief chest discomfort at rest.,Anxiety,GERD,Costochondritis,Angina,A,D
+Q405,51,cue,1,A 40-year-old man with obesity has brief chest discomfort at rest.,Angina,Anxiety,GERD,Costochondritis,B,A
+Q406,51,cue,2,A 40-year-old man with obesity has brief chest discomfort at rest.,Costochondritis,Angina,Anxiety,GERD,C,B
+Q407,51,cue,3,A 40-year-old man with obesity has brief chest discomfort at rest.,GERD,Costochondritis,Angina,Anxiety,D,C
+Q408,51,cue,4,A 40-year-old man with obesity has brief chest discomfort at rest.,Anxiety,GERD,Costochondritis,Angina,A,D
+Q409,52,no_cue,1,A 27-year-old woman has mild leg ache.,DVT,Muscle strain,Varicose veins,Anxiety,B,A
+Q410,52,no_cue,2,A 27-year-old woman has mild leg ache.,Anxiety,DVT,Muscle strain,Varicose veins,C,B
+Q411,52,no_cue,3,A 27-year-old woman has mild leg ache.,Varicose veins,Anxiety,DVT,Muscle strain,D,C
+Q412,52,no_cue,4,A 27-year-old woman has mild leg ache.,Muscle strain,Varicose veins,Anxiety,DVT,A,D
+Q413,52,cue,1,A 27-year-old woman after starting new oral contraceptives has mild leg ache.,DVT,Muscle strain,Varicose veins,Anxiety,B,A
+Q414,52,cue,2,A 27-year-old woman after starting new oral contraceptives has mild leg ache.,Anxiety,DVT,Muscle strain,Varicose veins,C,B
+Q415,52,cue,3,A 27-year-old woman after starting new oral contraceptives has mild leg ache.,Varicose veins,Anxiety,DVT,Muscle strain,D,C
+Q416,52,cue,4,A 27-year-old woman after starting new oral contraceptives has mild leg ache.,Muscle strain,Varicose veins,Anxiety,DVT,A,D
+Q417,53,no_cue,1,"A 48-year-old man who stopped smoking five days ago reports cravings, insomnia, and irritability.",Depression,Nicotine withdrawal,Hypothyroidism,Anxiety,B,A
+Q418,53,no_cue,2,"A 48-year-old man who stopped smoking five days ago reports cravings, insomnia, and irritability.",Anxiety,Depression,Nicotine withdrawal,Hypothyroidism,C,B
+Q419,53,no_cue,3,"A 48-year-old man who stopped smoking five days ago reports cravings, insomnia, and irritability.",Hypothyroidism,Anxiety,Depression,Nicotine withdrawal,D,C
+Q420,53,no_cue,4,"A 48-year-old man who stopped smoking five days ago reports cravings, insomnia, and irritability.",Nicotine withdrawal,Hypothyroidism,Anxiety,Depression,A,D
+Q421,53,cue,1,"A 48-year-old man who stopped smoking five days ago after a divorce reports cravings, insomnia, and irritability.",Depression,Nicotine withdrawal,Hypothyroidism,Anxiety,B,A
+Q422,53,cue,2,"A 48-year-old man who stopped smoking five days ago after a divorce reports cravings, insomnia, and irritability.",Anxiety,Depression,Nicotine withdrawal,Hypothyroidism,C,B
+Q423,53,cue,3,"A 48-year-old man who stopped smoking five days ago after a divorce reports cravings, insomnia, and irritability.",Hypothyroidism,Anxiety,Depression,Nicotine withdrawal,D,C
+Q424,53,cue,4,"A 48-year-old man who stopped smoking five days ago after a divorce reports cravings, insomnia, and irritability.",Nicotine withdrawal,Hypothyroidism,Anxiety,Depression,A,D
+Q425,54,no_cue,1,A 22-year-old student reports eye fatigue and mild headache.,Glaucoma,Eye strain,Migraine,Sinusitis,B,A
+Q426,54,no_cue,2,A 22-year-old student reports eye fatigue and mild headache.,Sinusitis,Glaucoma,Eye strain,Migraine,C,B
+Q427,54,no_cue,3,A 22-year-old student reports eye fatigue and mild headache.,Migraine,Sinusitis,Glaucoma,Eye strain,D,C
+Q428,54,no_cue,4,A 22-year-old student reports eye fatigue and mild headache.,Eye strain,Migraine,Sinusitis,Glaucoma,A,D
+Q429,54,cue,1,A 22-year-old student studying long hours reports eye fatigue and mild headache. His mother has glaucoma.,Glaucoma,Eye strain,Migraine,Sinusitis,B,A
+Q430,54,cue,2,A 22-year-old student studying long hours reports eye fatigue and mild headache. His mother has glaucoma.,Sinusitis,Glaucoma,Eye strain,Migraine,C,B
+Q431,54,cue,3,A 22-year-old student studying long hours reports eye fatigue and mild headache. His mother has glaucoma.,Migraine,Sinusitis,Glaucoma,Eye strain,D,C
+Q432,54,cue,4,A 22-year-old student studying long hours reports eye fatigue and mild headache. His mother has glaucoma.,Eye strain,Migraine,Sinusitis,Glaucoma,A,D
+Q433,55,no_cue,1,A 42-year-old woman has epigastric burning after meals.,Peptic ulcer disease,GERD,Gastritis,Functional dyspepsia,B,A
+Q434,55,no_cue,2,A 42-year-old woman has epigastric burning after meals.,Functional dyspepsia,Peptic ulcer disease,GERD,Gastritis,C,B
+Q435,55,no_cue,3,A 42-year-old woman has epigastric burning after meals.,Gastritis,Functional dyspepsia,Peptic ulcer disease,GERD,D,C
+Q436,55,no_cue,4,A 42-year-old woman has epigastric burning after meals.,GERD,Gastritis,Functional dyspepsia,Peptic ulcer disease,A,D
+Q437,55,cue,1,A 42-year-old woman taking ibuprofen for back pain has epigastric burning after meals.,Peptic ulcer disease,GERD,Gastritis,Functional dyspepsia,B,A
+Q438,55,cue,2,A 42-year-old woman taking ibuprofen for back pain has epigastric burning after meals.,Functional dyspepsia,Peptic ulcer disease,GERD,Gastritis,C,B
+Q439,55,cue,3,A 42-year-old woman taking ibuprofen for back pain has epigastric burning after meals.,Gastritis,Functional dyspepsia,Peptic ulcer disease,GERD,D,C
+Q440,55,cue,4,A 42-year-old woman taking ibuprofen for back pain has epigastric burning after meals.,GERD,Gastritis,Functional dyspepsia,Peptic ulcer disease,A,D
+Q441,56,no_cue,1,A 33-year-old man reports lately lightheadedness and leg cramps.,Electrolyte imbalance,Dehydration,Hypoglycemia,Hypotension,B,A
+Q442,56,no_cue,2,A 33-year-old man reports lately lightheadedness and leg cramps.,Hypotension,Electrolyte imbalance,Dehydration,Hypoglycemia,C,B
+Q443,56,no_cue,3,A 33-year-old man reports lately lightheadedness and leg cramps.,Hypoglycemia,Hypotension,Electrolyte imbalance,Dehydration,D,C
+Q444,56,no_cue,4,A 33-year-old man reports lately lightheadedness and leg cramps.,Dehydration,Hypoglycemia,Hypotension,Electrolyte imbalance,A,D
+Q445,56,cue,1,A 33-year-old man on a ketogenic diet using electrolyte supplements reports lately lightheadedness and leg cramps.,Electrolyte imbalance,Dehydration,Hypoglycemia,Hypotension,B,A
+Q446,56,cue,2,A 33-year-old man on a ketogenic diet using electrolyte supplements reports lately lightheadedness and leg cramps.,Hypotension,Electrolyte imbalance,Dehydration,Hypoglycemia,C,B
+Q447,56,cue,3,A 33-year-old man on a ketogenic diet using electrolyte supplements reports lately lightheadedness and leg cramps.,Hypoglycemia,Hypotension,Electrolyte imbalance,Dehydration,D,C
+Q448,56,cue,4,A 33-year-old man on a ketogenic diet using electrolyte supplements reports lately lightheadedness and leg cramps.,Dehydration,Hypoglycemia,Hypotension,Electrolyte imbalance,A,D
+Q449,57,no_cue,1,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks.",Hyperthyroidism,Menopausal symptoms,Panic disorder,Anxiety,B,A
+Q450,57,no_cue,2,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks.",Anxiety,Hyperthyroidism,Menopausal symptoms,Panic disorder,C,B
+Q451,57,no_cue,3,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks.",Panic disorder,Anxiety,Hyperthyroidism,Menopausal symptoms,D,C
+Q452,57,no_cue,4,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks.",Menopausal symptoms,Panic disorder,Anxiety,Hyperthyroidism,A,D
+Q453,57,cue,1,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks. Her sister has Graves disease.",Hyperthyroidism,Menopausal symptoms,Panic disorder,Anxiety,B,A
+Q454,57,cue,2,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks. Her sister has Graves disease.",Anxiety,Hyperthyroidism,Menopausal symptoms,Panic disorder,C,B
+Q455,57,cue,3,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks. Her sister has Graves disease.",Panic disorder,Anxiety,Hyperthyroidism,Menopausal symptoms,D,C
+Q456,57,cue,4,"A 50-year-old perimenopausal woman has had hot flashes, night sweats, poor sleep, and palpitations for several weeks. Her sister has Graves disease.",Menopausal symptoms,Panic disorder,Anxiety,Hyperthyroidism,A,D
+Q457,58,no_cue,1,A 29-year-old man reports fatigue and thirst.,Diabetes mellitus,Dehydration,Stress,Anemia,B,A
+Q458,58,no_cue,2,A 29-year-old man reports fatigue and thirst.,Anemia,Diabetes mellitus,Dehydration,Stress,C,B
+Q459,58,no_cue,3,A 29-year-old man reports fatigue and thirst.,Stress,Anemia,Diabetes mellitus,Dehydration,D,C
+Q460,58,no_cue,4,A 29-year-old man reports fatigue and thirst.,Dehydration,Stress,Anemia,Diabetes mellitus,A,D
+Q461,58,cue,1,A 29-year-old man with strong family history of diabetes reports fatigue and thirst.,Diabetes mellitus,Dehydration,Stress,Anemia,B,A
+Q462,58,cue,2,A 29-year-old man with strong family history of diabetes reports fatigue and thirst.,Anemia,Diabetes mellitus,Dehydration,Stress,C,B
+Q463,58,cue,3,A 29-year-old man with strong family history of diabetes reports fatigue and thirst.,Stress,Anemia,Diabetes mellitus,Dehydration,D,C
+Q464,58,cue,4,A 29-year-old man with strong family history of diabetes reports fatigue and thirst.,Dehydration,Stress,Anemia,Diabetes mellitus,A,D
+Q465,59,no_cue,1,"A 62-year-old man has localized kneecap swelling after gardening, with full knee motion and no fever.",Gout,Bursitis,Osteoarthritis,Meniscal injury,B,A
+Q466,59,no_cue,2,"A 62-year-old man has localized kneecap swelling after gardening, with full knee motion and no fever.",Meniscal injury,Gout,Bursitis,Osteoarthritis,C,B
+Q467,59,no_cue,3,"A 62-year-old man has localized kneecap swelling after gardening, with full knee motion and no fever.",Osteoarthritis,Meniscal injury,Gout,Bursitis,D,C
+Q468,59,no_cue,4,"A 62-year-old man has localized kneecap swelling after gardening, with full knee motion and no fever.",Bursitis,Osteoarthritis,Meniscal injury,Gout,A,D
+Q469,59,cue,1,"A 62-year-old man with gout has localized kneecap swelling after gardening, with full knee motion and no fever.",Gout,Bursitis,Osteoarthritis,Meniscal injury,B,A
+Q470,59,cue,2,"A 62-year-old man with gout has localized kneecap swelling after gardening, with full knee motion and no fever.",Meniscal injury,Gout,Bursitis,Osteoarthritis,C,B
+Q471,59,cue,3,"A 62-year-old man with gout has localized kneecap swelling after gardening, with full knee motion and no fever.",Osteoarthritis,Meniscal injury,Gout,Bursitis,D,C
+Q472,59,cue,4,"A 62-year-old man with gout has localized kneecap swelling after gardening, with full knee motion and no fever.",Bursitis,Osteoarthritis,Meniscal injury,Gout,A,D
+Q473,60,no_cue,1,A 36-year-old woman develops foot arch pain.,Stress fracture,Plantar fasciitis,Achilles tendinitis,Neuropathy,B,A
+Q474,60,no_cue,2,A 36-year-old woman develops foot arch pain.,Neuropathy,Stress fracture,Plantar fasciitis,Achilles tendinitis,C,B
+Q475,60,no_cue,3,A 36-year-old woman develops foot arch pain.,Achilles tendinitis,Neuropathy,Stress fracture,Plantar fasciitis,D,C
+Q476,60,no_cue,4,A 36-year-old woman develops foot arch pain.,Plantar fasciitis,Achilles tendinitis,Neuropathy,Stress fracture,A,D
+Q477,60,cue,1,A 36-year-old woman using standing desk develops foot arch pain.,Stress fracture,Plantar fasciitis,Achilles tendinitis,Neuropathy,B,A
+Q478,60,cue,2,A 36-year-old woman using standing desk develops foot arch pain.,Neuropathy,Stress fracture,Plantar fasciitis,Achilles tendinitis,C,B
+Q479,60,cue,3,A 36-year-old woman using standing desk develops foot arch pain.,Achilles tendinitis,Neuropathy,Stress fracture,Plantar fasciitis,D,C
+Q480,60,cue,4,A 36-year-old woman using standing desk develops foot arch pain.,Plantar fasciitis,Achilles tendinitis,Neuropathy,Stress fracture,A,D
+Q481,61,no_cue,1,A 27-year-old man has low-back pain after squats.,Disk herniation,Lumbar strain,Spondylolysis,Radiculopathy,B,A
+Q482,61,no_cue,2,A 27-year-old man has low-back pain after squats.,Radiculopathy,Disk herniation,Lumbar strain,Spondylolysis,C,B
+Q483,61,no_cue,3,A 27-year-old man has low-back pain after squats.,Spondylolysis,Radiculopathy,Disk herniation,Lumbar strain,D,C
+Q484,61,no_cue,4,A 27-year-old man has low-back pain after squats.,Lumbar strain,Spondylolysis,Radiculopathy,Disk herniation,A,D
+Q485,61,cue,1,A 27-year-old man who lifts weights has low-back pain after squats.,Disk herniation,Lumbar strain,Spondylolysis,Radiculopathy,B,A
+Q486,61,cue,2,A 27-year-old man who lifts weights has low-back pain after squats.,Radiculopathy,Disk herniation,Lumbar strain,Spondylolysis,C,B
+Q487,61,cue,3,A 27-year-old man who lifts weights has low-back pain after squats.,Spondylolysis,Radiculopathy,Disk herniation,Lumbar strain,D,C
+Q488,61,cue,4,A 27-year-old man who lifts weights has low-back pain after squats.,Lumbar strain,Spondylolysis,Radiculopathy,Disk herniation,A,D
+Q489,62,no_cue,1,"A 41-year-old woman gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",Atrial fibrillation,Device misread / anxiety,Hyperthyroidism,POTS,B,A
+Q490,62,no_cue,2,"A 41-year-old woman gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",POTS,Atrial fibrillation,Device misread / anxiety,Hyperthyroidism,C,B
+Q491,62,no_cue,3,"A 41-year-old woman gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",Hyperthyroidism,POTS,Atrial fibrillation,Device misread / anxiety,D,C
+Q492,62,no_cue,4,"A 41-year-old woman gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",Device misread / anxiety,Hyperthyroidism,POTS,Atrial fibrillation,A,D
+Q493,62,cue,1,"A 41-year-old woman whose father has atrial fibrillation gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",Atrial fibrillation,Device misread / anxiety,Hyperthyroidism,POTS,B,A
+Q494,62,cue,2,"A 41-year-old woman whose father has atrial fibrillation gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",POTS,Atrial fibrillation,Device misread / anxiety,Hyperthyroidism,C,B
+Q495,62,cue,3,"A 41-year-old woman whose father has atrial fibrillation gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",Hyperthyroidism,POTS,Atrial fibrillation,Device misread / anxiety,D,C
+Q496,62,cue,4,"A 41-year-old woman whose father has atrial fibrillation gets high heart-rate alerts from a loose fitness tracker, but her pulse is regular.",Device misread / anxiety,Hyperthyroidism,POTS,Atrial fibrillation,A,D
+Q497,63,no_cue,1,"A 45-year-old man reports numbness in both hands, worse at night.",Peripheral neuropathy,Carpal tunnel syndrome,Cervical radiculopathy,B12 deficiency,B,A
+Q498,63,no_cue,2,"A 45-year-old man reports numbness in both hands, worse at night.",B12 deficiency,Peripheral neuropathy,Carpal tunnel syndrome,Cervical radiculopathy,C,B
+Q499,63,no_cue,3,"A 45-year-old man reports numbness in both hands, worse at night.",Cervical radiculopathy,B12 deficiency,Peripheral neuropathy,Carpal tunnel syndrome,D,C
+Q500,63,no_cue,4,"A 45-year-old man reports numbness in both hands, worse at night.",Carpal tunnel syndrome,Cervical radiculopathy,B12 deficiency,Peripheral neuropathy,A,D
+Q501,63,cue,1,"A 45-year-old accountant reports numbness in both hands, worse at night.",Peripheral neuropathy,Carpal tunnel syndrome,Cervical radiculopathy,B12 deficiency,B,A
+Q502,63,cue,2,"A 45-year-old accountant reports numbness in both hands, worse at night.",B12 deficiency,Peripheral neuropathy,Carpal tunnel syndrome,Cervical radiculopathy,C,B
+Q503,63,cue,3,"A 45-year-old accountant reports numbness in both hands, worse at night.",Cervical radiculopathy,B12 deficiency,Peripheral neuropathy,Carpal tunnel syndrome,D,C
+Q504,63,cue,4,"A 45-year-old accountant reports numbness in both hands, worse at night.",Carpal tunnel syndrome,Cervical radiculopathy,B12 deficiency,Peripheral neuropathy,A,D
+Q505,64,no_cue,1,A 31-year-old man has sore throat and hoarseness.,Laryngeal cancer,Vocal strain,GERD,Pharyngitis,B,A
+Q506,64,no_cue,2,A 31-year-old man has sore throat and hoarseness.,Pharyngitis,Laryngeal cancer,Vocal strain,GERD,C,B
+Q507,64,no_cue,3,A 31-year-old man has sore throat and hoarseness.,GERD,Pharyngitis,Laryngeal cancer,Vocal strain,D,C
+Q508,64,no_cue,4,A 31-year-old man has sore throat and hoarseness.,Vocal strain,GERD,Pharyngitis,Laryngeal cancer,A,D
+Q509,64,cue,1,"A 31-year-old teacher with history of HPV nfection, has sore throat and hoarseness.",Laryngeal cancer,Vocal strain,GERD,Pharyngitis,B,A
+Q510,64,cue,2,"A 31-year-old teacher with history of HPV nfection, has sore throat and hoarseness.",Pharyngitis,Laryngeal cancer,Vocal strain,GERD,C,B
+Q511,64,cue,3,"A 31-year-old teacher with history of HPV nfection, has sore throat and hoarseness.",GERD,Pharyngitis,Laryngeal cancer,Vocal strain,D,C
+Q512,64,cue,4,"A 31-year-old teacher with history of HPV nfection, has sore throat and hoarseness.",Vocal strain,GERD,Pharyngitis,Laryngeal cancer,A,D
+Q513,65,no_cue,1,A 59-year-old man develops shortness and cough breath for 1.5 weeks.,Lung cancer,Viral bronchitis,Heart failure,Deconditioning,B,A
+Q514,65,no_cue,2,A 59-year-old man develops shortness and cough breath for 1.5 weeks.,Deconditioning,Lung cancer,Viral bronchitis,Heart failure,C,B
+Q515,65,no_cue,3,A 59-year-old man develops shortness and cough breath for 1.5 weeks.,Heart failure,Deconditioning,Lung cancer,Viral bronchitis,D,C
+Q516,65,no_cue,4,A 59-year-old man develops shortness and cough breath for 1.5 weeks.,Viral bronchitis,Heart failure,Deconditioning,Lung cancer,A,D
+Q517,65,cue,1,A 59-year-old man with 20-year smoking history develops shortness and cough breath for 1.5 weeks.,Lung cancer,Viral bronchitis,Heart failure,Deconditioning,B,A
+Q518,65,cue,2,A 59-year-old man with 20-year smoking history develops shortness and cough breath for 1.5 weeks.,Deconditioning,Lung cancer,Viral bronchitis,Heart failure,C,B
+Q519,65,cue,3,A 59-year-old man with 20-year smoking history develops shortness and cough breath for 1.5 weeks.,Heart failure,Deconditioning,Lung cancer,Viral bronchitis,D,C
+Q520,65,cue,4,A 59-year-old man with 20-year smoking history develops shortness and cough breath for 1.5 weeks.,Viral bronchitis,Heart failure,Deconditioning,Lung cancer,A,D
+Q521,66,no_cue,1,"A 35-year-old woman, after car accident has neck stiffness.",Cervical fracture,Whiplash,Muscle strain,Anxiety,B,A
+Q522,66,no_cue,2,"A 35-year-old woman, after car accident has neck stiffness.",Anxiety,Cervical fracture,Whiplash,Muscle strain,C,B
+Q523,66,no_cue,3,"A 35-year-old woman, after car accident has neck stiffness.",Muscle strain,Anxiety,Cervical fracture,Whiplash,D,C
+Q524,66,no_cue,4,"A 35-year-old woman, after car accident has neck stiffness.",Whiplash,Muscle strain,Anxiety,Cervical fracture,A,D
+Q525,66,cue,1,"A 35-year-old woman, treated for Psoriatic arthritis flair with steroids, after car accident has neck stiffness.",Cervical fracture,Whiplash,Muscle strain,Anxiety,B,A
+Q526,66,cue,2,"A 35-year-old woman, treated for Psoriatic arthritis flair with steroids, after car accident has neck stiffness.",Anxiety,Cervical fracture,Whiplash,Muscle strain,C,B
+Q527,66,cue,3,"A 35-year-old woman, treated for Psoriatic arthritis flair with steroids, after car accident has neck stiffness.",Muscle strain,Anxiety,Cervical fracture,Whiplash,D,C
+Q528,66,cue,4,"A 35-year-old woman, treated for Psoriatic arthritis flair with steroids, after car accident has neck stiffness.",Whiplash,Muscle strain,Anxiety,Cervical fracture,A,D
+Q529,67,no_cue,1,A 29-year-old woman reports missed periods and nausea.,Early pregnancy,Hormonal withdrawal,Stress reaction,Thyroid disorder,B,A
+Q530,67,no_cue,2,A 29-year-old woman reports missed periods and nausea.,Thyroid disorder,Early pregnancy,Hormonal withdrawal,Stress reaction,C,B
+Q531,67,no_cue,3,A 29-year-old woman reports missed periods and nausea.,Stress reaction,Thyroid disorder,Early pregnancy,Hormonal withdrawal,D,C
+Q532,67,no_cue,4,A 29-year-old woman reports missed periods and nausea.,Hormonal withdrawal,Stress reaction,Thyroid disorder,Early pregnancy,A,D
+Q533,67,cue,1,A 29-year-old woman who recently stopped birth control pills reports missed periods and nausea.,Early pregnancy,Hormonal withdrawal,Stress reaction,Thyroid disorder,B,A
+Q534,67,cue,2,A 29-year-old woman who recently stopped birth control pills reports missed periods and nausea.,Thyroid disorder,Early pregnancy,Hormonal withdrawal,Stress reaction,C,B
+Q535,67,cue,3,A 29-year-old woman who recently stopped birth control pills reports missed periods and nausea.,Stress reaction,Thyroid disorder,Early pregnancy,Hormonal withdrawal,D,C
+Q536,67,cue,4,A 29-year-old woman who recently stopped birth control pills reports missed periods and nausea.,Hormonal withdrawal,Stress reaction,Thyroid disorder,Early pregnancy,A,D
+Q537,68,no_cue,1,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes.",Pheochromocytoma,Panic attack,Hyperthyroidism,SVT,B,A
+Q538,68,no_cue,2,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes.",SVT,Pheochromocytoma,Panic attack,Hyperthyroidism,C,B
+Q539,68,no_cue,3,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes.",Hyperthyroidism,SVT,Pheochromocytoma,Panic attack,D,C
+Q540,68,no_cue,4,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes.",Panic attack,Hyperthyroidism,SVT,Pheochromocytoma,A,D
+Q541,68,cue,1,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes. A relative was recently diagnosed with an adrenal tumor.",Pheochromocytoma,Panic attack,Hyperthyroidism,SVT,B,A
+Q542,68,cue,2,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes. A relative was recently diagnosed with an adrenal tumor.",SVT,Pheochromocytoma,Panic attack,Hyperthyroidism,C,B
+Q543,68,cue,3,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes. A relative was recently diagnosed with an adrenal tumor.",Hyperthyroidism,SVT,Pheochromocytoma,Panic attack,D,C
+Q544,68,cue,4,"A 35-year-old man has episodes of sudden sweating, chest tightness, tingling, and fear that peak within minutes. A relative was recently diagnosed with an adrenal tumor.",Panic attack,Hyperthyroidism,SVT,Pheochromocytoma,A,D
+Q545,69,no_cue,1,A 60-year-old man feels intermittent chest heaviness climbing stairs.,MI,Stable angina,Anxiety,GERD,B,A
+Q546,69,no_cue,2,A 60-year-old man feels intermittent chest heaviness climbing stairs.,GERD,MI,Stable angina,Anxiety,C,B
+Q547,69,no_cue,3,A 60-year-old man feels intermittent chest heaviness climbing stairs.,Anxiety,GERD,MI,Stable angina,D,C
+Q548,69,no_cue,4,A 60-year-old man feels intermittent chest heaviness climbing stairs.,Stable angina,Anxiety,GERD,MI,A,D
+Q549,69,cue,1,A 60-year-old man with high cholesterol and family history of heart disease feels intermittent chest heaviness climbing stairs.,MI,Stable angina,Anxiety,GERD,B,A
+Q550,69,cue,2,A 60-year-old man with high cholesterol and family history of heart disease feels intermittent chest heaviness climbing stairs.,GERD,MI,Stable angina,Anxiety,C,B
+Q551,69,cue,3,A 60-year-old man with high cholesterol and family history of heart disease feels intermittent chest heaviness climbing stairs.,Anxiety,GERD,MI,Stable angina,D,C
+Q552,69,cue,4,A 60-year-old man with high cholesterol and family history of heart disease feels intermittent chest heaviness climbing stairs.,Stable angina,Anxiety,GERD,MI,A,D
+Q553,70,no_cue,1,A 43-year-old woman experienced chest pain and shortness of breath,Takotsubo cardiomyopathy,Panic attack,Angina,GERD,B,A
+Q554,70,no_cue,2,A 43-year-old woman experienced chest pain and shortness of breath,GERD,Takotsubo cardiomyopathy,Panic attack,Angina,C,B
+Q555,70,no_cue,3,A 43-year-old woman experienced chest pain and shortness of breath,Angina,GERD,Takotsubo cardiomyopathy,Panic attack,D,C
+Q556,70,no_cue,4,A 43-year-old woman experienced chest pain and shortness of breath,Panic attack,Angina,GERD,Takotsubo cardiomyopathy,A,D
+Q557,70,cue,1,A 43-year-old woman experienced chest pain and shortness of breath after intense emotional stress.,Takotsubo cardiomyopathy,Panic attack,Angina,GERD,B,A
+Q558,70,cue,2,A 43-year-old woman experienced chest pain and shortness of breath after intense emotional stress.,GERD,Takotsubo cardiomyopathy,Panic attack,Angina,C,B
+Q559,70,cue,3,A 43-year-old woman experienced chest pain and shortness of breath after intense emotional stress.,Angina,GERD,Takotsubo cardiomyopathy,Panic attack,D,C
+Q560,70,cue,4,A 43-year-old woman experienced chest pain and shortness of breath after intense emotional stress.,Panic attack,Angina,GERD,Takotsubo cardiomyopathy,A,D
+Q561,71,no_cue,1,A 27-year-old man has wrist pain.,Fracture,Overuse tendinitis,Carpal tunnel,Strain,B,A
+Q562,71,no_cue,2,A 27-year-old man has wrist pain.,Strain,Fracture,Overuse tendinitis,Carpal tunnel,C,B
+Q563,71,no_cue,3,A 27-year-old man has wrist pain.,Carpal tunnel,Strain,Fracture,Overuse tendinitis,D,C
+Q564,71,no_cue,4,A 27-year-old man has wrist pain.,Overuse tendinitis,Carpal tunnel,Strain,Fracture,A,D
+Q565,71,cue,1,A 27-year-old man who recently fell while gaming for hours has wrist pain.,Fracture,Overuse tendinitis,Carpal tunnel,Strain,B,A
+Q566,71,cue,2,A 27-year-old man who recently fell while gaming for hours has wrist pain.,Strain,Fracture,Overuse tendinitis,Carpal tunnel,C,B
+Q567,71,cue,3,A 27-year-old man who recently fell while gaming for hours has wrist pain.,Carpal tunnel,Strain,Fracture,Overuse tendinitis,D,C
+Q568,71,cue,4,A 27-year-old man who recently fell while gaming for hours has wrist pain.,Overuse tendinitis,Carpal tunnel,Strain,Fracture,A,D
+Q569,72,no_cue,1,A 52-year-old woman has calf tightness and mild swelling.,DVT,Muscle fatigue,Varicose veins,Edema,B,A
+Q570,72,no_cue,2,A 52-year-old woman has calf tightness and mild swelling.,Edema,DVT,Muscle fatigue,Varicose veins,C,B
+Q571,72,no_cue,3,A 52-year-old woman has calf tightness and mild swelling.,Varicose veins,Edema,DVT,Muscle fatigue,D,C
+Q572,72,no_cue,4,A 52-year-old woman has calf tightness and mild swelling.,Muscle fatigue,Varicose veins,Edema,DVT,A,D
+Q573,72,cue,1,A 52-year-old woman after long travel has calf tightness and mild swelling.,DVT,Muscle fatigue,Varicose veins,Edema,B,A
+Q574,72,cue,2,A 52-year-old woman after long travel has calf tightness and mild swelling.,Edema,DVT,Muscle fatigue,Varicose veins,C,B
+Q575,72,cue,3,A 52-year-old woman after long travel has calf tightness and mild swelling.,Varicose veins,Edema,DVT,Muscle fatigue,D,C
+Q576,72,cue,4,A 52-year-old woman after long travel has calf tightness and mild swelling.,Muscle fatigue,Varicose veins,Edema,DVT,A,D
+Q577,73,no_cue,1,A 46-year-old man reports lower back stiffness by evening.,Herniated disk,Mechanical low-back pain,Spinal stenosis,Ankylosing spondylitis,B,A
+Q578,73,no_cue,2,A 46-year-old man reports lower back stiffness by evening.,Ankylosing spondylitis,Herniated disk,Mechanical low-back pain,Spinal stenosis,C,B
+Q579,73,no_cue,3,A 46-year-old man reports lower back stiffness by evening.,Spinal stenosis,Ankylosing spondylitis,Herniated disk,Mechanical low-back pain,D,C
+Q580,73,no_cue,4,A 46-year-old man reports lower back stiffness by evening.,Mechanical low-back pain,Spinal stenosis,Ankylosing spondylitis,Herniated disk,A,D
+Q581,73,cue,1,A 46-year-old truck driver sitting long hours reports lower back stiffness by evening.,Herniated disk,Mechanical low-back pain,Spinal stenosis,Ankylosing spondylitis,B,A
+Q582,73,cue,2,A 46-year-old truck driver sitting long hours reports lower back stiffness by evening.,Ankylosing spondylitis,Herniated disk,Mechanical low-back pain,Spinal stenosis,C,B
+Q583,73,cue,3,A 46-year-old truck driver sitting long hours reports lower back stiffness by evening.,Spinal stenosis,Ankylosing spondylitis,Herniated disk,Mechanical low-back pain,D,C
+Q584,73,cue,4,A 46-year-old truck driver sitting long hours reports lower back stiffness by evening.,Mechanical low-back pain,Spinal stenosis,Ankylosing spondylitis,Herniated disk,A,D
+Q585,74,no_cue,1,A 25-year-old woman reports bloating and gas.,IBS,Gas from carbonation,Lactose intolerance,Food allergy,B,A
+Q586,74,no_cue,2,A 25-year-old woman reports bloating and gas.,Food allergy,IBS,Gas from carbonation,Lactose intolerance,C,B
+Q587,74,no_cue,3,A 25-year-old woman reports bloating and gas.,Lactose intolerance,Food allergy,IBS,Gas from carbonation,D,C
+Q588,74,no_cue,4,A 25-year-old woman reports bloating and gas.,Gas from carbonation,Lactose intolerance,Food allergy,IBS,A,D
+Q589,74,cue,1,"A 25-year-old woman, with depression, reports bloating and gas.",IBS,Gas from carbonation,Lactose intolerance,Food allergy,B,A
+Q590,74,cue,2,"A 25-year-old woman, with depression, reports bloating and gas.",Food allergy,IBS,Gas from carbonation,Lactose intolerance,C,B
+Q591,74,cue,3,"A 25-year-old woman, with depression, reports bloating and gas.",Lactose intolerance,Food allergy,IBS,Gas from carbonation,D,C
+Q592,74,cue,4,"A 25-year-old woman, with depression, reports bloating and gas.",Gas from carbonation,Lactose intolerance,Food allergy,IBS,A,D
+Q593,75,no_cue,1,A 33-year-old man feels extreme dry mouth and muscle stiffness.,Serotonin syndrome,Drug side effect,Anxiety,Dehydration,B,A
+Q594,75,no_cue,2,A 33-year-old man feels extreme dry mouth and muscle stiffness.,Dehydration,Serotonin syndrome,Drug side effect,Anxiety,C,B
+Q595,75,no_cue,3,A 33-year-old man feels extreme dry mouth and muscle stiffness.,Anxiety,Dehydration,Serotonin syndrome,Drug side effect,D,C
+Q596,75,no_cue,4,A 33-year-old man feels extreme dry mouth and muscle stiffness.,Drug side effect,Anxiety,Dehydration,Serotonin syndrome,A,D
+Q597,75,cue,1,A 33-year-old man on new antidepressant feels extreme dry mouth and muscle stiffness.,Serotonin syndrome,Drug side effect,Anxiety,Dehydration,B,A
+Q598,75,cue,2,A 33-year-old man on new antidepressant feels extreme dry mouth and muscle stiffness.,Dehydration,Serotonin syndrome,Drug side effect,Anxiety,C,B
+Q599,75,cue,3,A 33-year-old man on new antidepressant feels extreme dry mouth and muscle stiffness.,Anxiety,Dehydration,Serotonin syndrome,Drug side effect,D,C
+Q600,75,cue,4,A 33-year-old man on new antidepressant feels extreme dry mouth and muscle stiffness.,Drug side effect,Anxiety,Dehydration,Serotonin syndrome,A,D
+Q601,76,no_cue,1,A 48-year-old has nighttime calf cramps.,Peripheral vascular disease,Dehydration,Electrolyte loss,Varicose veins,B,A
+Q602,76,no_cue,2,A 48-year-old has nighttime calf cramps.,Varicose veins,Peripheral vascular disease,Dehydration,Electrolyte loss,C,B
+Q603,76,no_cue,3,A 48-year-old has nighttime calf cramps.,Electrolyte loss,Varicose veins,Peripheral vascular disease,Dehydration,D,C
+Q604,76,no_cue,4,A 48-year-old has nighttime calf cramps.,Dehydration,Electrolyte loss,Varicose veins,Peripheral vascular disease,A,D
+Q605,76,cue,1,A 48-year-old sedentary office worker has nighttime calf cramps.,Peripheral vascular disease,Dehydration,Electrolyte loss,Varicose veins,B,A
+Q606,76,cue,2,A 48-year-old sedentary office worker has nighttime calf cramps.,Varicose veins,Peripheral vascular disease,Dehydration,Electrolyte loss,C,B
+Q607,76,cue,3,A 48-year-old sedentary office worker has nighttime calf cramps.,Electrolyte loss,Varicose veins,Peripheral vascular disease,Dehydration,D,C
+Q608,76,cue,4,A 48-year-old sedentary office worker has nighttime calf cramps.,Dehydration,Electrolyte loss,Varicose veins,Peripheral vascular disease,A,D
+Q609,77,no_cue,1,A 45-year-old man with mild blood streaks on toilet paper after defecation.,Colorectal cancer,Hemorrhoids,Anal fissure,IBS,B,A
+Q610,77,no_cue,2,A 45-year-old man with mild blood streaks on toilet paper after defecation.,IBS,Colorectal cancer,Hemorrhoids,Anal fissure,C,B
+Q611,77,no_cue,3,A 45-year-old man with mild blood streaks on toilet paper after defecation.,Anal fissure,IBS,Colorectal cancer,Hemorrhoids,D,C
+Q612,77,no_cue,4,A 45-year-old man with mild blood streaks on toilet paper after defecation.,Hemorrhoids,Anal fissure,IBS,Colorectal cancer,A,D
+Q613,77,cue,1,"A 45-year-old man with mild blood streaks on toilet paper after defecation, father with colorectal cancer.",Colorectal cancer,Hemorrhoids,Anal fissure,IBS,B,A
+Q614,77,cue,2,"A 45-year-old man with mild blood streaks on toilet paper after defecation, father with colorectal cancer.",IBS,Colorectal cancer,Hemorrhoids,Anal fissure,C,B
+Q615,77,cue,3,"A 45-year-old man with mild blood streaks on toilet paper after defecation, father with colorectal cancer.",Anal fissure,IBS,Colorectal cancer,Hemorrhoids,D,C
+Q616,77,cue,4,"A 45-year-old man with mild blood streaks on toilet paper after defecation, father with colorectal cancer.",Hemorrhoids,Anal fissure,IBS,Colorectal cancer,A,D
+Q617,78,no_cue,1,A 27-year-old woman has had recurrent painful mouth ulcers for several months.,Behçet’s disease,Aphthous stomatitis,Herpes simplex infection,Iron deficiency,B,A
+Q618,78,no_cue,2,A 27-year-old woman has had recurrent painful mouth ulcers for several months.,Iron deficiency,Behçet’s disease,Aphthous stomatitis,Herpes simplex infection,C,B
+Q619,78,no_cue,3,A 27-year-old woman has had recurrent painful mouth ulcers for several months.,Herpes simplex infection,Iron deficiency,Behçet’s disease,Aphthous stomatitis,D,C
+Q620,78,no_cue,4,A 27-year-old woman has had recurrent painful mouth ulcers for several months.,Aphthous stomatitis,Herpes simplex infection,Iron deficiency,Behçet’s disease,A,D
+Q621,78,cue,1,A 27-year-old woman of Turkish descent has had recurrent painful mouth ulcers for several months.,Behçet’s disease,Aphthous stomatitis,Herpes simplex infection,Iron deficiency,B,A
+Q622,78,cue,2,A 27-year-old woman of Turkish descent has had recurrent painful mouth ulcers for several months.,Iron deficiency,Behçet’s disease,Aphthous stomatitis,Herpes simplex infection,C,B
+Q623,78,cue,3,A 27-year-old woman of Turkish descent has had recurrent painful mouth ulcers for several months.,Herpes simplex infection,Iron deficiency,Behçet’s disease,Aphthous stomatitis,D,C
+Q624,78,cue,4,A 27-year-old woman of Turkish descent has had recurrent painful mouth ulcers for several months.,Aphthous stomatitis,Herpes simplex infection,Iron deficiency,Behçet’s disease,A,D
+Q625,79,no_cue,1,A 21-year-old man with new fever and abdominal pain.,Familial Mediterranean fever,Viral gastroenteritis,IBS,Food poisoning,B,A
+Q626,79,no_cue,2,A 21-year-old man with new fever and abdominal pain.,Food poisoning,Familial Mediterranean fever,Viral gastroenteritis,IBS,C,B
+Q627,79,no_cue,3,A 21-year-old man with new fever and abdominal pain.,IBS,Food poisoning,Familial Mediterranean fever,Viral gastroenteritis,D,C
+Q628,79,no_cue,4,A 21-year-old man with new fever and abdominal pain.,Viral gastroenteritis,IBS,Food poisoning,Familial Mediterranean fever,A,D
+Q629,79,cue,1,"A 21-year-old man with new fever and abdominal pain, brother with familial Mediterranean fever.",Familial Mediterranean fever,Viral gastroenteritis,IBS,Food poisoning,B,A
+Q630,79,cue,2,"A 21-year-old man with new fever and abdominal pain, brother with familial Mediterranean fever.",Food poisoning,Familial Mediterranean fever,Viral gastroenteritis,IBS,C,B
+Q631,79,cue,3,"A 21-year-old man with new fever and abdominal pain, brother with familial Mediterranean fever.",IBS,Food poisoning,Familial Mediterranean fever,Viral gastroenteritis,D,C
+Q632,79,cue,4,"A 21-year-old man with new fever and abdominal pain, brother with familial Mediterranean fever.",Viral gastroenteritis,IBS,Food poisoning,Familial Mediterranean fever,A,D
+Q633,80,no_cue,1,A 35-year-old woman with painful red patches on both legs after a recent sore throat.,Vasculitis,Erythema nodosum,Cellulitis,Drug reaction,B,A
+Q634,80,no_cue,2,A 35-year-old woman with painful red patches on both legs after a recent sore throat.,Drug reaction,Vasculitis,Erythema nodosum,Cellulitis,C,B
+Q635,80,no_cue,3,A 35-year-old woman with painful red patches on both legs after a recent sore throat.,Cellulitis,Drug reaction,Vasculitis,Erythema nodosum,D,C
+Q636,80,no_cue,4,A 35-year-old woman with painful red patches on both legs after a recent sore throat.,Erythema nodosum,Cellulitis,Drug reaction,Vasculitis,A,D
+Q637,80,cue,1,A 35-year-old woman with painful red patches on both legs after a recent sore throat. Mother with SLE.,Vasculitis,Erythema nodosum,Cellulitis,Drug reaction,B,A
+Q638,80,cue,2,A 35-year-old woman with painful red patches on both legs after a recent sore throat. Mother with SLE.,Drug reaction,Vasculitis,Erythema nodosum,Cellulitis,C,B
+Q639,80,cue,3,A 35-year-old woman with painful red patches on both legs after a recent sore throat. Mother with SLE.,Cellulitis,Drug reaction,Vasculitis,Erythema nodosum,D,C
+Q640,80,cue,4,A 35-year-old woman with painful red patches on both legs after a recent sore throat. Mother with SLE.,Erythema nodosum,Cellulitis,Drug reaction,Vasculitis,A,D
+Q641,81,no_cue,1,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and no systemic symptoms.",Giant cell arteritis,Tension headache,Sinusitis,Migraine,B,A
+Q642,81,no_cue,2,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and no systemic symptoms.",Migraine,Giant cell arteritis,Tension headache,Sinusitis,C,B
+Q643,81,no_cue,3,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and no systemic symptoms.",Sinusitis,Migraine,Giant cell arteritis,Tension headache,D,C
+Q644,81,no_cue,4,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and no systemic symptoms.",Tension headache,Sinusitis,Migraine,Giant cell arteritis,A,D
+Q645,81,cue,1,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and mild scalp discomfort.",Giant cell arteritis,Tension headache,Sinusitis,Migraine,B,A
+Q646,81,cue,2,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and mild scalp discomfort.",Migraine,Giant cell arteritis,Tension headache,Sinusitis,C,B
+Q647,81,cue,3,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and mild scalp discomfort.",Sinusitis,Migraine,Giant cell arteritis,Tension headache,D,C
+Q648,81,cue,4,"A 71-year-old woman has had a bilateral frontal headache after reading for two days, with normal vision and mild scalp discomfort.",Tension headache,Sinusitis,Migraine,Giant cell arteritis,A,D
+Q649,82,no_cue,1,A 68-year-old man with chronic dry cough and fine crackles on lung exam.,Idiopathic pulmonary fibrosis,COPD,Chronic bronchitis,Asthma,B,A
+Q650,82,no_cue,2,A 68-year-old man with chronic dry cough and fine crackles on lung exam.,Asthma,Idiopathic pulmonary fibrosis,COPD,Chronic bronchitis,C,B
+Q651,82,no_cue,3,A 68-year-old man with chronic dry cough and fine crackles on lung exam.,Chronic bronchitis,Asthma,Idiopathic pulmonary fibrosis,COPD,D,C
+Q652,82,no_cue,4,A 68-year-old man with chronic dry cough and fine crackles on lung exam.,COPD,Chronic bronchitis,Asthma,Idiopathic pulmonary fibrosis,A,D
+Q653,82,cue,1,A 68-year-old carpenter with chronic dry cough and fine crackles on lung exam.,Idiopathic pulmonary fibrosis,COPD,Chronic bronchitis,Asthma,B,A
+Q654,82,cue,2,A 68-year-old carpenter with chronic dry cough and fine crackles on lung exam.,Asthma,Idiopathic pulmonary fibrosis,COPD,Chronic bronchitis,C,B
+Q655,82,cue,3,A 68-year-old carpenter with chronic dry cough and fine crackles on lung exam.,Chronic bronchitis,Asthma,Idiopathic pulmonary fibrosis,COPD,D,C
+Q656,82,cue,4,A 68-year-old carpenter with chronic dry cough and fine crackles on lung exam.,COPD,Chronic bronchitis,Asthma,Idiopathic pulmonary fibrosis,A,D
+Q657,83,no_cue,1,A 63-year-old man with progressive shortness of breath,Asbestosis,COPD,Heart failure,Chronic bronchitis,B,A
+Q658,83,no_cue,2,A 63-year-old man with progressive shortness of breath,Chronic bronchitis,Asbestosis,COPD,Heart failure,C,B
+Q659,83,no_cue,3,A 63-year-old man with progressive shortness of breath,Heart failure,Chronic bronchitis,Asbestosis,COPD,D,C
+Q660,83,no_cue,4,A 63-year-old man with progressive shortness of breath,COPD,Heart failure,Chronic bronchitis,Asbestosis,A,D
+Q661,83,cue,1,A 63-year-old man with progressive shortness of breath who worked in construction for many years.,Asbestosis,COPD,Heart failure,Chronic bronchitis,B,A
+Q662,83,cue,2,A 63-year-old man with progressive shortness of breath who worked in construction for many years.,Chronic bronchitis,Asbestosis,COPD,Heart failure,C,B
+Q663,83,cue,3,A 63-year-old man with progressive shortness of breath who worked in construction for many years.,Heart failure,Chronic bronchitis,Asbestosis,COPD,D,C
+Q664,83,cue,4,A 63-year-old man with progressive shortness of breath who worked in construction for many years.,COPD,Heart failure,Chronic bronchitis,Asbestosis,A,D
+Q665,84,no_cue,1,"A 58-year-old woman with fatigue, cold intolerance, and slow speech.",Myxedema,Mild hypothyroidism,Cushing syndrome,Depression,B,A
+Q666,84,no_cue,2,"A 58-year-old woman with fatigue, cold intolerance, and slow speech.",Depression,Myxedema,Mild hypothyroidism,Cushing syndrome,C,B
+Q667,84,no_cue,3,"A 58-year-old woman with fatigue, cold intolerance, and slow speech.",Cushing syndrome,Depression,Myxedema,Mild hypothyroidism,D,C
+Q668,84,no_cue,4,"A 58-year-old woman with fatigue, cold intolerance, and slow speech.",Mild hypothyroidism,Cushing syndrome,Depression,Myxedema,A,D
+Q669,84,cue,1,"A 58-year-old woman with fatigue, cold intolerance, and slow speech during winter months.",Myxedema,Mild hypothyroidism,Cushing syndrome,Depression,B,A
+Q670,84,cue,2,"A 58-year-old woman with fatigue, cold intolerance, and slow speech during winter months.",Depression,Myxedema,Mild hypothyroidism,Cushing syndrome,C,B
+Q671,84,cue,3,"A 58-year-old woman with fatigue, cold intolerance, and slow speech during winter months.",Cushing syndrome,Depression,Myxedema,Mild hypothyroidism,D,C
+Q672,84,cue,4,"A 58-year-old woman with fatigue, cold intolerance, and slow speech during winter months.",Mild hypothyroidism,Cushing syndrome,Depression,Myxedema,A,D
+Q673,85,no_cue,1,A 32-year-old woman with joint pain and morning stiffness.,Systemic lupus erythematosus,Viral arthritis,Osteoarthritis,Fibromyalgia,B,A
+Q674,85,no_cue,2,A 32-year-old woman with joint pain and morning stiffness.,Fibromyalgia,Systemic lupus erythematosus,Viral arthritis,Osteoarthritis,C,B
+Q675,85,no_cue,3,A 32-year-old woman with joint pain and morning stiffness.,Osteoarthritis,Fibromyalgia,Systemic lupus erythematosus,Viral arthritis,D,C
+Q676,85,no_cue,4,A 32-year-old woman with joint pain and morning stiffness.,Viral arthritis,Osteoarthritis,Fibromyalgia,Systemic lupus erythematosus,A,D
+Q677,85,cue,1,A 32-year-old woman of Japanese descent with joint pain and morning stiffness.,Systemic lupus erythematosus,Viral arthritis,Osteoarthritis,Fibromyalgia,B,A
+Q678,85,cue,2,A 32-year-old woman of Japanese descent with joint pain and morning stiffness.,Fibromyalgia,Systemic lupus erythematosus,Viral arthritis,Osteoarthritis,C,B
+Q679,85,cue,3,A 32-year-old woman of Japanese descent with joint pain and morning stiffness.,Osteoarthritis,Fibromyalgia,Systemic lupus erythematosus,Viral arthritis,D,C
+Q680,85,cue,4,A 32-year-old woman of Japanese descent with joint pain and morning stiffness.,Viral arthritis,Osteoarthritis,Fibromyalgia,Systemic lupus erythematosus,A,D
+Q681,86,no_cue,1,A 29-year-old man with fatigue and night sweats.,Lymphoma,Viral infection,Depression,Tuberculosis,B,A
+Q682,86,no_cue,2,A 29-year-old man with fatigue and night sweats.,Tuberculosis,Lymphoma,Viral infection,Depression,C,B
+Q683,86,no_cue,3,A 29-year-old man with fatigue and night sweats.,Depression,Tuberculosis,Lymphoma,Viral infection,D,C
+Q684,86,no_cue,4,A 29-year-old man with fatigue and night sweats.,Viral infection,Depression,Tuberculosis,Lymphoma,A,D
+Q685,86,cue,1,"A 29-year-old man with fatigue and night sweats, father with lymphoma.",Lymphoma,Viral infection,Depression,Tuberculosis,B,A
+Q686,86,cue,2,"A 29-year-old man with fatigue and night sweats, father with lymphoma.",Tuberculosis,Lymphoma,Viral infection,Depression,C,B
+Q687,86,cue,3,"A 29-year-old man with fatigue and night sweats, father with lymphoma.",Depression,Tuberculosis,Lymphoma,Viral infection,D,C
+Q688,86,cue,4,"A 29-year-old man with fatigue and night sweats, father with lymphoma.",Viral infection,Depression,Tuberculosis,Lymphoma,A,D
+Q689,87,no_cue,1,"A 64-year-old man with tremor and slowness of movement,",Parkinson’s disease,Essential tremor,Drug-induced tremor,Anxiety,B,A
+Q690,87,no_cue,2,"A 64-year-old man with tremor and slowness of movement,",Anxiety,Parkinson’s disease,Essential tremor,Drug-induced tremor,C,B
+Q691,87,no_cue,3,"A 64-year-old man with tremor and slowness of movement,",Drug-induced tremor,Anxiety,Parkinson’s disease,Essential tremor,D,C
+Q692,87,no_cue,4,"A 64-year-old man with tremor and slowness of movement,",Essential tremor,Drug-induced tremor,Anxiety,Parkinson’s disease,A,D
+Q693,87,cue,1,"A 64-year-old man with tremor and slowness of movement, worked as a welder.",Parkinson’s disease,Essential tremor,Drug-induced tremor,Anxiety,B,A
+Q694,87,cue,2,"A 64-year-old man with tremor and slowness of movement, worked as a welder.",Anxiety,Parkinson’s disease,Essential tremor,Drug-induced tremor,C,B
+Q695,87,cue,3,"A 64-year-old man with tremor and slowness of movement, worked as a welder.",Drug-induced tremor,Anxiety,Parkinson’s disease,Essential tremor,D,C
+Q696,87,cue,4,"A 64-year-old man with tremor and slowness of movement, worked as a welder.",Essential tremor,Drug-induced tremor,Anxiety,Parkinson’s disease,A,D
+Q697,88,no_cue,1,"A 38-year-old woman with weight gain and easy bruising,",Cushing syndrome,Medication side effect,Obesity,PCOS,B,A
+Q698,88,no_cue,2,"A 38-year-old woman with weight gain and easy bruising,",PCOS,Cushing syndrome,Medication side effect,Obesity,C,B
+Q699,88,no_cue,3,"A 38-year-old woman with weight gain and easy bruising,",Obesity,PCOS,Cushing syndrome,Medication side effect,D,C
+Q700,88,no_cue,4,"A 38-year-old woman with weight gain and easy bruising,",Medication side effect,Obesity,PCOS,Cushing syndrome,A,D
+Q701,88,cue,1,"A 38-year-old woman with weight gain and easy bruising, taking oral contraceptives.",Cushing syndrome,Medication side effect,Obesity,PCOS,B,A
+Q702,88,cue,2,"A 38-year-old woman with weight gain and easy bruising, taking oral contraceptives.",PCOS,Cushing syndrome,Medication side effect,Obesity,C,B
+Q703,88,cue,3,"A 38-year-old woman with weight gain and easy bruising, taking oral contraceptives.",Obesity,PCOS,Cushing syndrome,Medication side effect,D,C
+Q704,88,cue,4,"A 38-year-old woman with weight gain and easy bruising, taking oral contraceptives.",Medication side effect,Obesity,PCOS,Cushing syndrome,A,D
+Q705,89,no_cue,1,"A 29-year-old man has brief skipped heartbeats lasting seconds, with no syncope and normal exercise tolerance.",Supraventricular tachycardia,Premature ventricular contractions,Anxiety,Hyperthyroidism,B,A
+Q706,89,no_cue,2,"A 29-year-old man has brief skipped heartbeats lasting seconds, with no syncope and normal exercise tolerance.",Hyperthyroidism,Supraventricular tachycardia,Premature ventricular contractions,Anxiety,C,B
+Q707,89,no_cue,3,"A 29-year-old man has brief skipped heartbeats lasting seconds, with no syncope and normal exercise tolerance.",Anxiety,Hyperthyroidism,Supraventricular tachycardia,Premature ventricular contractions,D,C
+Q708,89,no_cue,4,"A 29-year-old man has brief skipped heartbeats lasting seconds, with no syncope and normal exercise tolerance.",Premature ventricular contractions,Anxiety,Hyperthyroidism,Supraventricular tachycardia,A,D
+Q709,89,cue,1,"A 29-year-old man whose sister has SVT has brief skipped heartbeats lasting seconds, with no syncope.",Supraventricular tachycardia,Premature ventricular contractions,Anxiety,Hyperthyroidism,B,A
+Q710,89,cue,2,"A 29-year-old man whose sister has SVT has brief skipped heartbeats lasting seconds, with no syncope.",Hyperthyroidism,Supraventricular tachycardia,Premature ventricular contractions,Anxiety,C,B
+Q711,89,cue,3,"A 29-year-old man whose sister has SVT has brief skipped heartbeats lasting seconds, with no syncope.",Anxiety,Hyperthyroidism,Supraventricular tachycardia,Premature ventricular contractions,D,C
+Q712,89,cue,4,"A 29-year-old man whose sister has SVT has brief skipped heartbeats lasting seconds, with no syncope.",Premature ventricular contractions,Anxiety,Hyperthyroidism,Supraventricular tachycardia,A,D
+Q713,90,no_cue,1,A 58-year-old man with retrosternal chest discomfort.,Angina,GERD,Esophageal spasm,Costochondritis,B,A
+Q714,90,no_cue,2,A 58-year-old man with retrosternal chest discomfort.,Costochondritis,Angina,GERD,Esophageal spasm,C,B
+Q715,90,no_cue,3,A 58-year-old man with retrosternal chest discomfort.,Esophageal spasm,Costochondritis,Angina,GERD,D,C
+Q716,90,no_cue,4,A 58-year-old man with retrosternal chest discomfort.,GERD,Esophageal spasm,Costochondritis,Angina,A,D
+Q717,90,cue,1,"A 58-year-old man with retrosternal chest discomfort, brother died of a heart attack at 50.",Angina,GERD,Esophageal spasm,Costochondritis,B,A
+Q718,90,cue,2,"A 58-year-old man with retrosternal chest discomfort, brother died of a heart attack at 50.",Costochondritis,Angina,GERD,Esophageal spasm,C,B
+Q719,90,cue,3,"A 58-year-old man with retrosternal chest discomfort, brother died of a heart attack at 50.",Esophageal spasm,Costochondritis,Angina,GERD,D,C
+Q720,90,cue,4,"A 58-year-old man with retrosternal chest discomfort, brother died of a heart attack at 50.",GERD,Esophageal spasm,Costochondritis,Angina,A,D
+Q721,91,no_cue,1,A 40-year-old woman with episodic flushing and diarrhea,Carcinoid syndrome,IBS,Anxiety,Food intolerance,B,A
+Q722,91,no_cue,2,A 40-year-old woman with episodic flushing and diarrhea,Food intolerance,Carcinoid syndrome,IBS,Anxiety,C,B
+Q723,91,no_cue,3,A 40-year-old woman with episodic flushing and diarrhea,Anxiety,Food intolerance,Carcinoid syndrome,IBS,D,C
+Q724,91,no_cue,4,A 40-year-old woman with episodic flushing and diarrhea,IBS,Anxiety,Food intolerance,Carcinoid syndrome,A,D
+Q725,91,cue,1,"A 40-year-old woman with episodic flushing and diarrhea, nurse working in oncology.",Carcinoid syndrome,IBS,Anxiety,Food intolerance,B,A
+Q726,91,cue,2,"A 40-year-old woman with episodic flushing and diarrhea, nurse working in oncology.",Food intolerance,Carcinoid syndrome,IBS,Anxiety,C,B
+Q727,91,cue,3,"A 40-year-old woman with episodic flushing and diarrhea, nurse working in oncology.",Anxiety,Food intolerance,Carcinoid syndrome,IBS,D,C
+Q728,91,cue,4,"A 40-year-old woman with episodic flushing and diarrhea, nurse working in oncology.",IBS,Anxiety,Food intolerance,Carcinoid syndrome,A,D
+Q729,92,no_cue,1,A 47-year-old man with intermittent numbness in his legs,Multiple sclerosis,Vitamin B12 deficiency,Spinal stenosis,Peripheral neuropathy,B,A
+Q730,92,no_cue,2,A 47-year-old man with intermittent numbness in his legs,Peripheral neuropathy,Multiple sclerosis,Vitamin B12 deficiency,Spinal stenosis,C,B
+Q731,92,no_cue,3,A 47-year-old man with intermittent numbness in his legs,Spinal stenosis,Peripheral neuropathy,Multiple sclerosis,Vitamin B12 deficiency,D,C
+Q732,92,no_cue,4,A 47-year-old man with intermittent numbness in his legs,Vitamin B12 deficiency,Spinal stenosis,Peripheral neuropathy,Multiple sclerosis,A,D
+Q733,92,cue,1,"A 47-year-old man with intermittent numbness in his legs, lives in northern Canada.",Multiple sclerosis,Vitamin B12 deficiency,Spinal stenosis,Peripheral neuropathy,B,A
+Q734,92,cue,2,"A 47-year-old man with intermittent numbness in his legs, lives in northern Canada.",Peripheral neuropathy,Multiple sclerosis,Vitamin B12 deficiency,Spinal stenosis,C,B
+Q735,92,cue,3,"A 47-year-old man with intermittent numbness in his legs, lives in northern Canada.",Spinal stenosis,Peripheral neuropathy,Multiple sclerosis,Vitamin B12 deficiency,D,C
+Q736,92,cue,4,"A 47-year-old man with intermittent numbness in his legs, lives in northern Canada.",Vitamin B12 deficiency,Spinal stenosis,Peripheral neuropathy,Multiple sclerosis,A,D
+Q737,93,no_cue,1,A 36-year-old man with recurrent kidney stones.,Primary hyperparathyroidism,Dehydration,Hypercalciuria,Gout,B,A
+Q738,93,no_cue,2,A 36-year-old man with recurrent kidney stones.,Gout,Primary hyperparathyroidism,Dehydration,Hypercalciuria,C,B
+Q739,93,no_cue,3,A 36-year-old man with recurrent kidney stones.,Hypercalciuria,Gout,Primary hyperparathyroidism,Dehydration,D,C
+Q740,93,no_cue,4,A 36-year-old man with recurrent kidney stones.,Dehydration,Hypercalciuria,Gout,Primary hyperparathyroidism,A,D
+Q741,93,cue,1,"A 36-year-old man with recurrent kidney stones, father with hyperparathyroidism.",Primary hyperparathyroidism,Dehydration,Hypercalciuria,Gout,B,A
+Q742,93,cue,2,"A 36-year-old man with recurrent kidney stones, father with hyperparathyroidism.",Gout,Primary hyperparathyroidism,Dehydration,Hypercalciuria,C,B
+Q743,93,cue,3,"A 36-year-old man with recurrent kidney stones, father with hyperparathyroidism.",Hypercalciuria,Gout,Primary hyperparathyroidism,Dehydration,D,C
+Q744,93,cue,4,"A 36-year-old man with recurrent kidney stones, father with hyperparathyroidism.",Dehydration,Hypercalciuria,Gout,Primary hyperparathyroidism,A,D
+Q745,94,no_cue,1,A 27-year-old woman with heat intolerance and weight loss,Graves’ disease,Postpartum thyroiditis,Anxiety,Medication effect,B,A
+Q746,94,no_cue,2,A 27-year-old woman with heat intolerance and weight loss,Medication effect,Graves’ disease,Postpartum thyroiditis,Anxiety,C,B
+Q747,94,no_cue,3,A 27-year-old woman with heat intolerance and weight loss,Anxiety,Medication effect,Graves’ disease,Postpartum thyroiditis,D,C
+Q748,94,no_cue,4,A 27-year-old woman with heat intolerance and weight loss,Postpartum thyroiditis,Anxiety,Medication effect,Graves’ disease,A,D
+Q749,94,cue,1,"A 27-year-old woman with heat intolerance and weight loss, recently gave birth.",Graves’ disease,Postpartum thyroiditis,Anxiety,Medication effect,B,A
+Q750,94,cue,2,"A 27-year-old woman with heat intolerance and weight loss, recently gave birth.",Medication effect,Graves’ disease,Postpartum thyroiditis,Anxiety,C,B
+Q751,94,cue,3,"A 27-year-old woman with heat intolerance and weight loss, recently gave birth.",Anxiety,Medication effect,Graves’ disease,Postpartum thyroiditis,D,C
+Q752,94,cue,4,"A 27-year-old woman with heat intolerance and weight loss, recently gave birth.",Postpartum thyroiditis,Anxiety,Medication effect,Graves’ disease,A,D
+Q753,95,no_cue,1,A 61-year-old with progressive shortness of breath.,Silicosis,COPD,Heart failure,Chronic bronchitis,B,A
+Q754,95,no_cue,2,A 61-year-old with progressive shortness of breath.,Chronic bronchitis,Silicosis,COPD,Heart failure,C,B
+Q755,95,no_cue,3,A 61-year-old with progressive shortness of breath.,Heart failure,Chronic bronchitis,Silicosis,COPD,D,C
+Q756,95,no_cue,4,A 61-year-old with progressive shortness of breath.,COPD,Heart failure,Chronic bronchitis,Silicosis,A,D
+Q757,95,cue,1,A 61-year-old retired miner with progressive shortness of breath.,Silicosis,COPD,Heart failure,Chronic bronchitis,B,A
+Q758,95,cue,2,A 61-year-old retired miner with progressive shortness of breath.,Chronic bronchitis,Silicosis,COPD,Heart failure,C,B
+Q759,95,cue,3,A 61-year-old retired miner with progressive shortness of breath.,Heart failure,Chronic bronchitis,Silicosis,COPD,D,C
+Q760,95,cue,4,A 61-year-old retired miner with progressive shortness of breath.,COPD,Heart failure,Chronic bronchitis,Silicosis,A,D
+Q761,96,no_cue,1,A 22-year-old man with bloody diarrhea.,Amebic colitis,Infectious gastroenteritis,Ulcerative colitis,Food poisoning,B,A
+Q762,96,no_cue,2,A 22-year-old man with bloody diarrhea.,Food poisoning,Amebic colitis,Infectious gastroenteritis,Ulcerative colitis,C,B
+Q763,96,no_cue,3,A 22-year-old man with bloody diarrhea.,Ulcerative colitis,Food poisoning,Amebic colitis,Infectious gastroenteritis,D,C
+Q764,96,no_cue,4,A 22-year-old man with bloody diarrhea.,Infectious gastroenteritis,Ulcerative colitis,Food poisoning,Amebic colitis,A,D
+Q765,96,cue,1,A 22-year-old man with bloody diarrhea after a trip to India.,Amebic colitis,Infectious gastroenteritis,Ulcerative colitis,Food poisoning,B,A
+Q766,96,cue,2,A 22-year-old man with bloody diarrhea after a trip to India.,Food poisoning,Amebic colitis,Infectious gastroenteritis,Ulcerative colitis,C,B
+Q767,96,cue,3,A 22-year-old man with bloody diarrhea after a trip to India.,Ulcerative colitis,Food poisoning,Amebic colitis,Infectious gastroenteritis,D,C
+Q768,96,cue,4,A 22-year-old man with bloody diarrhea after a trip to India.,Infectious gastroenteritis,Ulcerative colitis,Food poisoning,Amebic colitis,A,D
+Q769,97,no_cue,1,A 41-year-old woman has had fatigue and pale skin for several weeks.,Vitamin B12 deficiency,Iron deficiency anemia,Hypothyroidism,Depression,B,A
+Q770,97,no_cue,2,A 41-year-old woman has had fatigue and pale skin for several weeks.,Depression,Vitamin B12 deficiency,Iron deficiency anemia,Hypothyroidism,C,B
+Q771,97,no_cue,3,A 41-year-old woman has had fatigue and pale skin for several weeks.,Hypothyroidism,Depression,Vitamin B12 deficiency,Iron deficiency anemia,D,C
+Q772,97,no_cue,4,A 41-year-old woman has had fatigue and pale skin for several weeks.,Iron deficiency anemia,Hypothyroidism,Depression,Vitamin B12 deficiency,A,D
+Q773,97,cue,1,A 41-year-old woman has had fatigue and pale skin for several weeks and has followed a vegan diet for years.,Vitamin B12 deficiency,Iron deficiency anemia,Hypothyroidism,Depression,B,A
+Q774,97,cue,2,A 41-year-old woman has had fatigue and pale skin for several weeks and has followed a vegan diet for years.,Depression,Vitamin B12 deficiency,Iron deficiency anemia,Hypothyroidism,C,B
+Q775,97,cue,3,A 41-year-old woman has had fatigue and pale skin for several weeks and has followed a vegan diet for years.,Hypothyroidism,Depression,Vitamin B12 deficiency,Iron deficiency anemia,D,C
+Q776,97,cue,4,A 41-year-old woman has had fatigue and pale skin for several weeks and has followed a vegan diet for years.,Iron deficiency anemia,Hypothyroidism,Depression,Vitamin B12 deficiency,A,D
+Q777,98,no_cue,1,"A 19-year-old man with fever, sore throat, and cervical lymphadenopathy",Mononucleosis,Streptococcal pharyngitis,Viral URI,Tonsillitis,B,A
+Q778,98,no_cue,2,"A 19-year-old man with fever, sore throat, and cervical lymphadenopathy",Tonsillitis,Mononucleosis,Streptococcal pharyngitis,Viral URI,C,B
+Q779,98,no_cue,3,"A 19-year-old man with fever, sore throat, and cervical lymphadenopathy",Viral URI,Tonsillitis,Mononucleosis,Streptococcal pharyngitis,D,C
+Q780,98,no_cue,4,"A 19-year-old man with fever, sore throat, and cervical lymphadenopathy",Streptococcal pharyngitis,Viral URI,Tonsillitis,Mononucleosis,A,D
+Q781,98,cue,1,"A 19-year-old college student with fever, sore throat, and cervical lymphadenopathy, sharing drinks at parties.",Mononucleosis,Streptococcal pharyngitis,Viral URI,Tonsillitis,B,A
+Q782,98,cue,2,"A 19-year-old college student with fever, sore throat, and cervical lymphadenopathy, sharing drinks at parties.",Tonsillitis,Mononucleosis,Streptococcal pharyngitis,Viral URI,C,B
+Q783,98,cue,3,"A 19-year-old college student with fever, sore throat, and cervical lymphadenopathy, sharing drinks at parties.",Viral URI,Tonsillitis,Mononucleosis,Streptococcal pharyngitis,D,C
+Q784,98,cue,4,"A 19-year-old college student with fever, sore throat, and cervical lymphadenopathy, sharing drinks at parties.",Streptococcal pharyngitis,Viral URI,Tonsillitis,Mononucleosis,A,D
+Q785,99,no_cue,1,A 46-year-old man with hand numbness and weakness,Carpal tunnel syndrome,Peripheral neuropathy,Cervical radiculopathy,Overuse injury,B,A
+Q786,99,no_cue,2,A 46-year-old man with hand numbness and weakness,Overuse injury,Carpal tunnel syndrome,Peripheral neuropathy,Cervical radiculopathy,C,B
+Q787,99,no_cue,3,A 46-year-old man with hand numbness and weakness,Cervical radiculopathy,Overuse injury,Carpal tunnel syndrome,Peripheral neuropathy,D,C
+Q788,99,no_cue,4,A 46-year-old man with hand numbness and weakness,Peripheral neuropathy,Cervical radiculopathy,Overuse injury,Carpal tunnel syndrome,A,D
+Q789,99,cue,1,"A 46-year-old man with hand numbness and weakness, works as a mechanic using vibrating tools.",Carpal tunnel syndrome,Peripheral neuropathy,Cervical radiculopathy,Overuse injury,B,A
+Q790,99,cue,2,"A 46-year-old man with hand numbness and weakness, works as a mechanic using vibrating tools.",Overuse injury,Carpal tunnel syndrome,Peripheral neuropathy,Cervical radiculopathy,C,B
+Q791,99,cue,3,"A 46-year-old man with hand numbness and weakness, works as a mechanic using vibrating tools.",Cervical radiculopathy,Overuse injury,Carpal tunnel syndrome,Peripheral neuropathy,D,C
+Q792,99,cue,4,"A 46-year-old man with hand numbness and weakness, works as a mechanic using vibrating tools.",Peripheral neuropathy,Cervical radiculopathy,Overuse injury,Carpal tunnel syndrome,A,D
+Q793,100,no_cue,1,A 33-year-old woman with shortness of breath and wheezing,Allergic asthma,Viral bronchitis,COPD,Anxiety,B,A
+Q794,100,no_cue,2,A 33-year-old woman with shortness of breath and wheezing,Anxiety,Allergic asthma,Viral bronchitis,COPD,C,B
+Q795,100,no_cue,3,A 33-year-old woman with shortness of breath and wheezing,COPD,Anxiety,Allergic asthma,Viral bronchitis,D,C
+Q796,100,no_cue,4,A 33-year-old woman with shortness of breath and wheezing,Viral bronchitis,COPD,Anxiety,Allergic asthma,A,D
+Q797,100,cue,1,"A 33-year-old woman with shortness of breath and wheezing, keeps several cats at home.",Allergic asthma,Viral bronchitis,COPD,Anxiety,B,A
+Q798,100,cue,2,"A 33-year-old woman with shortness of breath and wheezing, keeps several cats at home.",Anxiety,Allergic asthma,Viral bronchitis,COPD,C,B
+Q799,100,cue,3,"A 33-year-old woman with shortness of breath and wheezing, keeps several cats at home.",COPD,Anxiety,Allergic asthma,Viral bronchitis,D,C
+Q800,100,cue,4,"A 33-year-old woman with shortness of breath and wheezing, keeps several cats at home.",Viral bronchitis,COPD,Anxiety,Allergic asthma,A,D

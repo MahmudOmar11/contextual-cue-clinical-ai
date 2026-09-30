@@ -1,0 +1,9 @@
+condition,rationale,n,percent
+Cue,Anchored on a case detail,96,61.1
+Cue,Judged most probable,52,33.1
+Cue,Uncertain,7,4.5
+Cue,Ruling out a serious diagnosis,2,1.3
+No cue,Anchored on a case detail,4,36.4
+No cue,Judged most probable,4,36.4
+No cue,Ruling out a serious diagnosis,2,18.2
+No cue,Uncertain,1,9.1

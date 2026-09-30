@@ -1,0 +1,7 @@
+condition,outcome,n,confidence_mean,confidence_sd,confidence_median,response_time_mean_sec,response_time_median_sec
+No cue,Correct,487,4.2,0.9,4.0,11.8,7.0
+No cue,Cue-associated diagnosis,11,3.09,0.3,3.0,16.1,14.0
+No cue,Other incorrect,66,3.42,0.8,3.0,15.1,9.5
+Cue,Correct,308,3.93,0.8,4.0,16.7,9.0
+Cue,Cue-associated diagnosis,157,3.42,0.74,3.0,19.1,12.0
+Cue,Other incorrect,99,3.37,0.8,3.0,16.7,9.0

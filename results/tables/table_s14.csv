@@ -1,0 +1,7 @@
+prompt,version,n,cue_mentioned,cue_associated_justification,base_rate_language,risk_language,high_confidence_wrong
+baseline,no_cue,500,6.2,3.8,39.8,3.6,16.6
+baseline,cue,500,59.4,39.8,29.4,2.6,40.2
+base_rate,no_cue,500,6.0,3.0,57.6,4.4,14.0
+base_rate,cue,500,49.8,27.2,52.6,4.2,27.6
+rare_or_serious,no_cue,500,6.4,4.0,37.2,39.4,17.2
+rare_or_serious,cue,500,65.8,49.6,22.0,31.4,45.0

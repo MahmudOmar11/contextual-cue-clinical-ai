@@ -1,0 +1,23 @@
+"model","provider","no_cue_selection","no_cue_selection_ci_low","no_cue_selection_ci_high","cue_selection","cue_selection_ci_low","cue_selection_ci_high","cue_accuracy","cue_accuracy_ci_low","cue_accuracy_ci_high"
+"Gemma 4 26B","Google",0,0,1.5,100,98.5,100,0,0,1.5
+"Llama 4 Scout","Meta",3.6,1.9,6.6,97.2,94.4,98.6,2.8,1.4,5.6
+"Gemini 3.1 Flash Lite","Google",0.4,0.1,2.2,95.2,91.9,97.3,0,0,1.5
+"Qwen3.7 Plus","Alibaba",0,0,1.5,95.2,91.9,97.3,4.8,2.7,8.1
+"Grok 4.3","xAI",1.2,0.4,3.4,94.8,91.4,97,5.2,3,8.6
+"DeepSeek V4 Flash","DeepSeek",1.6,0.6,4,94.4,90.9,96.7,4.8,2.7,8.1
+"Claude Sonnet 4.6","Anthropic",0.8,0.2,2.8,93.3,89.5,95.7,4.8,2.7,8.1
+"GPT-5.4","OpenAI",0,0,1.5,92.5,88.5,95.1,6.3,3.9,10.1
+"Qwen3.6 Flash","Alibaba",0.8,0.2,2.8,92.5,88.5,95.1,4,2.2,7.1
+"Qwen3.7 Max","Alibaba",0,0,1.5,92.5,88.5,95.1,6.3,3.9,10.1
+"Llama 4 Maverick","Meta",0,0,1.5,91.7,87.6,94.5,8.3,5.5,12.4
+"DeepSeek V4 Pro","DeepSeek",5.6,3.3,9.1,90.5,86.2,93.5,8.7,5.8,12.9
+"Mistral Large","Mistral",0.8,0.2,2.8,86.9,82.2,90.5,12.3,8.8,16.9
+"GPT-5.4 Mini","OpenAI",2,0.9,4.6,85.3,80.4,89.2,12.7,9.1,17.4
+"Gemini 3.5 Flash","Google",2.8,1.4,5.6,83.7,78.7,87.8,5.2,3,8.6
+"GPT-5.4 Nano","OpenAI",9.5,6.5,13.8,82.5,77.4,86.7,13.9,10.2,18.7
+"Mistral Small","Mistral",0,0,1.5,81.3,76.1,85.7,18.7,14.3,23.9
+"Gemini 3.1 Pro","Google",1,0.4,2.3,76.2,72.3,79.7,17.5,14.4,21
+"GPT-OSS 20B","OpenAI",0.8,0.2,2.8,70.2,64.3,75.5,16.3,12.2,21.3
+"GPT-OSS 120B","OpenAI",1.2,0.4,3.4,69.8,63.9,75.2,25,20.1,30.7
+"Claude Opus 4.8","Anthropic",0,0,1.5,57.1,51,63.1,42.9,36.9,49
+"GPT-5.5","OpenAI",0,0,1.5,53.6,47.4,59.6,46.4,40.4,52.6

@@ -1,0 +1,43 @@
+{
+  "temperature": 0,
+  "seed": 42,
+  "response_format": {
+    "type": "json_object"
+  },
+  "reasoning_request_when_accepted": {
+    "effort": "none",
+    "exclude": true
+  },
+  "answer_orders_per_case_version": 4,
+  "runs": {
+    "baseline": 3,
+    "base_rate": 1,
+    "rare_or_serious": 1
+  },
+  "retries": "transient API errors retried up to twice; outputs that did not parse requested again once",
+  "max_tokens": {
+    "core": 512,
+    "frontier": 1024
+  },
+  "run_dates": {
+    "core": "7 June 2026 (baseline) and 8 June 2026 (other prompts)",
+    "frontier": "21 June 2026"
+  },
+  "explanation_run": {
+    "models": [
+      "anthropic/claude-sonnet-4.6",
+      "deepseek/deepseek-v4-flash",
+      "google/gemma-4-26b-a4b-it",
+      "openai/gpt-5.4-mini",
+      "openai/gpt-oss-20b"
+    ],
+    "max_tokens": 1024,
+    "answer_order": 1,
+    "runs": 1,
+    "prompts": [
+      "baseline",
+      "base_rate",
+      "rare_or_serious"
+    ]
+  }
+}

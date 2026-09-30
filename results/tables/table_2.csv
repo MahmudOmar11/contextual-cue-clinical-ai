@@ -1,0 +1,4 @@
+"group","raters","responses","no_cue_accuracy","no_cue_accuracy_ci_low","no_cue_accuracy_ci_high","cue_accuracy","cue_accuracy_ci_low","cue_accuracy_ci_high","no_cue_selection","no_cue_selection_ci_low","no_cue_selection_ci_high","cue_selection","cue_selection_ci_low","cue_selection_ci_high"
+"Clinician participants",47,1128,86.3,83.3,88.9,54.6,50.5,58.7,2,1.1,3.5,27.8,24.3,31.7
+"All baseline LLMs",69,11592,90.9,90.2,91.7,12.4,11.5,13.2,1.4,1.2,1.8,84.9,84,85.8
+"Frontier LLMs",9,1512,99.1,98.1,99.6,39,35.6,42.5,0.1,0,0.7,59.4,55.9,62.8

@@ -1,0 +1,5 @@
+"outcome","term","odds_ratio","ci_low","ci_high","p_value"
+"Selection of the cue-associated diagnosis","Intercept",0.054,0.0019,1.5246,0.0868
+"Selection of the cue-associated diagnosis","Confidence",0.4538,0.1691,1.2177,0.117
+"Selection of the cue-associated diagnosis","Cue (vs no cue)",9.4883,0.3258,276.3339,0.191
+"Selection of the cue-associated diagnosis","Confidence x cue",1.6873,0.6042,4.7122,0.318

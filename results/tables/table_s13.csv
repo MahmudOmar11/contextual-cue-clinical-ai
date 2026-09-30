@@ -1,0 +1,13 @@
+subgroup_type,subgroup,participants,no_cue_selection,cue_selection,no_cue_accuracy,cue_accuracy
+Training level,Attending / consultant,20,1.7,29.2,90.0,57.5
+Training level,Resident / fellow,17,0.5,15.7,92.2,67.2
+Training level,Medical student,8,5.2,41.7,70.8,29.2
+Training level,Other clinician role,2,4.2,62.5,62.5,20.8
+Region,United States,26,3.2,40.7,78.5,43.3
+Region,Middle East,17,0.5,13.2,95.1,65.2
+Region,Europe,4,0.0,6.3,100.0,83.3
+Specialty,Internal Medicine,15,1.7,28.9,85.6,53.3
+Specialty,Family Medicine,12,0.0,4.9,98.6,79.9
+Specialty,Other,11,5.3,49.2,75.0,28.8
+Specialty,General Practice,5,0.0,31.7,83.3,50.0
+Specialty,Pediatrics,4,2.1,29.2,87.5,60.4

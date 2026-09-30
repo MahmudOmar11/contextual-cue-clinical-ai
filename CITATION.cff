@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the study."
+title: "Contextual Cue Susceptibility in Clinical AI: A Randomized Clinician-Comparator Study"
+abstract: >-
+  Code and data for a paired-vignette study comparing how a single added clinical detail changes the
+  diagnoses chosen by 22 large language models, 47 clinician participants and eight independent physicians.
+authors:
+  - family-names: Omar
+    given-names: Mahmud
+    orcid: "https://orcid.org/0009-0001-0438-0827"
+  - family-names: Agbareia
+    given-names: Reem
+  - family-names: Charney
+    given-names: Alexander W.
+  - family-names: Abdulnour
+    given-names: Raja-Elie E.
+  - family-names: Sakhuja
+    given-names: Ankit
+  - family-names: Klang
+    given-names: Eyal
+  - family-names: Nadkarni
+    given-names: Girish N.
+  - family-names: Glicksberg
+    given-names: Benjamin S.
+license: MIT
+repository-code: "https://github.com/MahmudOmar11/contextual-cue-clinical-ai"
+keywords:
+  - large language models
+  - clinical decision support
+  - diagnostic reasoning
+  - contextual cues

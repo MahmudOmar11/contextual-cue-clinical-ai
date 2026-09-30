@@ -1,0 +1,101 @@
+family,intended_diagnosis,cue_associated_diagnosis,other_diagnosis_1,other_diagnosis_2,cue_type,clinician_form,repeated_on_clinician_form
+1,Upper respiratory tract infection,Malaria,Hepatitis,Pneumonia,travel or residence,1,1
+2,Viral bronchitis,Lung cancer,COPD exacerbation,Pneumonia,lifestyle,1,1
+3,MSK pain,Pulmonary embolism,Anxiety attack,Costochondritis,travel or residence,0,0
+4,Exercise-induced hematuria,Bladder cancer,Glomerulonephritis,Nephrolithiasis,family history,0,0
+5,Viral bronchitis,Histoplasmosis,Pneumonia,Tuberculosis,travel or residence,1,1
+6,Viral bronchitis,Hypersensitivity pneumonitis,Asthma,Pneumonia,occupation or exposure,1,0
+7,Viral upper respiratory infection,Lung cancer,COPD exacerbation,Pneumonia,lifestyle,0,0
+8,Influenza,Lyme disease,Gastroenteritis,Mononucleosis,travel or residence,1,0
+9,Viral gastroenteritis,Cholera,Food poisoning,Typhoid fever,travel or residence,1,0
+10,Influenza,Brucellosis,Muscular strain,Pyelonephritis,occupation or exposure,0,0
+11,Viral pharyngitis,Legionella infection,Bronchitis,Sinusitis,occupation or exposure,1,0
+12,Viral infection (EBV),Cat-scratch disease,Cytomegalovirus,Strep pharyngitis,occupation or exposure,1,0
+13,Viral syndrome,Acute hepatitis B,Anxiety reaction,Influenza,occupation or exposure,0,0
+14,Viral bronchitis,Coccidioidomycosis,Asthma,Pneumonia,travel or residence,1,0
+15,Osteoarthritis,Q fever,Rheumatoid arthritis,Viral infection,occupation or exposure,0,0
+16,Viral bronchitis,EVALI,Asthma,Pneumonia,lifestyle,1,0
+17,Viral pharyngitis,Dengue fever,Influenza,Mononucleosis,travel or residence,0,0
+18,Viral gastroenteritis,Giardiasis,Food poisoning,IBS,occupation or exposure,1,0
+19,Viral bronchitis,Avian influenza,Asthma,Pneumonia,occupation or exposure,1,0
+20,Viral syndrome,Hepatitis C,Cellulitis,Influenza,lifestyle,0,0
+21,Viral bronchitis,Psittacosis,Asthma,Pneumonia,occupation or exposure,1,0
+22,Viral gastroenteritis,Salmonella infection,Food poisoning,IBS,occupation or exposure,1,0
+23,Viral bronchitis,Hantavirus infection,Asthma,Pneumonia,occupation or exposure,1,0
+24,Viral pharyngitis,Streptococcal pharyngitis,Influenza,Mononucleosis,occupation or exposure,0,0
+25,Viral infection,Brucellosis,Gastroenteritis,Typhoid fever,occupation or exposure,0,0
+26,Viral infection,Tularemia,Cellulitis,Influenza,occupation or exposure,1,0
+27,Influenza,Leptospirosis,Gastroenteritis,Viral syndrome,occupation or exposure,0,0
+28,Viral bronchitis,Cryptococcosis,Asthma,Pneumonia,occupation or exposure,1,0
+29,Asthma,Hypersensitivity pneumonitis,Anxiety,Viral bronchitis,occupation or exposure,0,0
+30,Influenza,Schistosomiasis,Gastroenteritis,Hepatitis,travel or residence,0,0
+31,Panic attack,Pulmonary embolism,Costochondritis,GERD,travel or residence,1,0
+32,GERD,Unstable angina,Costochondritis,Esophageal spasm,family history,0,0
+33,Tension-type headache,Brain tumor,Cervical strain,Migraine,family history,0,0
+34,Lumbar strain,Herniated disk,Ankylosing spondylitis,Vertebral fracture,occupation or exposure,0,0
+35,Osteoarthritis,Rheumatoid arthritis,Gout,Patellofemoral pain syndrome,family history,0,0
+36,Irritable bowel syndrome,Colon cancer,Lactose intolerance,Peptic ulcer disease,family history,0,0
+37,Benign paroxysmal positional vertigo,Ischemic stroke,Anxiety,Vestibular neuritis,occupation or exposure,0,0
+38,Asthma,Silicosis,COPD,Sarcoidosis,occupation or exposure,0,0
+39,Carpal tunnel syndrome,Multiple sclerosis,Cervical radiculopathy,Peripheral neuropathy,family history,0,0
+40,Plantar fasciitis,Metatarsal stress fracture,Achilles tendinopathy,Tarsal tunnel syndrome,lifestyle,0,0
+41,Exercise-induced bronchospasm,Hypertrophic cardiomyopathy,Anxiety,GERD,lifestyle,0,0
+42,Muscular strain,Kidney stones,Dehydration,Pyelonephritis,lifestyle,0,0
+43,Anxiety,Atrial fibrillation,Hyperthyroidism,Mitral valve prolapse,family history,0,0
+44,Muscle cramp,DVT,Dehydration,Varicose veins,travel or residence,0,0
+45,Essential tremor,Parkinson disease,Hyperthyroidism,Medication-induced tremor,family history,0,0
+46,Tension-type headache,Subarachnoid hemorrhage,Hypertension,Migraine,occupation or exposure,0,0
+47,Sleep deprivation,Hypothyroidism,Anemia,Depression,family history,0,0
+48,Functional constipation,Colon cancer,Diverticulosis,IBS,family history,0,0
+49,Muscle strain,Rotator cuff tear,Bursitis,Cervical radiculopathy,lifestyle,0,0
+50,Carpal tunnel syndrome,Stroke,Cervical radiculopathy,Peripheral neuropathy,occupation or exposure,0,0
+51,Anxiety,Angina,Costochondritis,GERD,lifestyle,0,0
+52,Muscle strain,DVT,Anxiety,Varicose veins,occupation or exposure,0,0
+53,Nicotine withdrawal,Depression,Anxiety,Hypothyroidism,other,0,0
+54,Eye strain,Glaucoma,Migraine,Sinusitis,family history,0,0
+55,GERD,Peptic ulcer disease,Functional dyspepsia,Gastritis,occupation or exposure,0,0
+56,Dehydration,Electrolyte imbalance,Hypoglycemia,Hypotension,lifestyle,0,0
+57,Menopausal symptoms,Hyperthyroidism,Anxiety,Panic disorder,family history,0,0
+58,Dehydration,Diabetes mellitus,Anemia,Stress,family history,0,0
+59,Bursitis,Gout,Meniscal injury,Osteoarthritis,other,0,0
+60,Plantar fasciitis,Stress fracture,Achilles tendinitis,Neuropathy,occupation or exposure,0,0
+61,Lumbar strain,Disk herniation,Radiculopathy,Spondylolysis,lifestyle,0,0
+62,Device misread / anxiety,Atrial fibrillation,Hyperthyroidism,POTS,family history,0,0
+63,Carpal tunnel syndrome,Peripheral neuropathy,B12 deficiency,Cervical radiculopathy,occupation or exposure,0,0
+64,Vocal strain,Laryngeal cancer,GERD,Pharyngitis,other,0,0
+65,Viral bronchitis,Lung cancer,Deconditioning,Heart failure,lifestyle,0,0
+66,Whiplash,Cervical fracture,Anxiety,Muscle strain,occupation or exposure,0,0
+67,Hormonal withdrawal,Early pregnancy,Stress reaction,Thyroid disorder,other,0,0
+68,Panic attack,Pheochromocytoma,Hyperthyroidism,SVT,family history,1,0
+69,Stable angina,MI,Anxiety,GERD,family history,0,0
+70,Panic attack,Takotsubo cardiomyopathy,Angina,GERD,other,0,0
+71,Overuse tendinitis,Fracture,Carpal tunnel,Strain,occupation or exposure,0,0
+72,Muscle fatigue,DVT,Edema,Varicose veins,travel or residence,0,0
+73,Mechanical low-back pain,Herniated disk,Ankylosing spondylitis,Spinal stenosis,occupation or exposure,0,0
+74,Gas from carbonation,IBS,Food allergy,Lactose intolerance,other,0,0
+75,Drug side effect,Serotonin syndrome,Anxiety,Dehydration,occupation or exposure,0,0
+76,Dehydration,Peripheral vascular disease,Electrolyte loss,Varicose veins,occupation or exposure,0,0
+77,Hemorrhoids,Colorectal cancer,Anal fissure,IBS,family history,0,0
+78,Aphthous stomatitis,Behçet’s disease,Herpes simplex infection,Iron deficiency,other,1,0
+79,Viral gastroenteritis,Familial Mediterranean fever,Food poisoning,IBS,family history,0,0
+80,Erythema nodosum,Vasculitis,Cellulitis,Drug reaction,family history,0,0
+81,Tension headache,Giant cell arteritis,Migraine,Sinusitis,other,0,0
+82,COPD,Idiopathic pulmonary fibrosis,Asthma,Chronic bronchitis,occupation or exposure,0,0
+83,COPD,Asbestosis,Chronic bronchitis,Heart failure,occupation or exposure,0,0
+84,Mild hypothyroidism,Myxedema,Cushing syndrome,Depression,other,0,0
+85,Viral arthritis,Systemic lupus erythematosus,Fibromyalgia,Osteoarthritis,other,0,0
+86,Viral infection,Lymphoma,Depression,Tuberculosis,family history,0,0
+87,Essential tremor,Parkinson’s disease,Anxiety,Drug-induced tremor,occupation or exposure,0,0
+88,Medication side effect,Cushing syndrome,Obesity,PCOS,occupation or exposure,0,0
+89,Premature ventricular contractions,Supraventricular tachycardia,Anxiety,Hyperthyroidism,family history,0,0
+90,GERD,Angina,Costochondritis,Esophageal spasm,family history,0,0
+91,IBS,Carcinoid syndrome,Anxiety,Food intolerance,occupation or exposure,0,0
+92,Vitamin B12 deficiency,Multiple sclerosis,Peripheral neuropathy,Spinal stenosis,travel or residence,0,0
+93,Dehydration,Primary hyperparathyroidism,Gout,Hypercalciuria,family history,0,0
+94,Postpartum thyroiditis,Graves’ disease,Anxiety,Medication effect,other,0,0
+95,COPD,Silicosis,Chronic bronchitis,Heart failure,occupation or exposure,0,0
+96,Infectious gastroenteritis,Amebic colitis,Food poisoning,Ulcerative colitis,travel or residence,0,0
+97,Iron deficiency anemia,Vitamin B12 deficiency,Depression,Hypothyroidism,lifestyle,1,0
+98,Streptococcal pharyngitis,Mononucleosis,Tonsillitis,Viral URI,occupation or exposure,0,0
+99,Peripheral neuropathy,Carpal tunnel syndrome,Cervical radiculopathy,Overuse injury,occupation or exposure,0,0
+100,Viral bronchitis,Allergic asthma,Anxiety,COPD,occupation or exposure,0,0

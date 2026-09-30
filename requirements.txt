@@ -1,0 +1,5 @@
+# Python packages for the analysis and figures (tested versions in the README).
+# The collection script uses only the standard library.
+pandas>=2.2
+numpy>=2.0
+matplotlib>=3.9

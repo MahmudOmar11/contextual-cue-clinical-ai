@@ -1,0 +1,1 @@
+You are accurately and evidence-based answering a clinical question. Choose the single most probable diagnosis from the four options. Return structured JSON only as per instructions.

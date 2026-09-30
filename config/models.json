@@ -1,0 +1,211 @@
+{
+  "models": [
+    {
+      "name": "Claude Sonnet 4.6",
+      "openrouter_id": "anthropic/claude-sonnet-4.6",
+      "returned_version": "claude-4.6-sonnet-20260217",
+      "panel": "core",
+      "provider": "Anthropic",
+      "tier": "closed flagship",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "DeepSeek V4 Flash",
+      "openrouter_id": "deepseek/deepseek-v4-flash",
+      "returned_version": "deepseek-v4-flash-20260423",
+      "panel": "core",
+      "provider": "DeepSeek",
+      "tier": "open efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "openrouter_id": "deepseek/deepseek-v4-pro",
+      "returned_version": "deepseek-v4-pro-20260423",
+      "panel": "core",
+      "provider": "DeepSeek",
+      "tier": "open strong",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Gemini 3.1 Flash Lite",
+      "openrouter_id": "google/gemini-3.1-flash-lite",
+      "returned_version": "gemini-3.1-flash-lite-20260507",
+      "panel": "core",
+      "provider": "Google",
+      "tier": "closed efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Gemini 3.1 Pro",
+      "openrouter_id": "google/gemini-3.1-pro-preview",
+      "returned_version": "gemini-3.1-pro-preview-20260219",
+      "panel": "core",
+      "provider": "Google",
+      "tier": "closed flagship",
+      "reasoning_off_requested": false
+    },
+    {
+      "name": "Gemini 3.5 Flash",
+      "openrouter_id": "google/gemini-3.5-flash",
+      "returned_version": "gemini-3.5-flash-20260519",
+      "panel": "core",
+      "provider": "Google",
+      "tier": "closed efficient",
+      "reasoning_off_requested": false
+    },
+    {
+      "name": "Gemma 4 26B",
+      "openrouter_id": "google/gemma-4-26b-a4b-it",
+      "returned_version": "gemma-4-26b-a4b-it-20260403",
+      "panel": "core",
+      "provider": "Google",
+      "tier": "open efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Llama 4 Maverick",
+      "openrouter_id": "meta-llama/llama-4-maverick",
+      "returned_version": "llama-4-maverick-17b-128e-instruct",
+      "panel": "core",
+      "provider": "Meta",
+      "tier": "open strong",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Llama 4 Scout",
+      "openrouter_id": "meta-llama/llama-4-scout",
+      "returned_version": "llama-4-scout-17b-16e-instruct",
+      "panel": "core",
+      "provider": "Meta",
+      "tier": "open efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Mistral Large",
+      "openrouter_id": "mistralai/mistral-large-2512",
+      "returned_version": "mistral-large-2512",
+      "panel": "core",
+      "provider": "Mistral",
+      "tier": "open strong",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Mistral Small",
+      "openrouter_id": "mistralai/mistral-small-2603",
+      "returned_version": "mistral-small-2603",
+      "panel": "core",
+      "provider": "Mistral",
+      "tier": "open efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "GPT-5.4",
+      "openrouter_id": "openai/gpt-5.4",
+      "returned_version": "gpt-5.4-20260305",
+      "panel": "core",
+      "provider": "OpenAI",
+      "tier": "closed flagship",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "GPT-5.4 Mini",
+      "openrouter_id": "openai/gpt-5.4-mini",
+      "returned_version": "gpt-5.4-mini-20260317",
+      "panel": "core",
+      "provider": "OpenAI",
+      "tier": "closed efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "GPT-5.4 Nano",
+      "openrouter_id": "openai/gpt-5.4-nano",
+      "returned_version": "gpt-5.4-nano-20260317",
+      "panel": "core",
+      "provider": "OpenAI",
+      "tier": "closed efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "GPT-OSS 120B",
+      "openrouter_id": "openai/gpt-oss-120b",
+      "returned_version": "gpt-oss-120b",
+      "panel": "core",
+      "provider": "OpenAI",
+      "tier": "open strong",
+      "reasoning_off_requested": false
+    },
+    {
+      "name": "GPT-OSS 20B",
+      "openrouter_id": "openai/gpt-oss-20b",
+      "returned_version": "gpt-oss-20b",
+      "panel": "core",
+      "provider": "OpenAI",
+      "tier": "open efficient",
+      "reasoning_off_requested": false
+    },
+    {
+      "name": "Qwen3.6 Flash",
+      "openrouter_id": "qwen/qwen3.6-flash",
+      "returned_version": "qwen3.6-flash",
+      "panel": "core",
+      "provider": "Alibaba",
+      "tier": "open efficient",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Qwen3.7 Max",
+      "openrouter_id": "qwen/qwen3.7-max",
+      "returned_version": "qwen3.7-max-20260520",
+      "panel": "core",
+      "provider": "Alibaba",
+      "tier": "open strong",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Qwen3.7 Plus",
+      "openrouter_id": "qwen/qwen3.7-plus",
+      "returned_version": "qwen3.7-plus-20260602",
+      "panel": "core",
+      "provider": "Alibaba",
+      "tier": "open strong",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Grok 4.3",
+      "openrouter_id": "x-ai/grok-4.3",
+      "returned_version": "grok-4.3-20260430",
+      "panel": "core",
+      "provider": "xAI",
+      "tier": "closed flagship",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Claude Opus 4.8",
+      "openrouter_id": "anthropic/claude-opus-4.8",
+      "returned_version": "claude-4.8-opus-20260528",
+      "panel": "frontier",
+      "provider": "Anthropic",
+      "tier": "frontier",
+      "reasoning_off_requested": true
+    },
+    {
+      "name": "Gemini 3.1 Pro",
+      "openrouter_id": "google/gemini-3.1-pro-preview",
+      "returned_version": "gemini-3.1-pro-preview-20260219",
+      "panel": "frontier",
+      "provider": "Google",
+      "tier": "closed flagship",
+      "reasoning_off_requested": false
+    },
+    {
+      "name": "GPT-5.5",
+      "openrouter_id": "openai/gpt-5.5",
+      "returned_version": "gpt-5.5-20260423",
+      "panel": "frontier",
+      "provider": "OpenAI",
+      "tier": "frontier",
+      "reasoning_off_requested": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+"analysis","group","no_cue_selection","no_cue_selection_ci_low","no_cue_selection_ci_high","cue_selection","cue_selection_ci_low","cue_selection_ci_high","no_cue_accuracy","no_cue_accuracy_ci_low","no_cue_accuracy_ci_high","cue_accuracy","cue_accuracy_ci_low","cue_accuracy_ci_high"
+"Primary (matched 21 cases)","Clinician participants",2,1.1,3.5,27.8,24.3,31.7,86.3,83.3,88.9,54.6,50.5,58.7
+"Primary (matched 21 cases)","All baseline LLMs",1.4,1.2,1.8,84.9,84,85.8,90.9,90.2,91.7,12.4,11.5,13.2
+"Excluding repeated case families (1, 2, 5)","Clinician participants",2.1,1.1,4,28.8,24.7,33.3,86.1,82.4,89,54.1,49.4,58.8
+"Excluding repeated case families (1, 2, 5)","All baseline LLMs",1.4,1.1,1.8,87.2,86.3,88.1,92.4,91.6,93.1,10.2,9.4,11.1
+"Excluding medical students","Clinician participants",1.3,0.6,2.8,25,21.3,29.1,89.5,86.4,92,59.8,55.3,64.2
+"Excluding medical students","All baseline LLMs",1.4,1.2,1.8,84.9,84,85.8,90.9,90.2,91.7,12.4,11.5,13.2
+"Frontier-3 comparator only","Clinician participants",2,1.1,3.5,27.8,24.3,31.7,86.3,83.3,88.9,54.6,50.5,58.7
+"Frontier-3 comparator only","Frontier LLMs",0.1,0,0.7,59.4,55.9,62.8,99.1,98.1,99.6,39,35.6,42.5

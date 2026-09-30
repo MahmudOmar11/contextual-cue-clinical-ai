@@ -1,0 +1,66 @@
+table,characteristic,category,measure,value
+table_1,Region,United States,participants,26
+table_1,Region,Middle East,participants,17
+table_1,Region,Europe,participants,4
+table_1,Specialty,Internal Medicine,participants,15
+table_1,Specialty,Family Medicine,participants,12
+table_1,Specialty,Other,participants,11
+table_1,Specialty,General Practice,participants,5
+table_1,Specialty,Pediatrics,participants,4
+table_1,Practice setting,Academic Medical Center,participants,33
+table_1,Practice setting,Private Practice / Clinic,participants,7
+table_1,Practice setting,Community Hospital,participants,5
+table_1,Practice setting,Federally Qualified Health Center,participants,1
+table_1,Practice setting,Urgent Care Center,participants,1
+table_s13,Region,United States,participants,26
+table_s13,Region,United States,no_cue_selection_pct,3.2
+table_s13,Region,United States,no_cue_accuracy_pct,78.5
+table_s13,Region,United States,cue_selection_pct,40.7
+table_s13,Region,United States,cue_accuracy_pct,43.3
+table_s13,Region,Middle East,participants,17
+table_s13,Region,Middle East,no_cue_selection_pct,0.5
+table_s13,Region,Middle East,no_cue_accuracy_pct,95.1
+table_s13,Region,Middle East,cue_selection_pct,13.2
+table_s13,Region,Middle East,cue_accuracy_pct,65.2
+table_s13,Region,Europe,participants,4
+table_s13,Region,Europe,no_cue_selection_pct,0.0
+table_s13,Region,Europe,no_cue_accuracy_pct,100.0
+table_s13,Region,Europe,cue_selection_pct,6.3
+table_s13,Region,Europe,cue_accuracy_pct,83.3
+table_s13,Specialty,Other,participants,11
+table_s13,Specialty,Other,no_cue_selection_pct,5.3
+table_s13,Specialty,Other,no_cue_accuracy_pct,75.0
+table_s13,Specialty,Other,cue_selection_pct,49.2
+table_s13,Specialty,Other,cue_accuracy_pct,28.8
+table_s13,Specialty,Family Medicine,participants,12
+table_s13,Specialty,Family Medicine,no_cue_selection_pct,0.0
+table_s13,Specialty,Family Medicine,no_cue_accuracy_pct,98.6
+table_s13,Specialty,Family Medicine,cue_selection_pct,4.9
+table_s13,Specialty,Family Medicine,cue_accuracy_pct,79.9
+table_s13,Specialty,Pediatrics,participants,4
+table_s13,Specialty,Pediatrics,no_cue_selection_pct,2.1
+table_s13,Specialty,Pediatrics,no_cue_accuracy_pct,87.5
+table_s13,Specialty,Pediatrics,cue_selection_pct,29.2
+table_s13,Specialty,Pediatrics,cue_accuracy_pct,60.4
+table_s13,Specialty,Internal Medicine,participants,15
+table_s13,Specialty,Internal Medicine,no_cue_selection_pct,1.7
+table_s13,Specialty,Internal Medicine,no_cue_accuracy_pct,85.6
+table_s13,Specialty,Internal Medicine,cue_selection_pct,28.9
+table_s13,Specialty,Internal Medicine,cue_accuracy_pct,53.3
+table_s13,Specialty,General Practice,participants,5
+table_s13,Specialty,General Practice,no_cue_selection_pct,0.0
+table_s13,Specialty,General Practice,no_cue_accuracy_pct,83.3
+table_s13,Specialty,General Practice,cue_selection_pct,31.7
+table_s13,Specialty,General Practice,cue_accuracy_pct,50.0
+table_s10,cue,cue_associated,mean_response_time_sec,19.1
+table_s10,cue,cue_associated,median_response_time_sec,12.0
+table_s10,cue,intended,mean_response_time_sec,16.7
+table_s10,cue,intended,median_response_time_sec,9.0
+table_s10,cue,other,mean_response_time_sec,16.7
+table_s10,cue,other,median_response_time_sec,9.0
+table_s10,no_cue,cue_associated,mean_response_time_sec,16.1
+table_s10,no_cue,cue_associated,median_response_time_sec,14.0
+table_s10,no_cue,intended,mean_response_time_sec,11.8
+table_s10,no_cue,intended,median_response_time_sec,7.0
+table_s10,no_cue,other,mean_response_time_sec,15.1
+table_s10,no_cue,other,median_response_time_sec,9.5

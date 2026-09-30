@@ -1,0 +1,10 @@
+"model","prompt","no_cue_selection","no_cue_selection_ci_low","no_cue_selection_ci_high","cue_selection","cue_selection_ci_low","cue_selection_ci_high","no_cue_accuracy","no_cue_accuracy_ci_low","no_cue_accuracy_ci_high","cue_accuracy","cue_accuracy_ci_low","cue_accuracy_ci_high"
+"Claude Opus 4.8","Baseline",21.6,19.3,24,50.8,48,53.7,66.5,63.8,69.1,46.2,43.4,49
+"GPT-5.5","Baseline",20.9,18.7,23.3,48,45.2,50.8,66.1,63.4,68.7,46.3,43.5,49.2
+"Gemini 3.1 Pro","Baseline",25.3,23,27.9,53.2,50.3,56,63.1,60.3,65.8,41.6,38.8,44.4
+"Claude Opus 4.8","Base-rate prompt",13.8,10.7,17.5,20,16.4,24.2,74.8,70.3,78.8,75,70.5,79
+"GPT-5.5","Base-rate prompt",16,12.7,19.9,24,20.1,28.4,73,68.4,77.1,68.5,63.8,72.9
+"Gemini 3.1 Pro","Base-rate prompt",18,14.5,22.1,32.8,28.3,37.5,70.5,65.9,74.8,62,57.2,66.6
+"Claude Opus 4.8","Rare-or-serious prompt",36.2,31.7,41.1,66.5,61.7,70.9,52.8,47.9,57.6,30.8,26.4,35.4
+"GPT-5.5","Rare-or-serious prompt",32.5,28.1,37.2,69.2,64.6,73.6,54.5,49.6,59.3,27.3,23.1,31.8
+"Gemini 3.1 Pro","Rare-or-serious prompt",58,53.1,62.7,84.8,80.9,87.9,20.8,17.1,25,12.5,9.6,16.1

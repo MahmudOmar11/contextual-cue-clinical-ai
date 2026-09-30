@@ -1,0 +1,18 @@
+characteristic,category,n,percent
+Training level,Attending or consultant physician,20,42.6
+Training level,Resident or fellow,17,36.2
+Training level,Medical student,8,17.0
+Training level,Other physician role,2,4.3
+Region,United States,26,55.3
+Region,Middle East,17,36.2
+Region,Europe,4,8.5
+Specialty,Internal medicine,15,31.9
+Specialty,Family medicine,12,25.5
+Specialty,Other,11,23.4
+Specialty,General practice,5,10.6
+Specialty,Pediatrics,4,8.5
+Practice setting,Academic medical center,33,70.2
+Practice setting,Private practice or clinic,7,14.9
+Practice setting,Community hospital,5,10.6
+Practice setting,Federally qualified health center,1,2.1
+Practice setting,Urgent care center,1,2.1

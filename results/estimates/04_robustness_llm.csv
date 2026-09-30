@@ -1,0 +1,14 @@
+estimate,value,ci_low,ci_high,n
+llm_cue_effect_21_families_all_runs_pp,84.4,73.9,93.0,21
+llm_cue_effect_21_families_one_run_per_unique_llm_pp,84.9,74.3,93.4,21
+llm_cue_effect_21_families_one_run_baseline_pp,84.3,73.7,93.0,21
+llm_cue_effect_21_families_one_run_base_rate_pp,29.7,16.5,44.6,21
+llm_cue_effect_21_families_one_run_rare_or_serious_pp,62.7,50.5,74.8,21
+change_in_llm_cue_effect_21_families_base_rate_vs_baseline_pp,-54.7,-67.5,-41.1,21
+change_in_llm_cue_effect_21_families_rare_or_serious_vs_baseline_pp,-21.6,-35.5,-8.2,21
+change_in_llm_cue_effect_100_families_base_rate_vs_baseline_pp,-16.6,-23.2,-10.0,100
+change_in_llm_cue_effect_100_families_rare_or_serious_vs_baseline_pp,-6.6,-14.0,0.4,100
+agreement_between_repeated_runs_baseline_pct,95.9,,,53741
+agreement_between_answer_orders_baseline_pct,90.6,,,80465
+agreement_between_answer_orders_base_rate_pct,90.4,,,26694
+agreement_between_answer_orders_rare_or_serious_pct,88.7,,,26492

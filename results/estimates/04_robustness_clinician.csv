@@ -1,0 +1,11 @@
+estimate,value,ci_low,ci_high,n
+clinician_confidence_cue_associated_diagnosis_cue,3.42,3.23,3.65,157
+clinician_confidence_intended_diagnosis_no_cue,4.2,3.98,4.4,487
+responses_per_version_repeated_families_min,47,,,6
+responses_per_version_repeated_families_max,47,,,6
+responses_per_version_other_families_min,23,,,36
+responses_per_version_other_families_max,24,,,36
+repeated_family_cases_between_versions_median,9.0,,,141
+repeated_family_cases_between_versions_min,5,,,141
+repeated_family_cases_between_versions_max,22,,,141
+repeated_family_pairs_cue_version_first,82,,,141

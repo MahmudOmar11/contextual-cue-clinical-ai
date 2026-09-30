@@ -1,0 +1,9 @@
+"outcome","term","estimate","se","odds_ratio","ci_low","ci_high","p_value"
+"Selection of the cue-associated diagnosis","Intercept",-6.1477,0.5712,0.0021,0.0007,0.0066,5.11e-27
+"Selection of the cue-associated diagnosis","LLM (vs clinician)",0.4437,0.4831,1.5584,0.6046,4.017,0.358
+"Selection of the cue-associated diagnosis","Cue (vs no cue)",4.3447,0.3794,77.0721,36.6394,162.1233,2.31e-30
+"Selection of the cue-associated diagnosis","LLM x cue interaction",4.2075,0.4003,67.1903,30.6622,147.2346,7.6e-26
+"Accuracy","Intercept",3.1006,0.3958,22.2123,10.2254,48.2509,4.73e-15
+"Accuracy","LLM (vs clinician)",0.1376,0.308,1.1475,0.6275,2.0985,0.655
+"Accuracy","Cue (vs no cue)",-2.7514,0.2036,0.0638,0.0428,0.0952,1.31e-41
+"Accuracy","LLM x cue interaction",-3.4446,0.2188,0.0319,0.0208,0.049,7.24e-56

@@ -1,0 +1,13 @@
+estimate,value,ci_low,ci_high,n
+cue_associated_justification_baseline_no_cue,3.8,2.4,5.9,500
+cue_associated_justification_baseline_cue,39.8,35.6,44.2,500
+cue_associated_justification_base_rate_no_cue,3.0,1.8,4.9,500
+cue_associated_justification_base_rate_cue,27.2,23.5,31.3,500
+cue_associated_justification_rare_or_serious_no_cue,4.0,2.6,6.1,500
+cue_associated_justification_rare_or_serious_cue,49.6,45.2,54.0,500
+high_confidence_wrong_baseline_no_cue,16.6,13.6,20.1,500
+high_confidence_wrong_baseline_cue,40.2,36.0,44.6,500
+high_confidence_wrong_base_rate_no_cue,14.0,11.2,17.3,500
+high_confidence_wrong_base_rate_cue,27.6,23.9,31.7,500
+high_confidence_wrong_rare_or_serious_no_cue,17.2,14.1,20.8,500
+high_confidence_wrong_rare_or_serious_cue,45.0,40.7,49.4,500
