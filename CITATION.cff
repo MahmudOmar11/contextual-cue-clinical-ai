@@ -3,7 +3,8 @@ message: "If you use this code or data, please cite the study."
 title: "Contextual Cue Susceptibility in Clinical AI: A Randomized Clinician-Comparator Study"
 abstract: >-
   Code and data for a paired-vignette study comparing how a single added clinical detail changes the
-  diagnoses chosen by 22 large language models, 47 clinician participants and eight independent physicians.
+  diagnoses chosen by 22 large language models, 47 clinician participants and eight clinical adjudicators, with an
+  irrelevant-control experiment in three frontier models.
 authors:
   - family-names: Omar
     given-names: Mahmud
@@ -22,6 +23,8 @@ authors:
     given-names: Girish N.
   - family-names: Glicksberg
     given-names: Benjamin S.
+version: "1.1.0"
+date-released: "2026-10-03"
 license: MIT
 repository-code: "https://github.com/MahmudOmar11/contextual-cue-clinical-ai"
 keywords:

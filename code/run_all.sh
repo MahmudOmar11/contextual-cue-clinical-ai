@@ -15,4 +15,5 @@ python3 code/analysis/05_physician_validation.py
 python3 code/analysis/06_figure_3.py
 python3 code/analysis/07_explanation_screen.py
 python3 code/analysis/08_model_table.py
+python3 code/analysis/09_control_experiment.py
 echo "Done: results/tables, results/figures, results/estimates"

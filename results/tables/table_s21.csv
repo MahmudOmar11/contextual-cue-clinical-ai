@@ -1,0 +1,101 @@
+family,cue_type,cue_detail,control_detail,no_cue_pct,cue_pct,control_pct
+1,Travel or residence,He returned from a trip to Nigeria about one week ago,He started learning to play the cello about one month ago,0.0,100.0,0.0
+2,Lifestyle,with a 30-pack-year smoking history,with a 30-year chess hobby,0.0,0.0,0.0
+3,Travel or residence,after a short flight,after a short shower,0.0,100.0,33.3
+4,Family history,His grandfather had bladder cancer,His grandfather had a hip replacement,0.0,0.0,0.0
+5,Travel or residence,She was exposed to some bats in a cave during a trip two weeks ago,She finished reading a long historical novel about two weeks ago,0.0,100.0,0.0
+6,Occupation or exposure,He recently noticed some mold in his apartment,He recently bought a piano for his apartment,0.0,0.0,8.3
+7,Lifestyle,with 40 pack-years,with 40 jazz albums,0.0,0.0,0.0
+8,Travel or residence,"recently returned from a camping trip, with possible exposure to ticks, and now",recently completed a weekend calligraphy course and now,0.0,100.0,0.0
+9,Travel or residence,He returned from a trip to India about one week ago,He started learning to play the harmonica about one week ago,0.0,100.0,8.3
+10,Occupation or exposure,who works in a slaughterhouse,who works as a court interpreter,58.3,100.0,83.3
+11,Occupation or exposure,She sometimes uses a shared hot tub at her apartment building,She recently started learning to knit,0.0,0.0,0.0
+12,Occupation or exposure,recently adopted a kitten and,recently bought a vintage camera and,0.0,100.0,50.0
+13,Occupation or exposure,nurse after needle exposure,poetry translator,0.0,100.0,0.0
+14,Travel or residence,after returning from a hiking trip in Colorado,after starting an online course in art history,0.0,0.0,0.0
+15,Occupation or exposure,farmer; after daily cattle work,accountant who collects coins,0.0,58.3,41.7
+16,Lifestyle,He vapes some evenings,He plays chess some evenings,0.0,0.0,0.0
+17,Travel or residence,who just returned from Southeast Asia,who just finished a film course,0.0,41.7,0.0
+18,Occupation or exposure,who sometimes drinks untreated stream water,who sometimes plays the trumpet,0.0,83.3,0.0
+19,Occupation or exposure,He sometimes helps at a poultry farm,He sometimes helps at a jewelry store,0.0,8.3,0.0
+20,Lifestyle,who recently got a tattoo,who recently joined a library,0.0,100.0,0.0
+21,Occupation or exposure,She often handles birds at work,She often handles legal contracts at work,0.0,100.0,0.0
+22,Occupation or exposure,He keeps reptiles at home,He keeps vintage radios at home,0.0,100.0,0.0
+23,Occupation or exposure,after recently moving into an old house with some mice,after recently starting guitar lessons,0.0,33.3,0.0
+24,Occupation or exposure,medical student dissecting cadavers,accountant auditing museums,0.0,16.7,0.0
+25,Occupation or exposure,He sometimes drinks unpasteurized milk,He sometimes listens to jazz records,0.0,100.0,0.0
+26,Occupation or exposure,hunter; after skinning a rabbit during a recent trip,accountant; after reading a novel during a recent weekend,0.0,100.0,0.0
+27,Occupation or exposure,surfer; after falling into seawater,stamp collector; after sorting stamps,0.0,100.0,83.3
+28,Occupation or exposure,He recently cleaned an attic with some bird droppings,He recently framed a poster with some old concert tickets,0.0,33.3,0.0
+29,Occupation or exposure,using new essential oils,using new reading glasses,0.0,8.3,0.0
+30,Travel or residence,recently returned from Egypt,a keen crossword solver,0.0,91.7,0.0
+31,Travel or residence,after a long flight earlier that day,after a haircut earlier that day,0.0,100.0,0.0
+32,Family history,father had MI at 50,father broke his wrist at 70,0.0,0.0,0.0
+33,Family history,mother had a brain tumor,mother had a knee replacement,0.0,0.0,0.0
+34,Occupation or exposure,after moving boxes,after a phone call,0.0,0.0,0.0
+35,Family history,aunt has RA,aunt wears hearing aids,0.0,0.0,0.0
+36,Family history,father had colon cancer,father had a hip replacement,100.0,100.0,100.0
+37,Occupation or exposure,uses oral contraceptives,wears a smartwatch,0.0,0.0,0.0
+38,Occupation or exposure,demolition worker,radio presenter,0.0,0.0,0.0
+39,Family history,sister has MS,sister has hay fever,0.0,0.0,0.0
+40,Lifestyle,started marathon training,started learning chess,0.0,0.0,0.0
+41,Lifestyle,who runs marathons,who collects comic books,0.0,0.0,0.0
+42,Lifestyle,recently started a high-protein diet and now,recently started a book club and now,100.0,100.0,50.0
+43,Family history,whose father has atrial fibrillation,whose father wears hearing aids,0.0,0.0,0.0
+44,Travel or residence,smoking woman on a long flight,who writes poetry,33.3,100.0,41.7
+45,Family history,whose father had Parkinson disease,whose father had a knee replacement,0.0,0.0,0.0
+46,Occupation or exposure,job reports early-morning very painful,who collects coins,0.0,0.0,0.0
+47,Family history,whose mother has Hashimoto thyroiditis,whose mother is nearsighted,0.0,0.0,0.0
+48,Family history,His father had colon cancer in his 70s,His father had cataract surgery in his 70s,16.7,0.0,0.0
+49,Lifestyle,with new gym routine,with a passion for jazz,0.0,0.0,0.0
+50,Occupation or exposure,working at a computer,listening to a podcast,33.3,0.0,41.7
+51,Lifestyle,with obesity,with red hair,25.0,25.0,25.0
+52,Occupation or exposure,after starting new oral contraceptives,after starting singing lessons,0.0,100.0,0.0
+53,Other,after a divorce,after a dental check-up,0.0,0.0,0.0
+54,Family history,studying long hours; His mother has glaucoma,His mother wears hearing aids,0.0,0.0,0.0
+55,Occupation or exposure,taking ibuprofen for back pain,taking guitar lessons for fun,16.7,33.3,25.0
+56,Lifestyle,on a ketogenic diet using electrolyte supplements,who collects vintage typewriters,91.7,100.0,66.7
+57,Family history,Her sister has Graves disease,Her sister wears hearing aids,0.0,41.7,0.0
+58,Family history,with strong family history of diabetes,with strong family history of nearsightedness,100.0,100.0,100.0
+59,Other,with gout,with a beard,0.0,0.0,0.0
+60,Occupation or exposure,using standing desk,using a new phone,0.0,0.0,0.0
+61,Lifestyle,who lifts weights,who loves poetry,0.0,0.0,0.0
+62,Family history,whose father has atrial fibrillation,whose father has tinnitus,0.0,0.0,0.0
+63,Occupation or exposure,accountant,singer,0.0,0.0,0.0
+64,Other,teacher with history of HPV nfection,accountant with history of wrist fracture,0.0,33.3,0.0
+65,Lifestyle,with 20-year smoking history,with 20-year chess-club membership,0.0,0.0,8.3
+66,Occupation or exposure,treated for Psoriatic arthritis flair with steroids,who collects vintage postcards,0.0,91.7,8.3
+67,Other,who recently stopped birth control pills,who recently started piano lessons,100.0,100.0,100.0
+68,Family history,A relative was recently diagnosed with an adrenal tumor,A relative was recently fitted with hearing aids,0.0,16.7,0.0
+69,Family history,with high cholesterol and family history of heart disease,with red hair and family history of nearsightedness,0.0,0.0,0.0
+70,Other,after intense emotional stress,after a haircut,66.7,100.0,100.0
+71,Occupation or exposure,who recently fell while gaming for hours,who recently watched an opera,8.3,75.0,8.3
+72,Travel or residence,after long travel,after a new haircut,100.0,100.0,75.0
+73,Occupation or exposure,truck driver sitting long hours,amateur singer,0.0,0.0,0.0
+74,Other,with depression,with curly hair,16.7,100.0,41.7
+75,Occupation or exposure,on new antidepressant,on a chess team,0.0,16.7,0.0
+76,Occupation or exposure,sedentary office worker,jazz enthusiast,0.0,0.0,8.3
+77,Family history,father with colorectal cancer,father with a hip replacement,0.0,0.0,0.0
+78,Other,of Turkish descent,fond of jazz,0.0,100.0,0.0
+79,Family history,brother with familial Mediterranean fever,brother with nearsightedness,91.7,100.0,91.7
+80,Family history,Mother with SLE,Mother is nearsighted,0.0,0.0,0.0
+81,Other,mild scalp discomfort,a retired chef,0.0,58.3,0.0
+82,Occupation or exposure,carpenter,accountant,100.0,100.0,100.0
+83,Occupation or exposure,who worked in construction for many years,who worked as an editor for many years,33.3,100.0,16.7
+84,Other,during winter months,who collects teapots,100.0,75.0,100.0
+85,Other,of Japanese descent,fond of opera,100.0,100.0,83.3
+86,Family history,father with lymphoma,father with tinnitus,91.7,100.0,75.0
+87,Occupation or exposure,worked as a welder,worked as a bank clerk,100.0,100.0,100.0
+88,Occupation or exposure,taking oral contraceptives,taking piano lessons,100.0,100.0,100.0
+89,Family history,whose sister has SVT,whose sister is color-blind,0.0,0.0,0.0
+90,Family history,brother died of a heart attack at 50,brother broke his wrist at 50,100.0,100.0,91.7
+91,Occupation or exposure,nurse working in oncology,accountant working in insurance,100.0,100.0,100.0
+92,Travel or residence,lives in northern Canada,collects stamps,25.0,83.3,16.7
+93,Family history,father with hyperparathyroidism,father with color blindness,16.7,100.0,0.0
+94,Other,recently gave birth,recently bought a piano,100.0,0.0,100.0
+95,Occupation or exposure,retired miner,retired pianist,8.3,100.0,0.0
+96,Travel or residence,after a trip to India,after a long phone call,0.0,100.0,8.3
+97,Lifestyle,and has followed a vegan diet for years,and has played the violin for years,0.0,91.7,0.0
+98,Occupation or exposure,college student; sharing drinks at parties,apprentice electrician; fond of jazz records,100.0,100.0,100.0
+99,Occupation or exposure,works as a mechanic using vibrating tools,works as a radio presenter,100.0,100.0,100.0
+100,Occupation or exposure,keeps several cats at home,keeps several chess sets at home,100.0,100.0,100.0

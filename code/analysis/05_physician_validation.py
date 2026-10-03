@@ -1,13 +1,15 @@
-"""Independent physician validation: Table 3, Tables S15 to S18, and the numbers reported in the text.
+"""Clinical adjudication: Table 3, Tables S15 to S18, and the numbers reported in the text.
 
-Physician ratings are averaged within each case version, and case families are weighted equally. LLM rates use
+The eight clinical adjudicators (codes A to H in data/physician_ratings.csv) were six physicians and two medical
+students (A and B). Ratings are averaged within each case version, and case families are weighted equally. LLM rates use
 the baseline benchmark responses (valid answers only), pooled over runs and answer orders within a panel entry and
 averaged over panel entries, so that each unique LLM counts once. The frontier LLMs use their frontier-panel runs.
 
 Intervals come from approximate crossed exponential reweighting (10,000 draws): family weights are shared between
 LLMs and physicians, physicians are reweighted, and LLMs are reweighted for the 22-LLM panel; the three frontier
 LLMs are held fixed. Within support subsets, which depend on the physicians' own ratings, only LLM effects are
-reported.
+reported. A sensitivity analysis repeats the Table 3 comparison with the six physicians alone, on the same
+draws.
 
 Writes results/tables/table_3.csv, table_s15.csv to table_s18.csv, and results/estimates/05_physician_validation.csv.
 """
@@ -97,8 +99,12 @@ assert sorted(CELLS["frontier"].model_id.unique()) == sorted(FRONTIER)
 class Panel:
     """Crossed exponential reweighting of families, physicians and (unless held fixed) LLMs."""
 
-    def __init__(self, cells, name, fixed_llms, prompt="baseline"):
+    def __init__(self, cells, name, fixed_llms, prompt="baseline", keep=None):
         self.name, self.fixed = name, fixed_llms
+        idx = list(range(len(PHYSICIANS))) if keep is None else [PHYSICIANS.index(c) for c in keep]
+        self.arr, self.present = ARR[idx], PRESENT[idx]
+        assert self.present.sum(0).min() > 0  # every version keeps at least one rating
+        self.human = self.arr.sum(0) / self.present.sum(0)[:, :, None]
         d = cells[cells.prompt == prompt]
         self.llms = sorted(d.model_id.unique())
         M = len(self.llms)
@@ -113,10 +119,11 @@ class Panel:
         rng = np.random.default_rng(SEED)
         self.fw = rng.exponential(1, (B, F))
         lw = rng.exponential(1, (B, M))
-        pw = rng.exponential(1, (B, len(PHYSICIANS)))
+        pw = rng.exponential(1, (B, len(PHYSICIANS)))[:, idx]
         self.lboot = (np.einsum("bm,mfck->bfck", lw, ma)
                       / np.maximum(np.einsum("bm,mf->bf", lw, paired), 1e-200)[:, :, None, None])
-        self.hboot = np.einsum("br,rfck->bfck", pw, ARR) / np.einsum("br,rfc->bfc", pw, PRESENT)[:, :, :, None]
+        self.hboot = (np.einsum("br,rfck->bfck", pw, self.arr)
+                      / np.einsum("br,rfc->bfc", pw, self.present)[:, :, :, None])
 
     def w(self, mask):
         w = self.fw[:, mask]
@@ -126,7 +133,7 @@ class Panel:
         """LLM and physician cue effects and the extra LLM cue effect, with 95% intervals."""
         mask = mask & self.available
         w = self.w(mask)
-        pm, ph = self.cells[mask][:, :, k].mean(0), HUMAN[mask][:, :, k].mean(0)
+        pm, ph = self.cells[mask][:, :, k].mean(0), self.human[mask][:, :, k].mean(0)
         if self.fixed:
             md = w @ (self.cells[mask, 1, k] - self.cells[mask, 0, k])
         else:
@@ -147,14 +154,14 @@ class Panel:
     def physician_rates(self, mask, k):
         mask = mask & self.available
         w = self.w(mask)
-        ph = HUMAN[mask][:, :, k].mean(0)
+        ph = self.human[mask][:, :, k].mean(0)
         b = np.einsum("bf,bfc->bc", w, self.hboot[:, mask][..., k])
         return [(ph[c], *ci(b[:, c])) for c in (0, 1)]
 
     def physician_effect(self, mask, k):
         mask = mask & self.available
         w = self.w(mask)
-        ph = HUMAN[mask][:, :, k].mean(0)
+        ph = self.human[mask][:, :, k].mean(0)
         h = np.einsum("bf,bfc->bc", w, self.hboot[:, mask][..., k])
         return ph[0], ph[1], ph[1] - ph[0], ci(h[:, 1] - h[:, 0])
 
@@ -172,7 +179,7 @@ def add(name, value, lo=np.nan, hi=np.nan, n=np.nan):
 # ---------------------------------------------------------------- Table 3
 e_fr, e_ll = FR.effect(ALL), LL.effect(ALL)
 rows = []
-for group, n, sel, acc, e in [("Independent physicians", 8, FR.physician_rates(ALL, SEL), FR.physician_rates(ALL, ACC), None),
+for group, n, sel, acc, e in [("Clinical adjudicators", 8, FR.physician_rates(ALL, SEL), FR.physician_rates(ALL, ACC), None),
                               ("Frontier LLMs", 3, FR.llm_rates(ALL, SEL), FR.llm_rates(ALL, ACC), e_fr),
                               ("All 22 LLMs", 22, LL.llm_rates(ALL, SEL), LL.llm_rates(ALL, ACC), e_ll)]:
     row = dict(group=group, n=n)
@@ -194,6 +201,24 @@ add("physician_probability_cue_associated_difference_pp", round(diff, 1), round(
 for ver in VERSIONS:
     s = R[R.version == ver]
     add(f"physician_assessments_cue_associated_first_{ver}", int((s.role == 1).sum()), n=len(s))
+
+# Sensitivity: the six physicians alone (adjudicators A and B were medical students), same draws
+SIX = [c for c in PHYSICIANS if c not in ("A", "B")]
+FR6 = Panel(CELLS["frontier"], "Frontier LLMs", fixed_llms=True, keep=SIX)
+LL6 = Panel(CELLS["all"], "All 22 LLMs", fixed_llms=False, keep=SIX)
+e6_fr, e6_ll = FR6.effect(ALL), LL6.effect(ALL)
+for ver, v in zip(VERSIONS, FR6.human[:, :, SEL].mean(0)):
+    add(f"six_physicians_selection_{ver}_pct", pct(v), n=F)
+add("six_physicians_cue_effect_selection_pp", pct(e6_fr["physician"]), *map(pct, e6_fr["physician_ci"]), F)
+add("extra_llm_cue_effect_six_physicians_frontier_llms_pp", pct(e6_fr["extra"]), *map(pct, e6_fr["extra_ci"]), F)
+add("extra_llm_cue_effect_six_physicians_all_llms_pp", pct(e6_ll["extra"]), *map(pct, e6_ll["extra_ci"]), F)
+
+# Families in which the LLMs shifted more than the adjudicators (rounded to remove floating-point noise)
+adj_shift = np.round(HUMAN[:, 1, SEL] - HUMAN[:, 0, SEL], 9)
+for panel, P in [("all_llms", LL), ("frontier_llms", FR)]:
+    shift = np.round(P.cells[:, 1, SEL] - P.cells[:, 0, SEL], 9)
+    add(f"families_{panel}_shift_above_adjudicators", int((shift > adj_shift).sum()), n=F)
+    add(f"families_{panel}_shift_equal_to_adjudicators", int((shift == adj_shift).sum()), n=F)
 
 # Leading diagnosis by mean probability
 lead = {ver: np.array([VERSION_CELLS[f, ver]["leader"] for f in FAMILIES]) for ver in VERSIONS}

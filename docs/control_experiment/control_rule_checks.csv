@@ -1,0 +1,101 @@
+family,cue_words,control_words,control_detail,options,problems
+case_001,11,11,He started learning to play the cello about one month ago .,Hepatitis; Malaria; Pneumonia; Upper respiratory tract infection,pass
+case_002,4,4,with a 30 -year chess hobby,COPD exacerbation; Lung cancer; Pneumonia; Viral bronchitis,pass
+case_003,4,4,after a short shower,Anxiety attack; Costochondritis; MSK pain; Pulmonary embolism,pass
+case_004,5,6,His grandfather had a hip replacement .,Bladder cancer; Exercise-induced hematuria; Glomerulonephritis; Nephrolithiasis,pass
+case_005,15,11,She finished reading a long historical novel about two weeks ago .,Histoplasmosis; Pneumonia; Tuberculosis; Viral bronchitis,pass
+case_006,8,8,He recently bought a piano for his apartment .,Asthma; Hypersensitivity pneumonitis; Pneumonia; Viral bronchitis,pass
+case_007,2,3,with 40 jazz albums,COPD exacerbation; Lung cancer; Pneumonia; Viral upper respiratory infection,pass
+case_008,13,8,recently completed a weekend calligraphy course and now,Gastroenteritis; Influenza; Lyme disease; Mononucleosis,pass
+case_009,11,11,He started learning to play the harmonica about one week ago .,Cholera; Food poisoning; Typhoid fever; Viral gastroenteritis,pass
+case_010,5,6,who works as a court interpreter,Brucellosis; Influenza; Muscular strain; Pyelonephritis,pass
+case_011,11,6,She recently started learning to knit .,Bronchitis; Legionella infection; Sinusitis; Viral pharyngitis,pass
+case_012,5,6,recently bought a vintage camera and,Cat-scratch disease; Cytomegalovirus; Strep pharyngitis; Viral infection (EBV),pass
+case_013,4,2,poetry translator,Acute hepatitis B; Anxiety reaction; Influenza; Viral syndrome,pass
+case_014,8,8,after starting an online course in art history,Asthma; Coccidioidomycosis; Pneumonia; Viral bronchitis,pass
+case_015,5,4,accountant who collects coins,Osteoarthritis; Q fever; Rheumatoid arthritis; Viral infection,pass
+case_016,4,5,He plays chess some evenings .,Asthma; EVALI; Pneumonia; Viral bronchitis,pass
+case_017,6,6,who just finished a film course,Dengue fever; Influenza; Mononucleosis; Viral pharyngitis,pass
+case_018,6,5,who sometimes plays the trumpet,Food poisoning; Giardiasis; IBS; Viral gastroenteritis,pass
+case_019,7,7,He sometimes helps at a jewelry store .,Asthma; Avian influenza; Pneumonia; Viral bronchitis,pass
+case_020,5,5,who recently joined a library,Cellulitis; Hepatitis C; Influenza; Viral syndrome,pass
+case_021,6,7,She often handles legal contracts at work .,Asthma; Pneumonia; Psittacosis; Viral bronchitis,pass
+case_022,5,6,He keeps vintage radios at home .,Food poisoning; IBS; Salmonella infection; Viral gastroenteritis,pass
+case_023,10,5,after recently starting guitar lessons,Asthma; Hantavirus infection; Pneumonia; Viral bronchitis,pass
+case_024,4,3,accountant auditing museums,Influenza; Mononucleosis; Streptococcal pharyngitis; Viral pharyngitis,pass
+case_025,5,6,He sometimes listens to jazz records .,Brucellosis; Gastroenteritis; Typhoid fever; Viral infection,pass
+case_026,9,9,accountant after reading a novel during a recent weekend,Cellulitis; Influenza; Tularemia; Viral infection,pass
+case_027,5,5,stamp collector after sorting stamps,Gastroenteritis; Influenza; Leptospirosis; Viral syndrome,pass
+case_028,9,10,He recently framed a poster with some old concert tickets .,Asthma; Cryptococcosis; Pneumonia; Viral bronchitis,pass
+case_029,4,4,using new reading glasses,Anxiety; Asthma; Hypersensitivity pneumonitis; Viral bronchitis,pass
+case_030,4,4,", a keen crossword solver ,",Gastroenteritis; Hepatitis; Influenza; Schistosomiasis,pass
+case_031,7,6,after a haircut earlier that day,Costochondritis; GERD; Panic attack; Pulmonary embolism,pass
+case_032,4,5,father broke his wrist at 70,Costochondritis; Esophageal spasm; GERD; Unstable angina,pass
+case_033,5,5,mother had a knee replacement,Brain tumor; Cervical strain; Migraine; Tension-type headache,pass
+case_034,3,4,after a phone call ;,Ankylosing spondylitis; Herniated disk; Lumbar strain; Vertebral fracture,pass
+case_035,3,4,aunt wears hearing aids,Gout; Osteoarthritis; Patellofemoral pain syndrome; Rheumatoid arthritis,pass
+case_036,4,5,father had a hip replacement .,Colon cancer; Irritable bowel syndrome; Lactose intolerance; Peptic ulcer disease,pass
+case_037,3,3,wears a smartwatch .,Anxiety; Benign paroxysmal positional vertigo; Ischemic stroke; Vestibular neuritis,pass
+case_038,2,2,radio presenter,Asthma; COPD; Sarcoidosis; Silicosis,pass
+case_039,3,4,sister has hay fever,Carpal tunnel syndrome; Cervical radiculopathy; Multiple sclerosis; Peripheral neuropathy,pass
+case_040,3,3,; started learning chess,Achilles tendinopathy; Metatarsal stress fracture; Plantar fasciitis; Tarsal tunnel syndrome,pass
+case_041,3,4,who collects comic books,Anxiety; Exercise-induced bronchospasm; GERD; Hypertrophic cardiomyopathy,pass
+case_042,7,7,recently started a book club and now,Dehydration; Kidney stones; Muscular strain; Pyelonephritis,pass
+case_043,5,5,", whose father wears hearing aids ,",Anxiety; Atrial fibrillation; Hyperthyroidism; Mitral valve prolapse,pass
+case_044,5,3,who writes poetry,Dehydration; DVT; Muscle cramp; Varicose veins,pass
+case_045,5,6,whose father had a knee replacement,Essential tremor; Hyperthyroidism; Medication-induced tremor; Parkinson disease,pass
+case_046,4,3,who collects coins,Hypertension; Migraine; Subarachnoid hemorrhage; Tension-type headache,pass
+case_047,5,4,whose mother is nearsighted,Anemia; Depression; Hypothyroidism; Sleep deprivation,pass
+case_048,8,8,His father had cataract surgery in his 70 s .,Colon cancer; Diverticulosis; Functional constipation; IBS,pass
+case_049,4,5,with a passion for jazz,Bursitis; Cervical radiculopathy; Muscle strain; Rotator cuff tear,pass
+case_050,4,4,listening to a podcast,Carpal tunnel syndrome; Cervical radiculopathy; Peripheral neuropathy; Stroke,pass
+case_051,2,3,with red hair,Angina; Anxiety; Costochondritis; GERD,pass
+case_052,5,4,after starting singing lessons,Anxiety; DVT; Muscle strain; Varicose veins,pass
+case_053,3,4,after a dental check-up,Anxiety; Depression; Hypothyroidism; Nicotine withdrawal,pass
+case_054,7,5,His mother wears hearing aids .,Eye strain; Glaucoma; Migraine; Sinusitis,pass
+case_055,5,5,taking guitar lessons for fun,Functional dyspepsia; Gastritis; GERD; Peptic ulcer disease,pass
+case_056,7,4,who collects vintage typewriters,Dehydration; Electrolyte imbalance; Hypoglycemia; Hypotension,pass
+case_057,5,5,Her sister wears hearing aids .,Anxiety; Hyperthyroidism; Menopausal symptoms; Panic disorder,pass
+case_058,6,6,with strong family history of nearsightedness,Anemia; Dehydration; Diabetes mellitus; Stress,pass
+case_059,2,3,with a beard,Bursitis; Gout; Meniscal injury; Osteoarthritis,pass
+case_060,3,4,using a new phone,Achilles tendinitis; Neuropathy; Plantar fasciitis; Stress fracture,pass
+case_061,3,3,who loves poetry,Disk herniation; Lumbar strain; Radiculopathy; Spondylolysis,pass
+case_062,5,4,whose father has tinnitus,Atrial fibrillation; Device misread / anxiety; Hyperthyroidism; POTS,pass
+case_063,1,1,singer,B12 deficiency; Carpal tunnel syndrome; Cervical radiculopathy; Peripheral neuropathy,pass
+case_064,6,6,"accountant with history of wrist fracture ,",GERD; Laryngeal cancer; Pharyngitis; Vocal strain,pass
+case_065,3,3,with 20 -year chess-club membership,Deconditioning; Heart failure; Lung cancer; Viral bronchitis,pass
+case_066,7,4,", who collects vintage postcards",Anxiety; Cervical fracture; Muscle strain; Whiplash,pass
+case_067,6,5,who recently started piano lessons,Early pregnancy; Hormonal withdrawal; Stress reaction; Thyroid disorder,pass
+case_068,9,8,A relative was recently fitted with hearing aids .,Hyperthyroidism; Panic attack; Pheochromocytoma; SVT,pass
+case_069,9,8,with red hair and family history of nearsightedness,Anxiety; GERD; MI; Stable angina,pass
+case_070,4,3,after a haircut .,Angina; GERD; Panic attack; Takotsubo cardiomyopathy,pass
+case_071,7,5,who recently watched an opera,Carpal tunnel; Fracture; Overuse tendinitis; Strain,pass
+case_072,3,4,after a new haircut,DVT; Edema; Muscle fatigue; Varicose veins,pass
+case_073,5,2,amateur singer,Ankylosing spondylitis; Herniated disk; Mechanical low-back pain; Spinal stenosis,pass
+case_074,2,3,", with curly hair ,",Food allergy; Gas from carbonation; IBS; Lactose intolerance,pass
+case_075,3,4,on a chess team,Anxiety; Dehydration; Drug side effect; Serotonin syndrome,pass
+case_076,3,2,jazz enthusiast,Dehydration; Electrolyte loss; Peripheral vascular disease; Varicose veins,pass
+case_077,4,5,", father with a hip replacement",Anal fissure; Colorectal cancer; Hemorrhoids; IBS,pass
+case_078,3,3,fond of jazz,Aphthous stomatitis; Behçet’s disease; Herpes simplex infection; Iron deficiency,pass
+case_079,5,3,", brother with nearsightedness",Familial Mediterranean fever; Food poisoning; IBS; Viral gastroenteritis,pass
+case_080,3,3,Mother is nearsighted .,Cellulitis; Drug reaction; Erythema nodosum; Vasculitis,pass
+case_081,3,3,", a retired chef ,",Giant cell arteritis; Migraine; Sinusitis; Tension headache,pass
+case_082,1,1,accountant,Asthma; Chronic bronchitis; COPD; Idiopathic pulmonary fibrosis,pass
+case_083,7,8,who worked as an editor for many years .,Asbestosis; Chronic bronchitis; COPD; Heart failure,pass
+case_084,3,3,"who collects teapots ,",Cushing syndrome; Depression; Mild hypothyroidism; Myxedema,pass
+case_085,3,3,fond of opera,Fibromyalgia; Osteoarthritis; Systemic lupus erythematosus; Viral arthritis,pass
+case_086,3,3,", father with tinnitus",Depression; Lymphoma; Tuberculosis; Viral infection,pass
+case_087,4,5,worked as a bank clerk .,Anxiety; Drug-induced tremor; Essential tremor; Parkinson’s disease,pass
+case_088,3,3,taking piano lessons .,Cushing syndrome; Medication side effect; Obesity; PCOS,pass
+case_089,4,4,whose sister is color-blind,Anxiety; Hyperthyroidism; Premature ventricular contractions; Supraventricular tachycardia,pass
+case_090,7,5,", brother broke his wrist at 50",Angina; Costochondritis; Esophageal spasm; GERD,pass
+case_091,4,4,", accountant working in insurance .",Anxiety; Carcinoid syndrome; Food intolerance; IBS,pass
+case_092,4,2,", collects stamps .",Multiple sclerosis; Peripheral neuropathy; Spinal stenosis; Vitamin B12 deficiency,pass
+case_093,3,4,", father with color blindness",Dehydration; Gout; Hypercalciuria; Primary hyperparathyroidism,pass
+case_094,3,4,", recently bought a piano .",Anxiety; Graves’ disease; Medication effect; Postpartum thyroiditis,pass
+case_095,2,2,retired pianist,Chronic bronchitis; COPD; Heart failure; Silicosis,pass
+case_096,5,5,after a long phone call,Amebic colitis; Food poisoning; Infectious gastroenteritis; Ulcerative colitis,pass
+case_097,8,7,and has played the violin for years,Depression; Hypothyroidism; Iron deficiency anemia; Vitamin B12 deficiency,pass
+case_098,6,6,"apprentice electrician , fond of jazz records .",Mononucleosis; Streptococcal pharyngitis; Tonsillitis; Viral URI,pass
+case_099,7,5,", works as a radio presenter .",Carpal tunnel syndrome; Cervical radiculopathy; Overuse injury; Peripheral neuropathy,pass
+case_100,5,6,", keeps several chess sets at home .",Allergic asthma; Anxiety; COPD; Viral bronchitis,pass

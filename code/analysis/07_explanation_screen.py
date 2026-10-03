@@ -13,8 +13,8 @@ patterns for six markers:
 - high-confidence wrong answer: the model chose a diagnosis other than the
   intended one with confidence of 80 or more
 
-Outputs: table_s14.csv, figure_s4.png and estimates/07_explanation_screen.csv
-(the Figure S4 rates with 95% Wilson intervals).
+Outputs: table_s14.csv, table_s19.csv (two markers by model), figure_s4.png and
+estimates/07_explanation_screen.csv (the Figure S4 rates with 95% Wilson intervals).
 """
 import re
 import string
@@ -148,6 +148,21 @@ def table_s14(markers):
     return pd.DataFrame(rows)
 
 
+def table_s19(markers):
+    """Cue-associated justification and high-confidence wrong answers by model, prompt and version."""
+    rows = []
+    for model in sorted(markers.model_id.unique()):
+        for prompt in PROMPTS:
+            row = {"model_id": model, "prompt": prompt}
+            for version in VERSIONS:
+                g = markers[(markers.model_id == model) & (markers.prompt == prompt) & (markers.version == version)]
+                row[f"n_{version}"] = len(g)
+                for m in ("cue_associated_justification", "high_confidence_wrong"):
+                    row[f"{m}_{version}"] = round(100 * g[m].mean(), 1)
+            rows.append(row)
+    return pd.DataFrame(rows)
+
+
 def figure_estimates(markers):
     """Rates with 95% Wilson intervals for the two Figure S4 markers."""
     rows = []
@@ -208,9 +223,10 @@ def figure_s4(markers):
 def main():
     markers = response_markers()
     table_s14(markers).to_csv(TABLES / "table_s14.csv", index=False)
+    table_s19(markers).to_csv(TABLES / "table_s19.csv", index=False)
     figure_estimates(markers).to_csv(ESTIMATES / "07_explanation_screen.csv", index=False)
     figure_s4(markers)
-    print("wrote table_s14.csv, figure_s4.png and estimates/07_explanation_screen.csv")
+    print("wrote table_s14.csv, table_s19.csv, figure_s4.png and estimates/07_explanation_screen.csv")
 
 
 if __name__ == "__main__":

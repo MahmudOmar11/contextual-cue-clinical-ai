@@ -1,9 +1,9 @@
-"""Figure 3: LLMs shift more than independent physicians on the same case versions.
+"""Figure 3: LLMs shift more than clinical adjudicators on the same case versions.
 
-(A) Cue effect in each case family for the independent physicians (x) and the frontier LLMs (y). Plotted positions
+(A) Cue effect in each case family for the clinical adjudicators (x) and the frontier LLMs (y). Plotted positions
 carry a fixed-seed uniform jitter of up to 1.5 percentage points on each axis so that coinciding families separate.
-(B) LLM cue effect (95% CI) by physician support for the intended diagnosis, for the frontier LLMs and all 22 LLMs,
-against the physicians' cue effect on all families.
+(B) LLM cue effect (95% CI) by the adjudicators' support for the intended diagnosis, for the frontier LLMs and all 22
+LLMs, against the adjudicators' cue effect on all families.
 
 Reads results/tables/table_s16.csv, table_s17.csv and results/estimates/05_physician_validation.csv.
 Writes results/figures/figure_3.png.
@@ -123,7 +123,7 @@ ax_a.set_ylim(LIM_A)
 ax_a.set_aspect("equal", adjustable="box")
 ax_a.set_xticks([-100, -50, 0, 50, 100])
 ax_a.set_yticks([-100, -50, 0, 50, 100])
-ax_a.set_xlabel("Independent physicians:\ncue effect (percentage points)")
+ax_a.set_xlabel("Clinical adjudicators:\ncue effect (percentage points)")
 ax_a.set_ylabel("Frontier LLMs:\ncue effect (percentage points)")
 for s in ("top", "right"):
     ax_a.spines[s].set_visible(False)
@@ -162,7 +162,7 @@ fig.canvas.draw()
 label_bottom = ax_b.xaxis.label.get_window_extent(fig.canvas.get_renderer()).y0 / DPI
 fig.legend([Line2D([], [], color=DARK_RED, lw=1.0, marker="o", ms=4.0),
             Line2D([], [], color=LIGHT_RED, lw=1.0, marker="s", ms=3.4), PhysicianKey()],
-           ["Frontier LLMs (100 families)", "All 22 LLMs (100 families)", "Independent physicians, all families"],
+           ["Frontier LLMs (100 families)", "All 22 LLMs (100 families)", "Clinical adjudicators, all families"],
            handler_map={PhysicianKey: BandLineHandler()}, ncol=2, loc="upper right",
            bbox_to_anchor=(b_right / FIG_W, (label_bottom - 0.06) / FIG_H), frameon=False, borderpad=0,
            borderaxespad=0, handlelength=1.8, handletextpad=0.5, columnspacing=1.2, labelspacing=0.4)

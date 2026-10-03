@@ -1,4 +1,4 @@
 group,n,no_cue_accuracy,no_cue_accuracy_ci_low,no_cue_accuracy_ci_high,cue_accuracy,cue_accuracy_ci_low,cue_accuracy_ci_high,no_cue_selection,no_cue_selection_ci_low,no_cue_selection_ci_high,cue_selection,cue_selection_ci_low,cue_selection_ci_high,extra_llm_cue_effect,extra_llm_cue_effect_ci_low,extra_llm_cue_effect_ci_high
-Independent physicians,8,71.6,61.2,81.2,64.5,52.5,76.1,8.3,3.6,14.5,13.6,5.9,22.8,,,
+Clinical adjudicators,8,71.6,61.2,81.2,64.5,52.5,76.1,8.3,3.6,14.5,13.6,5.9,22.8,,,
 Frontier LLMs,3,65.2,56.3,73.7,44.7,35.9,53.8,22.6,15.5,30.3,50.7,41.6,59.4,22.8,12.4,33.0
 All 22 LLMs,22,62.4,54.2,70.4,37.3,29.4,45.7,23.4,16.6,30.9,57.6,49.2,65.9,28.9,19.0,38.7
