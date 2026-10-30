@@ -1,0 +1,7 @@
+measure,frontier_llms,frontier_llms_ci_low,frontier_llms_ci_high,clinical_adjudicators,clinical_adjudicators_ci_low,clinical_adjudicators_ci_high,extra_llm_cue_effect,extra_llm_cue_effect_ci_low,extra_llm_cue_effect_ci_high,prespecified_extra_llm_cue_effect,prespecified_extra_llm_cue_effect_ci_low,prespecified_extra_llm_cue_effect_ci_high
+"First choice, percentage points",14.7,8.7,21.3,5.3,-0.7,12.5,9.4,0.6,17.8,9.4,2.7,16.2
+"Probability, points",12.7,9.6,16.1,5.9,2.6,10.0,6.8,2.1,11.1,6.8,3.3,10.4
+"First choice, without Gemini 3.1 Pro",12.9,6.9,19.6,5.3,-0.7,12.5,7.6,-1.2,16.0,,,
+"Probability, without Gemini 3.1 Pro",11.4,8.6,14.4,5.9,2.6,10.0,5.4,0.9,9.5,,,
+"Irrelevant detail, first choice",-0.5,-3.0,1.5,,,,,,,,,
+"Irrelevant detail, probability",0.0,-0.5,0.5,,,,,,,,,

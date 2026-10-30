@@ -1,0 +1,17 @@
+estimate,value
+records,92000
+records_with_1_responses,91767
+records_with_2_responses,233
+records_with_1_api_calls,91756
+records_with_2_api_calls,243
+records_with_3_api_calls,1
+records_with_more_than_one_response_analysed_last,233
+readable_answer_passed_over,0
+outputs_over_requested_limit,68
+outputs_over_limit_with_valid_answer,36
+longest_output_characters,131080
+outputs_stopped_at_limit,2442
+outputs_stopped_at_limit_with_valid_answer,1208
+outputs_over_limit_SiliconFlow,60
+outputs_over_limit_Groq,6
+outputs_over_limit_NextBit,2

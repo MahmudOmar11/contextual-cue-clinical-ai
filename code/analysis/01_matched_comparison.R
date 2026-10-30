@@ -109,10 +109,16 @@ matched_groups <- bind_rows(
 ) %>%
   rate_table("group")
 
+# Clinician participants, or unique LLMs with their runs (each model-panel entry was run three times)
+unique_llms <- c(`All baseline LLMs` = n_distinct(baseline_matched$model_id),
+                 `Frontier LLMs` = n_distinct(baseline_matched$model_id[baseline_matched$panel == "frontier"]))
 table_2 <- matched_groups %>%
   filter(group != "Core-20 (baseline)") %>%
   in_order("group", c("Clinician participants", "All baseline LLMs", "Frontier LLMs")) %>%
-  transmute(group, raters = cue_raters, responses = cue_n + no_cue_n, across(all_of(ACC_SEL), pct))
+  transmute(group,
+            participants_or_llms = ifelse(group == "Clinician participants", cue_raters, unique_llms[group]),
+            runs = ifelse(group == "Clinician participants", NA, cue_raters),
+            responses = cue_n + no_cue_n, across(all_of(ACC_SEL), pct))
 write_table(table_2, "table_2")
 
 table_s3 <- matched_groups %>%
@@ -300,7 +306,7 @@ estimates <- bind_rows(
                 "Clinician participants excluding medical students"),
   estimate_rows(one(clin %>% filter(!family %in% repeated_families)),
                 "Clinician participants excluding the repeated case families", endpoints = "selection"),
-  tibble(estimate = c("Clinician participants", "Raters among baseline LLMs on the matched case families",
+  tibble(estimate = c("Clinician participants", "Baseline LLM runs on the matched case families",
                       "Unique LLMs", "Model-panel entries"),
          value = c(length(rater_order$Clinician), length(rater_order$LLM), n_distinct(models$model_id),
                    nrow(distinct(models, panel, model_id))),

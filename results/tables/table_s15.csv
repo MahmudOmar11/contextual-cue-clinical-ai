@@ -1,5 +1,5 @@
 measure,no_cue,no_cue_ci_low,no_cue_ci_high,cue,cue_ci_low,cue_ci_high
-Physicians completing all 100 cases,8,,,8,,
+Adjudicators completing all 100 cases,8,,,8,,
 Assessments,400,,,400,,
 Versions with 2 ratings,6,,,5,,
 Versions with 3 ratings,26,,,28,,

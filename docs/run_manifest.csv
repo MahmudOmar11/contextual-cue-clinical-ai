@@ -1,0 +1,19 @@
+run_id,first_date,last_date,dates,panel,models,prompts,max_tokens,responses,analysed,use
+pilot_three_models,2026-06-03,2026-06-03,2026-06-03,pilot,3,baseline,512,2400,2400,"Pilot used to choose the 21 clinician-form families (Supplementary Section S1.4): three models, all 100 families, the case wording of 3 June 2026"
+check_core_routes,2026-06-07,2026-06-07,2026-06-07,core,20,baseline,512,24,0,Connectivity check of the core panel
+core_baseline,2026-06-07,2026-06-07,2026-06-07,core,20,baseline,512,48004,48000,"Main run, core panel, baseline prompt, runs 1 to 3; 25 families in their earlier wording"
+check_core_routes_base_rate,2026-06-08,2026-06-08,2026-06-08,core,20,base_rate,512,20,0,"Connectivity check of the core panel, base-rate prompt"
+check_core_routes_rare_or_serious,2026-06-08,2026-06-08,2026-06-08,core,20,rare_or_serious,512,20,0,"Connectivity check of the core panel, rare-or-serious prompt"
+core_base_rate,2026-06-08,2026-06-08,2026-06-08,core,20,base_rate,512,16000,16000,"Main run, core panel, base-rate prompt"
+core_rare_or_serious,2026-06-08,2026-06-08,2026-06-08,core,20,rare_or_serious,512,16002,16000,"Main run, core panel, rare-or-serious prompt"
+explanation,2026-06-18,2026-06-18,2026-06-18,explanation,5,base_rate; baseline; rare_or_serious,1024,3070,3000,"Explanation run (Supplementary Section S1.7): five models, all 100 families, answer order 1"
+explanation_pilot,2026-06-18,2026-06-18,2026-06-18,explanation,5,base_rate; baseline; rare_or_serious,1024,647,0,Explanation run on the 21 clinician-form families; not analysed
+check_frontier_output_limit,2026-06-21,2026-06-21,2026-06-21,frontier,1,baseline,1024,12,0,"Check of Gemini 3.1 Pro answers under the 1,024-token limit"
+check_frontier_routes,2026-06-21,2026-06-21,2026-06-21,frontier,3,baseline,1024,3,0,Connectivity check of the frontier panel
+frontier_base_rate,2026-06-21,2026-06-21,2026-06-21,frontier,3,base_rate,1024,2400,2398,"Main run, frontier panel, base-rate prompt"
+frontier_baseline,2026-06-21,2026-06-21,2026-06-21,frontier,3,baseline,1024,7421,7196,"Main run, frontier panel, baseline prompt, runs 1 to 3; restarted after its first minutes with the same settings"
+frontier_rare_or_serious,2026-06-21,2026-06-21,2026-06-21,frontier,3,rare_or_serious,1024,2400,2400,"Main run, frontier panel, rare-or-serious prompt"
+frontier_reasks,2026-06-21,2026-06-21,2026-06-21,frontier,1,base_rate; baseline,1024,6,6,Re-asks of frontier-panel outputs without a readable answer
+control_adjudicator_instruction,2026-10-02,2026-10-28,2026-10-02; 2026-10-28,control,3,adjudicator_instruction,4096,3600,3600,"Irrelevant-control experiment, second arm: the clinical adjudicators' instruction"
+control_baseline_prompt,2026-10-02,2026-10-02,2026-10-02,control,3,baseline,4096,3600,3600,"Irrelevant-control experiment, first arm: baseline prompt"
+control_repeat_families_1_2,2026-10-28,2026-10-28,2026-10-28,control,3,adjudicator_instruction,4096,72,0,"Repeat of families 1 and 2 in the second arm, compared with the answers of 2 October 2026"

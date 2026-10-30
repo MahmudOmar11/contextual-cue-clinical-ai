@@ -1,0 +1,20 @@
+analysis,valid_answers_only,valid_answers_only_ci_low,valid_answers_only_ci_high,all_attempts,all_attempts_ci_low,all_attempts_ci_high
+"LLM cue effect, 21 families, all runs",84.6,74.2,93.1,84.1,73.5,92.7
+"LLM cue effect, 21 families, one run per unique LLM",85.2,74.9,93.6,84.8,74.1,93.5
+"LLM cue effect, 21 families, one run, baseline prompt",84.7,74.2,93.3,84.5,73.9,93.1
+"LLM cue effect, 21 families, one run, base-rate prompt",30.2,16.8,45.3,29.2,16.1,44.0
+"LLM cue effect, 21 families, one run, rare-or-serious prompt",63.0,50.7,75.2,62.6,50.5,74.4
+"Change from baseline, base-rate prompt, 21 families",-54.5,-67.4,-41.1,-55.2,-67.9,-42.2
+"Change from baseline, rare-or-serious prompt, 21 families",-21.7,-35.6,-8.4,-21.9,-35.4,-9.0
+"Change from baseline, base-rate prompt, 100 families",-16.7,-23.3,-10.1,-17.0,-23.6,-10.4
+"Change from baseline, rare-or-serious prompt, 100 families",-6.7,-14.1,0.3,-6.9,-14.1,-0.2
+"All 22 LLMs, cue effect, 100 families",34.3,26.2,42.6,34.1,26.1,42.4
+"Extra LLM cue effect over the clinical adjudicators, all 22 LLMs",29.0,19.0,38.8,28.8,18.9,38.6
+"Same, against the six physician adjudicators",33.2,23.8,42.4,33.0,23.7,42.2
+"Same, all 22 LLMs under the base-rate prompt",12.6,3.9,20.9,12.2,3.5,20.4
+"Same, all 22 LLMs, travel or residence cues",58.8,32.9,79.5,58.6,33.0,79.3
+"Same, all 22 LLMs, occupation or exposure cues",37.4,21.8,52.5,37.0,21.5,52.1
+"Same, all 22 LLMs, family history cues",1.4,-16.4,18.4,1.5,-16.2,18.5
+"Same, all 22 LLMs, lifestyle cues",27.3,6.9,51.4,26.9,6.5,51.0
+"Same, all 22 LLMs, other cues",23.0,1.2,47.1,23.0,1.5,46.8
+"Extra LLM cue effect over clinician participants, 21 families (main text: all attempts)",58.4,46.3,70.3,57.9,45.8,69.6

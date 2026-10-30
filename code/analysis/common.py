@@ -65,3 +65,14 @@ def wilson(k, n, z=1.959963984540054):
     c = p + z * z / (2 * n)
     h = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
     return p, (c - h) / d, (c + h) / d
+
+
+def bold_font(families):
+    """The first of these font families with a bold face that matplotlib can load, for panel letters. Some
+    matplotlib versions read only the regular face of a font collection, such as Helvetica on macOS."""
+    from matplotlib import font_manager
+    for name in families:
+        if any(f.name == name and font_manager.weight_dict.get(f.weight, f.weight) >= 700
+               for f in font_manager.fontManager.ttflist):
+            return name
+    return "DejaVu Sans"

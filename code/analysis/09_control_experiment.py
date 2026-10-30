@@ -7,7 +7,8 @@ answered all 1,200 items once with the baseline prompt (data/control_responses.c
 Responses are averaged over the four answer orders within each model, family and version; families are weighted
 equally within each model and the models equally. Intervals come from 10,000 bootstrap resamples of case families
 (multinomial weights) with the three models held fixed, percentile 2.5 and 97.5, paired across contrasts. Each scope
-(all families, one model, a subset of families) draws its weights afresh from the same seed.
+(all families, one model, a subset of families) draws its weights afresh from the same seed;
+10_case_audit_sensitivity.py uses the same function for its subsets of families.
 
 Writes results/tables/table_s20.csv, table_s21.csv and results/estimates/09_control_experiment.csv.
 """
@@ -36,7 +37,8 @@ resp["intended"] = 100.0 * (resp.selected_role == "intended")
 CELLS = resp.groupby(["model_id", "family", "version"], as_index=False)[["cue_associated", "intended"]].mean()
 assert len(CELLS) == 900
 
-# Adjudicators' cue effect per family (share selecting the cue-associated diagnosis first), for the plan's comparison
+# Adjudicators' cue effect per family (share selecting the cue-associated diagnosis first), for the prespecified
+# comparison
 R = physician_ratings()
 share = (R.assign(first=100.0 * (R.top_choice == "cue_associated")).groupby(["family", "version"])["first"].mean().unstack())
 ADJ_SHIFT = share["cue"] - share["no_cue"]
@@ -88,58 +90,68 @@ def r1(x):
     return round(round(x, 9), 1)  # floating-point noise removed first, so exact ties such as 0.75 round consistently
 
 
-ctype = cases().set_index("family").cue_type
-adj = {"model_cue_effect_minus_adjudicators_cue_effect":
-       lambda w: (w[("cue_associated", "cue")] - w[("cue_associated", "no_cue")]) - w.index.get_level_values("family").map(ADJ_SHIFT).to_numpy()}
-SCOPES = [("Selection of the cue-associated diagnosis", "Frontier LLMs", CELLS, adj)]
-SCOPES += [("Selection of the cue-associated diagnosis", MODEL_NAME[m], CELLS[CELLS.model_id == m], None) for m in FRONTIER]
-SCOPES += [("Selection of the cue-associated diagnosis", "Without Gemini 3.1 Pro",
-            CELLS[CELLS.model_id != "google/gemini-3.1-pro-preview"], None),
-           ("Selection of the cue-associated diagnosis", "21 clinician-form families",
-            CELLS[CELLS.family.isin(form_families())], None)]
-SCOPES += [("By cue type (exploratory)", t.capitalize(), CELLS[CELLS.family.map(ctype) == t], None) for t in CUE_TYPES]
+def main():
+    ctype = cases().set_index("family").cue_type
+    adj = {"model_cue_effect_minus_adjudicators_cue_effect":
+           lambda w: (w[("cue_associated", "cue")] - w[("cue_associated", "no_cue")])
+           - w.index.get_level_values("family").map(ADJ_SHIFT).to_numpy()}
+    SCOPES = [("Selection of the cue-associated diagnosis", "Frontier LLMs", CELLS, adj)]
+    SCOPES += [("Selection of the cue-associated diagnosis", MODEL_NAME[m], CELLS[CELLS.model_id == m], None)
+               for m in FRONTIER]
+    SCOPES += [("Selection of the cue-associated diagnosis", "Without Gemini 3.1 Pro",
+                CELLS[CELLS.model_id != "google/gemini-3.1-pro-preview"], None),
+               ("Selection of the cue-associated diagnosis", "21 clinician-form families",
+                CELLS[CELLS.family.isin(form_families())], None)]
+    SCOPES += [("By cue type (exploratory)", t.capitalize(), CELLS[CELLS.family.map(ctype) == t], None)
+               for t in CUE_TYPES]
 
-est, rows20, results = [], [], {}
-for group, label, cells, extra in SCOPES:
-    results[label] = scope(cells, extra)
-for group, label, _, _ in SCOPES + [("Accuracy (selection of the intended diagnosis)", "Frontier LLMs", None, None)]:
-    outcome = "intended" if group.startswith("Accuracy") else "cue_associated"
-    res = results[label]
-    row = dict(group=group, scope=label, families=res[outcome, "cue_minus_no_cue"][3])
-    for v in VERSIONS:
-        row[f"{v}_pct"] = r1(res[outcome, f"level_{v}"][0])
-    for name in CONTRASTS:
-        point, lo, hi, _ = res[outcome, name]
-        row.update({f"{name}_pp": r1(point), f"{name}_ci_low": r1(lo), f"{name}_ci_high": r1(hi)})
-    rows20.append(row)
-    key = "accuracy" if outcome == "intended" else "selection"
-    for name in list(CONTRASTS) + [f"level_{v}" for v in VERSIONS]:
-        point, lo, hi, n = res[outcome, name]
-        est.append(dict(estimate=f"{label.lower().replace(' ', '_')}_{key}_{name}", value=r1(point),
-                        ci_low=r1(lo), ci_high=r1(hi), n=n))
-pd.DataFrame(rows20).to_csv(TABLES / "table_s20.csv", index=False)
-point, lo, hi, n = results["Frontier LLMs"]["cue_associated", "model_cue_effect_minus_adjudicators_cue_effect"]
-est.append(dict(estimate="cue_effect_minus_adjudicators_cue_effect_adjudicators_held_fixed_pp", value=r1(point),
-                ci_low=r1(lo), ci_high=r1(hi), n=n))
+    est, rows20, results = [], [], {}
+    for group, label, cells, extra in SCOPES:
+        results[label] = scope(cells, extra)
+    accuracy = [("Accuracy (selection of the intended diagnosis)", "Frontier LLMs", None, None)]
+    for group, label, _, _ in SCOPES + accuracy:
+        outcome = "intended" if group.startswith("Accuracy") else "cue_associated"
+        res = results[label]
+        row = dict(group=group, scope=label, families=res[outcome, "cue_minus_no_cue"][3])
+        for v in VERSIONS:
+            row[f"{v}_pct"] = r1(res[outcome, f"level_{v}"][0])
+        for name in CONTRASTS:
+            point, lo, hi, _ = res[outcome, name]
+            row.update({f"{name}_pp": r1(point), f"{name}_ci_low": r1(lo), f"{name}_ci_high": r1(hi)})
+        rows20.append(row)
+        key = "accuracy" if outcome == "intended" else "selection"
+        for name in list(CONTRASTS) + [f"level_{v}" for v in VERSIONS]:
+            point, lo, hi, n = res[outcome, name]
+            est.append(dict(estimate=f"{label.lower().replace(' ', '_')}_{key}_{name}", value=r1(point),
+                            ci_low=r1(lo), ci_high=r1(hi), n=n))
+    pd.DataFrame(rows20).to_csv(TABLES / "table_s20.csv", index=False)
+    point, lo, hi, n = results["Frontier LLMs"]["cue_associated", "model_cue_effect_minus_adjudicators_cue_effect"]
+    est.append(dict(estimate="cue_effect_minus_adjudicators_cue_effect_adjudicators_held_fixed_pp", value=r1(point),
+                    ci_low=r1(lo), ci_high=r1(hi), n=n))
 
-# ---------------------------------------------------------------- Table S21: each family
-text = items[items.answer_order == 1].pivot(index="family", columns="version", values="vignette")
-fam = CELLS.pivot_table(index="family", columns="version", values="cue_associated", aggfunc="mean")
-s21 = pd.DataFrame({"family": fam.index, "cue_type": [ctype[f].capitalize() for f in fam.index],
-                    "cue_detail": [detail(text.loc[f, "no_cue"], text.loc[f, "cue"]) for f in fam.index],
-                    "control_detail": [detail(text.loc[f, "no_cue"], text.loc[f, "control"]) for f in fam.index],
-                    "no_cue_pct": fam.no_cue.round(1).to_numpy(), "cue_pct": fam.cue.round(1).to_numpy(),
-                    "control_pct": fam.control.round(1).to_numpy()})
-s21.to_csv(TABLES / "table_s21.csv", index=False)
+    # ------------------------------------------------------------ Table S21: each family
+    text = items[items.answer_order == 1].pivot(index="family", columns="version", values="vignette")
+    fam = CELLS.pivot_table(index="family", columns="version", values="cue_associated", aggfunc="mean")
+    s21 = pd.DataFrame({"family": fam.index, "cue_type": [ctype[f].capitalize() for f in fam.index],
+                        "cue_detail": [detail(text.loc[f, "no_cue"], text.loc[f, "cue"]) for f in fam.index],
+                        "control_detail": [detail(text.loc[f, "no_cue"], text.loc[f, "control"]) for f in fam.index],
+                        "no_cue_pct": fam.no_cue.round(1).to_numpy(), "cue_pct": fam.cue.round(1).to_numpy(),
+                        "control_pct": fam.control.round(1).to_numpy()})
+    s21.to_csv(TABLES / "table_s21.csv", index=False)
 
-effect = fam.control - fam.no_cue
-for name, value in [("families_control_no_net_effect", int((effect == 0).sum())),
-                    ("families_control_effect_within_10pp", int((effect.abs() <= 10).sum())),
-                    ("families_control_effect_toward_at_least_25pp", int((effect >= 25).sum())),
-                    ("families_control_effect_away_at_least_25pp", int((effect <= -25).sum())),
-                    ("responses_with_valid_answer", int((resp.selected_role != "no_valid_answer").sum()))]:
-    est.append(dict(estimate=name, value=value, ci_low=np.nan, ci_high=np.nan, n=len(resp) if "responses" in name else 100))
-out = pd.DataFrame(est, dtype=object)
-out.to_csv(ESTIMATES / "09_control_experiment.csv", index=False)
-print(pd.DataFrame(rows20).to_string(index=False))
-print("wrote table_s20.csv, table_s21.csv and estimates/09_control_experiment.csv")
+    effect = fam.control - fam.no_cue
+    for name, value in [("families_control_no_net_effect", int((effect == 0).sum())),
+                        ("families_control_effect_within_10pp", int((effect.abs() <= 10).sum())),
+                        ("families_control_effect_toward_at_least_25pp", int((effect >= 25).sum())),
+                        ("families_control_effect_away_at_least_25pp", int((effect <= -25).sum())),
+                        ("responses_with_valid_answer", int((resp.selected_role != "no_valid_answer").sum()))]:
+        est.append(dict(estimate=name, value=value, ci_low=np.nan, ci_high=np.nan,
+                        n=len(resp) if "responses" in name else 100))
+    out = pd.DataFrame(est, dtype=object)
+    out.to_csv(ESTIMATES / "09_control_experiment.csv", index=False)
+    print(pd.DataFrame(rows20).to_string(index=False))
+    print("wrote table_s20.csv, table_s21.csv and estimates/09_control_experiment.csv")
+
+
+if __name__ == "__main__":
+    main()

@@ -16,4 +16,10 @@ python3 code/analysis/06_figure_3.py
 python3 code/analysis/07_explanation_screen.py
 python3 code/analysis/08_model_table.py
 python3 code/analysis/09_control_experiment.py
+python3 code/analysis/10_case_audit_sensitivity.py
+Rscript code/analysis/11_identical_text_matched.R
+python3 code/analysis/11_identical_text.py
+python3 code/analysis/12_all_attempts.py
+python3 code/analysis/13_adjudicator_instruction_arm.py
+python3 code/records/trace_records.py
 echo "Done: results/tables, results/figures, results/estimates"

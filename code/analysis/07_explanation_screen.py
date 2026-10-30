@@ -1,9 +1,9 @@
 """Explanation-text screen of the explanation run (Table S14, Figure S4).
 
 Five models answered every case in both versions under the three prompts and
-added a one-sentence explanation and a 0-100 confidence. Each output is parsed
-and its explanation is screened with fixed keyword and regular-expression
-patterns for six markers:
+added a one-sentence explanation and a 0-100 confidence. Each output is read with
+the answer reader (code/collect/read_answer.py), and its explanation is screened
+with fixed keyword and regular-expression patterns for six markers:
 
 - cue mentioned: the explanation uses a word that appears in the cue version of
   the vignette but not in the no-cue version
@@ -27,10 +27,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.patches import Patch
 
-from common import DATA, ESTIMATES, FIGURES, PROMPT_LABEL, PROMPTS, ROOT, TABLES, VERSIONS, explanation_responses, wilson
+from common import DATA, ESTIMATES, FIGURES, PROMPT_LABEL, PROMPTS, ROOT, TABLES, VERSIONS, bold_font, \
+    explanation_responses, wilson
 
 sys.path.insert(0, str(ROOT / "code" / "collect"))
-from parse_output import parse_response, selected_role  # noqa: E402
+from read_answer import explanation_fields, read_answer, selected_role  # noqa: E402
 
 HIGH_CONFIDENCE = 80
 
@@ -100,19 +101,22 @@ def mentions_cue(explanation, words):
 
 
 def response_markers():
-    """One row per explanation-run output with the parsed answer and the six markers."""
+    """One row per explanation-run output with the answer read and the six markers."""
     d = explanation_responses()
     items = pd.read_csv(DATA / "items.csv", keep_default_na=False)
     keys = ["family", "version", "answer_order"]
-    d = d.merge(items[keys + ["vignette", "intended_option", "cue_associated_option"]], on=keys, how="left")
+    options = [f"option_{x}" for x in "ABCD"]
+    columns = keys + ["vignette"] + options + ["intended_option", "cue_associated_option"]
+    d = d.merge(items[columns], on=keys, how="left")
     words = cue_words(d.drop_duplicates(["family", "version"])[["family", "version", "vignette"]])
 
     rows = []
     for r in d.itertuples(index=False):
-        parsed = parse_response(r.raw_output)
-        explanation = " ".join(str(parsed.get("short_explanation", "")).strip().split())
-        confidence = parsed.get("confidence")
-        role = selected_role(parsed["selected_option"], r.intended_option, r.cue_associated_option)
+        option, _, _ = read_answer(r.raw_output, {x: getattr(r, f"option_{x}") for x in "ABCD"})
+        fields = explanation_fields(r.raw_output)
+        explanation = " ".join(str(fields["short_explanation"]).strip().split())
+        confidence = fields["confidence"]
+        role = selected_role(option, r.intended_option, r.cue_associated_option)
         cue_seen = mentions_cue(explanation, words[r.family])
         wrong = role in ("cue_associated", "other")
         rows.append({
@@ -121,7 +125,7 @@ def response_markers():
             "family": r.family,
             "version": r.version,
             "answer_order": r.answer_order,
-            "selected_option": parsed["selected_option"],
+            "selected_option": option,
             "selected_role": role,
             "confidence": confidence,
             "explanation": explanation,
@@ -212,7 +216,8 @@ def figure_s4(markers):
         ax.set_xlim(-0.6, len(PROMPTS) - 0.4)
         ax.yaxis.grid(True, color="#e6e6e6", zorder=0)
         ax.set_axisbelow(True)
-        ax.text(-0.10, 1.04, letter, transform=ax.transAxes, fontsize=14, fontweight="bold", va="bottom")
+        ax.text(-0.10, 1.04, letter, transform=ax.transAxes, fontsize=14, fontweight="bold",
+                fontfamily=bold_font(plt.rcParams["font.sans-serif"]), va="bottom")
     handles = [Patch(facecolor=LIGHT, label="No cue"), Patch(facecolor=DARK, label="Cue")]
     fig.legend(handles=handles, loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.02), fontsize=9.5)
     fig.tight_layout(rect=[0, 0, 1, 0.95])

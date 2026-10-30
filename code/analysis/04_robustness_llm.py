@@ -2,7 +2,8 @@
 
 Each unique LLM counts once. Within an LLM, rates use valid answers only: they are pooled over runs and answer
 orders within a panel entry, then averaged over panel entries (Gemini 3.1 Pro appears in both panels).
-Intervals resample case families and unique LLMs together (10,000 multinomial draws).
+Intervals resample case families and unique LLMs together (10,000 multinomial draws). 12_all_attempts.py repeats the
+cue effects with all responses in the denominator.
 
 Writes results/estimates/04_robustness_llm.csv.
 """
@@ -18,12 +19,14 @@ SEED = 20260927
 OUTCOMES = ["intended", "cue_associated"]
 
 
-def llm_cells(d):
-    """Valid-answer rates per unique LLM, prompt, family and version."""
-    g = d.groupby(["model_id", "panel", "prompt", "family", "version"], as_index=False)[
-        ["valid", "intended", "cue_associated"]].sum()
+def llm_cells(d, all_attempts=False):
+    """Rates per unique LLM, prompt, family and version, among valid answers or, with all_attempts, among all
+    responses (a response without a valid answer then counts as neither diagnosis)."""
+    g = d.assign(responses=1).groupby(["model_id", "panel", "prompt", "family", "version"], as_index=False)[
+        ["responses", "valid", "intended", "cue_associated"]].sum()
+    denominator = g.responses if all_attempts else g.valid.replace(0, np.nan)
     for o in OUTCOMES:
-        g[o] = g[o] / g.valid.replace(0, np.nan)
+        g[o] = g[o] / denominator
     return g.groupby(["model_id", "prompt", "family", "version"], as_index=False)[OUTCOMES].mean()
 
 
@@ -69,53 +72,49 @@ def change_from_baseline(prompt):
     return cue_effect(prompt) + [("baseline", "cue", -1), ("baseline", "no_cue", 1)]
 
 
-d = model_responses()
-first_run = d[d.run == 1]
-core_llms = set(first_run.loc[first_run.panel == "core", "model_id"])
-variants = {
-    "all_runs": d,
-    "one_run": first_run,
-    "one_run_per_unique_llm": first_run[(first_run.panel == "core") | ~first_run.model_id.isin(core_llms)],
-}
 F21 = form_families()
 F100 = list(range(1, 101))
 
-rows = []
 
-
-def add(name, result, n):
+def rounded(name, result, n):
     value, lo, hi = result
-    rows.append(dict(estimate=name, value=round(value, 1), ci_low=round(lo, 1), ci_high=round(hi, 1), n=n))
+    return dict(estimate=name, value=round(value, 1), ci_low=round(lo, 1), ci_high=round(hi, 1), n=n)
 
 
-arrays = {}
-for variant, data in variants.items():
-    cells = llm_cells(data)
-    arrays[variant] = {nf: cell_array(cells, fams) for nf, fams in [(21, F21), (100, F100)]}
-n_llms = arrays["all_runs"][21].shape[0]
-assert n_llms == 22
-W = {nf: resampling_weights(n_llms, nf) for nf in (21, 100)}
+def cue_effect_estimates(d, all_attempts=False):
+    """LLM cue effects on the 21 families (all runs, one run per unique LLM, one run per prompt) and the changes in the
+    cue effect under each prompt on 21 and 100 families."""
+    first_run = d[d.run == 1]
+    core_llms = set(first_run.loc[first_run.panel == "core", "model_id"])
+    variants = {
+        "all_runs": d,
+        "one_run": first_run,
+        "one_run_per_unique_llm": first_run[(first_run.panel == "core") | ~first_run.model_id.isin(core_llms)],
+    }
+    arrays = {}
+    for variant, data in variants.items():
+        cells = llm_cells(data, all_attempts)
+        arrays[variant] = {nf: cell_array(cells, fams) for nf, fams in [(21, F21), (100, F100)]}
+    n_llms = arrays["all_runs"][21].shape[0]
+    assert n_llms == 22
+    W = {nf: resampling_weights(n_llms, nf) for nf in (21, 100)}
 
-# LLM cue effect on the 21 clinician-form families: all runs, and one run per unique LLM
-add("llm_cue_effect_21_families_all_runs_pp", contrast(arrays["all_runs"][21], W[21], cue_effect("baseline")), 21)
-add("llm_cue_effect_21_families_one_run_per_unique_llm_pp",
-    contrast(arrays["one_run_per_unique_llm"][21], W[21], cue_effect("baseline")), 21)
+    # LLM cue effect on the 21 clinician-form families: all runs, and one run per unique LLM
+    rows = [rounded("llm_cue_effect_21_families_all_runs_pp",
+                    contrast(arrays["all_runs"][21], W[21], cue_effect("baseline")), 21),
+            rounded("llm_cue_effect_21_families_one_run_per_unique_llm_pp",
+                    contrast(arrays["one_run_per_unique_llm"][21], W[21], cue_effect("baseline")), 21)]
 
-# Prompt arms with one run in every arm: cue effects on the 21 families, and changes from baseline
-for prompt in PROMPTS:
-    add(f"llm_cue_effect_21_families_one_run_{prompt}_pp", contrast(arrays["one_run"][21], W[21], cue_effect(prompt)), 21)
-for nf in (21, 100):
-    a = arrays["one_run"][nf]
-    for prompt in PROMPTS[1:]:
-        add(f"change_in_llm_cue_effect_{nf}_families_{prompt}_vs_baseline_pp",
-            contrast(a, W[nf], change_from_baseline(prompt)), nf)
-
-# Agreement of the selected diagnosis between repeated runs (baseline) and between answer orders (each prompt),
-# over pairs of responses that both contain a valid answer
-items = pd.read_csv(DATA / "items.csv", keep_default_na=False)
-text = {(r.family, r.version, r.answer_order, x): " ".join(str(getattr(r, f"option_{x}")).lower().split())
-        for r in items.itertuples() for x in "ABCD"}
-d["diagnosis"] = [text.get((f, v, o, x), "") for f, v, o, x in zip(d.family, d.version, d.answer_order, d.selected_option)]
+    # Prompt arms with one run in every arm: cue effects on the 21 families, and changes from baseline
+    for prompt in PROMPTS:
+        rows.append(rounded(f"llm_cue_effect_21_families_one_run_{prompt}_pp",
+                            contrast(arrays["one_run"][21], W[21], cue_effect(prompt)), 21))
+    for nf in (21, 100):
+        a = arrays["one_run"][nf]
+        for prompt in PROMPTS[1:]:
+            rows.append(rounded(f"change_in_llm_cue_effect_{nf}_families_{prompt}_vs_baseline_pp",
+                                contrast(a, W[nf], change_from_baseline(prompt)), nf))
+    return rows
 
 
 def agreement(data, fixed):
@@ -128,15 +127,31 @@ def agreement(data, fixed):
     return 100 * same / n, n
 
 
-keys = ["panel", "model_id", "prompt", "family", "version"]
-value, n = agreement(d[d.prompt == "baseline"], keys + ["answer_order"])
-rows.append(dict(estimate="agreement_between_repeated_runs_baseline_pct", value=round(value, 1), ci_low=np.nan,
-                 ci_high=np.nan, n=n))
-for prompt in PROMPTS:
-    value, n = agreement(d[d.prompt == prompt], keys + ["run"])
-    rows.append(dict(estimate=f"agreement_between_answer_orders_{prompt}_pct", value=round(value, 1), ci_low=np.nan,
-                     ci_high=np.nan, n=n))
+def agreement_estimates(d):
+    """Agreement of the selected diagnosis between repeated runs (baseline) and between answer orders (each prompt),
+    over pairs of responses that both contain a valid answer."""
+    items = pd.read_csv(DATA / "items.csv", keep_default_na=False)
+    text = {(r.family, r.version, r.answer_order, x): " ".join(str(getattr(r, f"option_{x}")).lower().split())
+            for r in items.itertuples() for x in "ABCD"}
+    d = d.assign(diagnosis=[text.get((f, v, o, x), "") for f, v, o, x in
+                            zip(d.family, d.version, d.answer_order, d.selected_option)])
+    keys = ["panel", "model_id", "prompt", "family", "version"]
+    value, n = agreement(d[d.prompt == "baseline"], keys + ["answer_order"])
+    rows = [dict(estimate="agreement_between_repeated_runs_baseline_pct", value=round(value, 1), ci_low=np.nan,
+                 ci_high=np.nan, n=n)]
+    for prompt in PROMPTS:
+        value, n = agreement(d[d.prompt == prompt], keys + ["run"])
+        rows.append(dict(estimate=f"agreement_between_answer_orders_{prompt}_pct", value=round(value, 1),
+                         ci_low=np.nan, ci_high=np.nan, n=n))
+    return rows
 
-out = pd.DataFrame(rows)
-out.to_csv(ESTIMATES / "04_robustness_llm.csv", index=False)
-print(out.to_string(index=False))
+
+def main():
+    d = model_responses()
+    out = pd.DataFrame(cue_effect_estimates(d) + agreement_estimates(d))
+    out.to_csv(ESTIMATES / "04_robustness_llm.csv", index=False)
+    print(out.to_string(index=False))
+
+
+if __name__ == "__main__":
+    main()

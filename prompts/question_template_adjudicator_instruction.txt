@@ -1,0 +1,14 @@
+Clinical vignette:
+{vignette}
+
+Four diagnoses:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+
+1. How would you distribute diagnostic probability across these four diagnoses? Use whole numbers from 0 to 100 for A, B, C and D that total exactly 100.
+2. If required to select one diagnosis, which is the single most probable? Name it by its letter. It must be the diagnosis with the highest probability, or tied for highest.
+
+Return exactly this JSON shape and nothing else:
+{"probabilities": {"A": <integer>, "B": <integer>, "C": <integer>, "D": <integer>}, "most_likely": "<A, B, C or D>"}

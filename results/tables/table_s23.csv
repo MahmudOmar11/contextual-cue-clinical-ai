@@ -1,0 +1,8 @@
+comparison,case_text,families,extra_llm_cue_effect,ci_low,ci_high
+"Clinician participants vs all 22 LLMs, main result",Earlier wording for the Core-20 baseline runs in 20 of the 21 families,21,57.9,45.8,69.6
+Clinician participants vs frontier LLMs,Identical,21,33.0,14.8,50.7
+"Clinician participants vs all 22 LLMs, accuracy, main result",Earlier wording for the Core-20 baseline runs in 20 of the 21 families,21,-46.9,-59.8,-34.4
+"Clinician participants vs frontier LLMs, accuracy",Identical,21,-28.1,-45.4,-9.8
+"Clinical adjudicators vs all 22 LLMs, main result",Earlier wording for the Core-20 baseline runs in 25 of the 100 families,100,29.0,19.0,38.8
+Clinical adjudicators vs all 22 LLMs,"Identical, the 75 unedited families",75,14.3,4.2,24.2
+Clinical adjudicators vs frontier LLMs,Identical,100,22.8,12.4,33.0

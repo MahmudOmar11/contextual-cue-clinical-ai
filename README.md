@@ -8,7 +8,8 @@ occupational, family-history or similar detail that points to a less likely diag
 diagnosis). It compared how often 22 large language models (LLMs) and 47 clinician participants selected that
 diagnosis, and eight clinical adjudicators (six physicians and two medical students) rated the cases, each rating one
 version of every family. In an added experiment, the three frontier models also answered every case with a matched,
-clinically irrelevant detail in place of the cue. This repository holds the data and the code that reproduce every
+clinically irrelevant detail in place of the cue, under the baseline prompt and under the clinical adjudicators'
+instruction. This repository holds the data and the code that reproduce every
 table, figure and reported estimate.
 
 ## Repository layout
@@ -17,11 +18,13 @@ table, figure and reported estimate.
 data/            the released data (described below)
 prompts/         the system prompts, the question template and the requested answer formats, verbatim
 config/          the models queried and the request settings
-code/analysis/   the analysis, in run order (01 to 08)
-code/collect/    the script that queries the models, for anyone who wants to re-run them
+code/analysis/   the analysis, in run order
+code/collect/    the answer reader and the script that queries the models, with their tests
+code/records/    rebuilds the response files from the collection records and traces every analysed response
 code/run_all.sh  runs the full analysis
 results/         the output of code/run_all.sh: tables, figures and estimates
-docs/            the control records of the irrelevant-control experiment
+docs/            the list of runs, and the plans and records of the irrelevant-control experiment
+CHANGELOG.md     the changes between releases
 ```
 
 ## Data
@@ -32,14 +35,18 @@ All clinical cases are synthetic, and no patient data were used.
 |---|---|---|
 | `cases.csv` | 100 | One row per case family: intended diagnosis, cue-associated diagnosis, the two other options, cue type, and whether the family was on the clinician form (21 families; families 1, 2 and 5 appeared there in both versions). |
 | `items.csv` | 800 | The case set as questions: every case version in each of the four answer orders, with the vignette, options A to D in the order shown, and which letters hold the intended and the cue-associated diagnosis. |
-| `model_responses.csv.gz` | 92,000 | Every model answer from the main runs: panel, model, the model version returned, prompt, run, family, version, answer order, the option selected, its role, and the model's raw output. |
+| `model_responses.csv.gz` | 92,000 | Every model answer from the main runs: panel, model, the model version returned, prompt, run, family, version, answer order, the case wording received, the option selected, its role, and the model's raw output. |
+| `items_earlier_wording.csv` | 200 | The earlier wording of the 25 case families edited on 7 June 2026, which the core-panel baseline runs received, with the same columns as `items.csv`. |
 | `explanation_responses.csv.gz` | 3,000 | The exploratory run in which five models also gave a short explanation and a confidence. |
 | `clinician_responses.csv` | 1,128 | Every clinician answer: participant code, form (1 to 8), position on the form (1 to 24), family, version, answer order, the diagnosis chosen, confidence (1 to 5), and the rationale category recorded when the cue-associated diagnosis was chosen. |
 | `clinician_participants.csv` | 47 | Participant code and training level. |
 | `clinician_aggregates.csv` | 65 | Aggregate values for characteristics withheld at the individual level (see Privacy). |
 | `physician_ratings.csv` | 800 | Every clinical adjudicator rating: adjudicator code in the column `physician` (A and B were medical students, C to H physicians), family, version, the probability given to each of the four diagnoses, the diagnosis chosen as most probable, whether the leading diagnoses were judged about equally likely or could not be separated, and whether a problem with the case was flagged. |
 | `control_items.csv` | 1,200 | The irrelevant-control experiment as questions: every family in three versions (`no_cue`, `cue`, `control`) and four answer orders, with the same columns as `items.csv`. |
-| `control_responses.csv.gz` | 3,600 | Every answer of the three frontier models in the irrelevant-control experiment: model, the model version returned, item, family, version, answer order, the option selected, its role, and the model's raw output. |
+| `control_responses.csv.gz` | 3,600 | Every answer of the three frontier models in the first arm of the irrelevant-control experiment (baseline prompt): model, the model version returned, item, family, version, answer order, the option selected, its role, and the model's raw output. |
+| `control_responses_adjudicator_instruction.csv.gz` | 3,600 | Every answer in the second arm (the clinical adjudicators' instruction): the same columns, with the probabilities given to options A to D (`p_A` to `p_D`), the option named most likely, and the probabilities of the intended and cue-associated diagnoses. |
+| `pilot_responses.csv.gz` | 2,400 | The pilot of 3 June 2026 used to choose the clinician-form families: three models, every case version in four answer orders, with the case text and options as shown that day, the option selected, its role, and the raw output. |
+| `collection_records.csv.gz` | 105,701 | Every response received in every run (see Collection records). |
 
 Column values:
 - `version` is `no_cue` or `cue`, or, in the control files, also `control`. `answer_order` (1 to 4) is one of the four fixed orders of the options.
@@ -49,8 +56,10 @@ Column values:
 - `top_choice` is `intended`, `cue_associated`, `other_1` or `other_2`; the last two are `other_diagnosis_1` and `other_diagnosis_2` in `cases.csv`.
 - `rationale` is `specific_case_detail`, `most_probable`, `rule_out` or `uncertain`, and is empty unless the cue-associated diagnosis was chosen.
 - `training_level` is `attending_or_consultant`, `resident_or_fellow`, `medical_student` or `other_physician_role`.
-- `raw_output` is the model's text exactly as returned. Most outputs are the requested JSON; some are truncated at the token limit, empty, or prose that contains the answer. `selected_option` is the answer as read when the runs were collected.
-- A model panel entry is the pair of `panel` and `model_id`. Gemini 3.1 Pro was queried in both panels, giving 23 entries for 22 models. Responses without a valid answer stay in the denominators as neither diagnosis, as in the paper.
+- `wording` is `final`, the text in `items.csv`, or `earlier`, the text in `items_earlier_wording.csv`.
+- `raw_output` is the model's text exactly as returned. Most outputs are the requested JSON; some are truncated at the token limit, empty, or prose that contains the answer. `selected_option` is the answer read from `raw_output` by `code/collect/read_answer.py`: the final structured answer, else the last explicitly stated choice; a lone letter in prose never counts. `code/collect/test_read_answer.py` checks every released label against the reader.
+- A model panel entry is the pair of `panel` and `model_id`. Gemini 3.1 Pro was queried in both panels, giving 23 entries for 22 models.
+- A response without a valid answer counts as neither diagnosis. Response-level rates, the mixed models, the rater-clustered bootstrap and the crossed comparison with clinician participants count every response. The LLM cue effects by family, the prompt comparisons and the comparisons with the clinical adjudicators count valid answers only, and the prompt comparisons also leave out model-family pairs without a valid answer in a required version; `code/analysis/12_all_attempts.py` repeats them with every response (Supplementary Table S24).
 
 ## Reproducing the results
 
@@ -58,13 +67,13 @@ Requirements:
 - Python 3.9 or later with pandas, numpy and matplotlib (`pip install -r requirements.txt`).
 - R 4.3 or later with lme4, dplyr, tidyr, readr and jsonlite (`install.packages(c("lme4", "dplyr", "tidyr", "readr", "jsonlite"))`).
 
-The results were produced with Python 3.14.7 (pandas 3.0.3, numpy 2.4.6, matplotlib 3.11.1) and R 4.3.0 (lme4 1.1-34, dplyr 1.1.4, tidyr 1.3.1, readr 2.1.4, jsonlite 1.8.8). Mixed-model intervals can differ in the last digit with other lme4 versions.
+The results were produced with Python 3.9.6 (pandas 2.2.3, numpy 2.0.2, matplotlib 3.9.4) and R 4.3.0 (lme4 1.1-34 with Matrix 1.6-3, dplyr 1.1.4, tidyr 1.3.1, readr 2.1.4, jsonlite 1.8.8). Mixed-model intervals can differ in the last digit with other lme4 versions. lme4 must be built against the installed Matrix version; if the mixed models stop with a Matrix version error, reinstall lme4 from source (`install.packages("lme4", type = "source")`).
 
 ```
 bash code/run_all.sh
 ```
 
-The full run takes about 20 seconds. All resampling uses fixed, arbitrary seeds, so repeated runs give identical output. Tables and estimates reproduce exactly; figure images can differ at the pixel level with other matplotlib versions or fonts. `06_figure_3.py` uses the output of `05_physician_validation.py`, and `07_explanation_screen.py` uses the parser in `code/collect/`, so run the scripts in order or use `run_all.sh`.
+The full run takes about a minute. All resampling uses fixed, arbitrary seeds, so repeated runs give identical output. Tables and estimates reproduce exactly; figure images can differ at the pixel level with other matplotlib versions or fonts. `06_figure_3.py` uses the output of `05_physician_validation.py`, `11_identical_text.py` and `12_all_attempts.py` use the outputs of the R scripts, and `07_explanation_screen.py` uses the answer reader in `code/collect/`, so run the scripts in order or use `run_all.sh`.
 
 | Script | Produces |
 |---|---|
@@ -78,7 +87,14 @@ The full run takes about 20 seconds. All resampling uses fixed, arbitrary seeds,
 | `06_figure_3.py` | Figure 3 |
 | `07_explanation_screen.py` | Tables S14 and S19; Figure S4 |
 | `08_model_table.py` | Table S1 |
-| `09_control_experiment.py` | Tables S20 and S21: the irrelevant-control experiment |
+| `09_control_experiment.py` | Tables S20 and S21: the irrelevant-control experiment, first arm |
+| `10_case_audit_sensitivity.py` | Table S22, lower panel: the main comparisons without the 6 and the 17 audited case families |
+| `11_identical_text_matched.R` | Clinician participants against the frontier LLMs on identical case text |
+| `11_identical_text.py` | Table S23: the comparisons restricted to identical case text |
+| `12_all_attempts.py` | Table S24: the analyses that count valid answers only, repeated with every response |
+| `13_adjudicator_instruction_arm.py` | Extended Data Table 1: the second arm of the irrelevant-control experiment |
+| `adjudication.py`, `crossed_resampling.R` | Shared code: the adjudicators' ratings and their reweighting (05 and 10 to 13), and the crossed resampling (04 and 11) |
+| `code/records/trace_records.py` | The trace of every analysed main-run response through the collection records |
 
 Tables are written to `results/tables/`, figures to `results/figures/`, and estimates reported in the text to `results/estimates/`.
 
@@ -92,12 +108,42 @@ items once with the baseline prompt (`prompts/system_baseline.txt`, `prompts/que
 in `config/control_request_settings.json`, which match the main runs except that up to 4,096 output tokens were
 allowed.
 
-`docs/control_experiment/` holds the automated rule checks of every control (`control_rule_checks.csv`) and the
-drafts rewritten under the rules before the run (`control_revisions.csv`).
+In the second arm, the same models answered the same 1,200 items with the clinical adjudicators' instruction and answer
+format (`prompts/system_adjudicator_instruction.txt`, `prompts/question_template_adjudicator_instruction.txt`): 100
+probability points across the four diagnoses and the single most probable one. The second arm was begun on 2 October
+2026 and completed on 28 October 2026 with the same code, items and prompt.
+
+`docs/control_experiment/` holds the written pre-run plans, the automated rule checks of every control
+(`control_rule_checks.csv`), the controls rewritten under the rules before the run (`control_revisions.csv`), and the
+deviations from the plan.
+
+## Collection records
+
+`data/collection_records.csv.gz` holds every response received in every run, one row per response, including re-asks,
+restarted requests, connectivity checks, the pilot and the explanation runs. `docs/run_manifest.csv` lists the runs
+with their dates, models, prompts, output limits, number of responses and use. Columns:
+- `run_id`, `timestamp_utc` (when the response was received), `panel`, `model_id`, `model_version_returned` and
+  `provider` (the hosting service that answered);
+- `prompt`, `run`, `family`, `version`, `answer_order` and `wording`, as in the response files;
+- `max_tokens` (the output limit requested), `attempts` (calls within the request, transient-error retries included),
+  `status`, `finish_reason`, `error`, and the token counts `prompt_tokens`, `completion_tokens` and `reasoning_tokens`;
+- `analysed` (1 for the response used in the released response files) and `release_row` (its row in that file);
+- `raw_output`.
+
+Request keys, provider response identifiers and costs are not released.
+
+```
+python3 code/records/build_response_files.py --check
+python3 code/records/trace_records.py
+```
+
+The first rebuilds the released response files from the records with the answer reader and compares them with
+`data/`. The second traces every analysed main-run response through the records (responses and calls per record,
+and outputs over or at the output limit) and writes `results/estimates/trace_records.csv`.
 
 ## Re-running the model queries
 
-`code/collect/run_models.py` sends the case set to the models with the study's prompts, model identifiers and request settings; `--replicate` selects the models, case versions and answer orders of an original run. It needs an OpenRouter key in the environment variable `OPENROUTER_API_KEY` and incurs API costs.
+`code/collect/run_models.py` sends the case set to the models with the study's prompts, model identifiers and request settings; `--replicate` selects the models, case versions and answer orders of an original run. An output without a readable answer is requested again once; the response with a readable answer is kept (the first, if both have one), and `api_calls` counts every call. It needs an OpenRouter key in the environment variable `OPENROUTER_API_KEY` and incurs API costs; `python3 code/collect/test_run_models.py` tests the re-ask rule offline.
 
 Hosted models change over time, so new answers can differ from the released ones. The collector reads
 `data/items.csv`; the requests of the irrelevant-control experiment can be rebuilt in the same way from

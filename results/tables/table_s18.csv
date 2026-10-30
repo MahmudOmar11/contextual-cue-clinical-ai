@@ -4,8 +4,8 @@ llm_panel,cue_type,families,physician_cue_effect,physician_ci_low,physician_ci_h
 "Frontier LLMs, 100 families",Family history,23,14.9,4.0,29.8,7.2,1.0,18.1,-7.6,-24.5,7.8
 "Frontier LLMs, 100 families",Lifestyle,13,-3.5,-18.6,12.1,13.2,-0.1,36.4,16.7,-4.7,45.7
 "Frontier LLMs, 100 families",Other,11,-8.0,-29.1,7.3,14.4,-15.1,40.4,22.4,2.8,44.7
-"All 22 LLMs, 100 families",Travel or residence,13,5.6,-6.8,22.6,64.2,47.0,78.8,58.5,32.5,79.3
-"All 22 LLMs, 100 families",Occupation or exposure,40,6.2,-2.0,16.8,43.5,30.5,56.7,37.3,21.8,52.3
+"All 22 LLMs, 100 families",Travel or residence,13,5.6,-6.8,22.6,64.4,47.3,79.0,58.8,32.9,79.5
+"All 22 LLMs, 100 families",Occupation or exposure,40,6.2,-2.0,16.8,43.6,30.6,56.8,37.4,21.8,52.5
 "All 22 LLMs, 100 families",Family history,23,14.9,4.0,29.8,16.3,7.8,27.8,1.4,-16.4,18.4
-"All 22 LLMs, 100 families",Lifestyle,13,-3.5,-18.9,12.4,23.8,6.8,44.3,27.3,6.8,51.3
-"All 22 LLMs, 100 families",Other,11,-8.0,-28.7,6.8,14.9,-13.4,40.9,22.9,1.2,46.9
+"All 22 LLMs, 100 families",Lifestyle,13,-3.5,-18.9,12.4,23.9,6.8,44.4,27.3,6.9,51.4
+"All 22 LLMs, 100 families",Other,11,-8.0,-28.7,6.8,15.0,-13.3,41.2,23.0,1.2,47.1

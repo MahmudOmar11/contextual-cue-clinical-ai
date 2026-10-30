@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
-from common import FIGURES, ROOT, cases, clinician_responses, form_families, model_responses, wilson
+from common import FIGURES, ROOT, bold_font, cases, clinician_responses, form_families, model_responses, wilson
 
 plt.rcParams.update({
     "font.family": "sans-serif",
@@ -23,6 +23,7 @@ plt.rcParams.update({
     "axes.edgecolor": "#444444",
 })
 DPI = 300
+PANEL_FONT = bold_font(plt.rcParams["font.sans-serif"])
 BLUE_L, BLUE_D = "#a6cee3", "#1f78b4"
 RED_L, RED_D = "#f4a582", "#b2182b"
 SELECTION = "Selection of the cue-associated diagnosis"
@@ -67,7 +68,8 @@ def grouped(ax, labels, groups, outcome, ylabel, panel, refline=None):
     ax.set_xlim(-0.6, len(labels) - 0.4)
     ax.yaxis.grid(True, color="#e6e6e6", zorder=0)
     ax.set_axisbelow(True)
-    ax.text(-0.10, 1.04, panel, transform=ax.transAxes, fontsize=14, fontweight="bold", va="bottom")
+    ax.text(-0.10, 1.04, panel, transform=ax.transAxes, fontsize=14, fontweight="bold", fontfamily=PANEL_FONT,
+            va="bottom")
 
 
 def save(fig, name):

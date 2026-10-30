@@ -29,5 +29,41 @@
   "system_prompt": "prompts/system_baseline.txt",
   "question_template": "prompts/question_template.txt",
   "json_shape": "baseline",
-  "responses": "data/control_responses.csv.gz"
+  "responses": "data/control_responses.csv.gz",
+  "adjudicator_instruction_arm": {
+    "dates": [
+      "2026-10-02",
+      "2026-10-28"
+    ],
+    "models": [
+      "anthropic/claude-opus-4.8",
+      "openai/gpt-5.5",
+      "google/gemini-3.1-pro-preview"
+    ],
+    "answer_orders": 4,
+    "repeats": 1,
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 4096,
+    "response_format": {
+      "type": "json_object"
+    },
+    "reasoning": {
+      "request": {
+        "effort": "none",
+        "exclude": true
+      },
+      "sent_to": [
+        "anthropic/claude-opus-4.8",
+        "openai/gpt-5.5"
+      ],
+      "not_accepted_by": [
+        "google/gemini-3.1-pro-preview"
+      ]
+    },
+    "system_prompt": "prompts/system_adjudicator_instruction.txt",
+    "question_template": "prompts/question_template_adjudicator_instruction.txt",
+    "json_shape": "adjudicator_instruction",
+    "responses": "data/control_responses_adjudicator_instruction.csv.gz"
+  }
 }

@@ -1,4 +1,5 @@
 {
   "main_runs": "{\"selected_option\":\"A|B|C|D\",\"selected_diagnosis\":\"diagnosis text\"}",
-  "explanation_run": "{\"selected_option\":\"A|B|C|D\",\"selected_diagnosis\":\"diagnosis text\",\"short_explanation\":\"one sentence, <=35 words\",\"confidence\":0}"
+  "explanation_run": "{\"selected_option\":\"A|B|C|D\",\"selected_diagnosis\":\"diagnosis text\",\"short_explanation\":\"one sentence, <=35 words\",\"confidence\":0}",
+  "adjudicator_instruction": "{\"probabilities\": {\"A\": <integer>, \"B\": <integer>, \"C\": <integer>, \"D\": <integer>}, \"most_likely\": \"<A, B, C or D>\"}"
 }

@@ -5,7 +5,10 @@ model entry from config/models.json, under one prompt (the system prompts in
 prompts/). The
 request settings, including the output-token limits, come from
 config/request_settings.json. Every response is written as one JSON line with
-the request payload, the raw output and the parsed answer. Requests already in
+the request payload, the raw output and the answer read by read_answer.py. An
+output without a readable answer is requested again once; the response with a
+readable answer is kept (the first, if both have one), and api_calls counts
+every call of both requests. Requests already in
 the output file are skipped, so an interrupted run can be resumed with the same
 command; requests that failed are recorded with their status and are not retried
 on resume.
@@ -46,7 +49,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-from parse_output import parse_response, selected_role
+from read_answer import read_answer, selected_role
 
 ROOT = Path(__file__).resolve().parents[2]
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -228,7 +231,7 @@ def send(payload, api_key, timeout):
             response = post(payload, api_key, timeout)
             text = response_text(response)
             return {"status": "ok", "attempts": attempt + 1, "response": response,
-                    "raw_output": text, "parsed": parse_response(text)}
+                    "raw_output": text}
         except urllib.error.HTTPError as exc:
             body = exc.read().decode("utf-8", errors="replace")
             if attempt < MAX_RETRIES and exc.code in RETRYABLE_HTTP:
@@ -242,18 +245,19 @@ def send(payload, api_key, timeout):
             return {"status": "error", "attempts": attempt + 1, "error": repr(exc)}
 
 
-def parsed_as_json(result):
-    return result["status"] == "ok" and result["parsed"]["parse_status"] == "json"
+def readable(result, options):
+    return result["status"] == "ok" and read_answer(result["raw_output"], options)[0] != ""
 
 
-def send_with_parse_retry(payload, api_key, timeout):
-    """Send; if the output did not parse as JSON, request it again once and keep the better result."""
+def send_with_reask(payload, api_key, timeout, options):
+    """Send; if the output has no readable answer, request it once more. Keep the response with a readable answer
+    (the first, if both have one); api_calls counts every call, transient-error retries of both requests included."""
     first = send(payload, api_key, timeout)
-    if parsed_as_json(first):
-        return {**first, "requested_again": False}
+    if readable(first, options):
+        return {**first, "requested_again": False, "api_calls": first["attempts"]}
     second = send(payload, api_key, timeout)
-    better = parsed_as_json(second) or (second["status"] == "ok" and first["status"] != "ok")
-    return {**(second if better else first), "requested_again": True}
+    keep = second if readable(second, options) or (second["status"] == "ok" and first["status"] != "ok") else first
+    return {**keep, "requested_again": True, "api_calls": first["attempts"] + second["attempts"]}
 
 
 # ---------------------------------------------------------------- main
@@ -332,11 +336,13 @@ def main():
                 if args.dry_run:
                     row["status"] = "dry_run"
                 else:
-                    result = send_with_parse_retry(payload, api_key, args.timeout)
+                    options = {letter: item["option_" + letter] for letter in "ABCD"}
+                    result = send_with_reask(payload, api_key, args.timeout, options)
                     row["timestamp_utc"] = datetime.now(timezone.utc).isoformat()
                     row.update(result)
                     if result["status"] == "ok":
-                        option = result["parsed"]["selected_option"]
+                        option, rule, _ = read_answer(result["raw_output"], options)
+                        row["read_rule"] = rule
                         row["model_version_returned"] = result["response"].get("model", "")
                         row["selected_option"] = option
                         row["selected_role"] = selected_role(option, item["intended_option"], item["cue_associated_option"])
