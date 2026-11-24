@@ -1,5 +1,17 @@
 # Changes
 
+## 1.3.0 (24 November 2026)
+
+- `data/parser_audit_labels.csv`: the 229 model outputs a physician read to check the answer reader, with the
+  reader's and the physician's reading, and `code/analysis/14_parser_audit.py`, which reads them again and recomputes
+  the agreement (208 of 229). The README describes how the outputs were drawn.
+- Figures 1 and 2 show each clinician participant and each LLM as a dot over the pooled bar, and name the 21
+  clinician-form families as the selected challenge set. Extended Data Figure 4 shows each of the five models.
+- The Supplementary Figures are now Extended Data Figures 1 to 4 (`extended_data_figure_1.png` to `_4.png`, formerly
+  `figure_s1.png` to `figure_s4.png`); Extended Data Figures 1 and 2 name the selected challenge set.
+- Every figure is also written as PDF, and the plotted values of each figure are in `results/source_data/`.
+- No table or estimate changed.
+
 ## 1.2.0 (30 October 2026)
 
 Answers and results

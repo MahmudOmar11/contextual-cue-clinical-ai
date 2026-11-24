@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the study."
 title: "Contextual Cue Susceptibility in Clinical AI: A Randomized Clinician-Comparator Study"
 abstract: >-
-  Code and data for a paired-vignette study comparing how a single added clinical detail changes the
+  Code and data for a paired-vignette study comparing how an added clinical detail changes the
   diagnoses chosen by 22 large language models, 47 clinician participants and eight clinical adjudicators, with an
   irrelevant-control experiment in three frontier models, under the baseline prompt and under the clinical
   adjudicators' instruction.
@@ -24,8 +24,8 @@ authors:
     given-names: Girish N.
   - family-names: Glicksberg
     given-names: Benjamin S.
-version: "1.2.0"
-date-released: "2026-10-30"
+version: "1.3.0"
+date-released: "2026-11-24"
 license: MIT
 repository-code: "https://github.com/MahmudOmar11/contextual-cue-clinical-ai"
 keywords:

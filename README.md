@@ -22,7 +22,7 @@ code/analysis/   the analysis, in run order
 code/collect/    the answer reader and the script that queries the models, with their tests
 code/records/    rebuilds the response files from the collection records and traces every analysed response
 code/run_all.sh  runs the full analysis
-results/         the output of code/run_all.sh: tables, figures and estimates
+results/         the output of code/run_all.sh: tables, figures, estimates, and the source data of each figure
 docs/            the list of runs, and the plans and records of the irrelevant-control experiment
 CHANGELOG.md     the changes between releases
 ```
@@ -47,6 +47,7 @@ All clinical cases are synthetic, and no patient data were used.
 | `control_responses_adjudicator_instruction.csv.gz` | 3,600 | Every answer in the second arm (the clinical adjudicators' instruction): the same columns, with the probabilities given to options A to D (`p_A` to `p_D`), the option named most likely, and the probabilities of the intended and cue-associated diagnoses. |
 | `pilot_responses.csv.gz` | 2,400 | The pilot of 3 June 2026 used to choose the clinician-form families: three models, every case version in four answer orders, with the case text and options as shown that day, the option selected, its role, and the raw output. |
 | `collection_records.csv.gz` | 105,701 | Every response received in every run (see Collection records). |
+| `parser_audit_labels.csv` | 229 | The model outputs a physician read to check the answer reader, with the reader's and the physician's reading (see Answer reader check). |
 
 Column values:
 - `version` is `no_cue` or `cue`, or, in the control files, also `control`. `answer_order` (1 to 4) is one of the four fixed orders of the options.
@@ -58,8 +59,13 @@ Column values:
 - `training_level` is `attending_or_consultant`, `resident_or_fellow`, `medical_student` or `other_physician_role`.
 - `wording` is `final`, the text in `items.csv`, or `earlier`, the text in `items_earlier_wording.csv`.
 - `raw_output` is the model's text exactly as returned. Most outputs are the requested JSON; some are truncated at the token limit, empty, or prose that contains the answer. `selected_option` is the answer read from `raw_output` by `code/collect/read_answer.py`: the final structured answer, else the last explicitly stated choice; a lone letter in prose never counts. `code/collect/test_read_answer.py` checks every released label against the reader.
+- In `parser_audit_labels.csv`, `sample` is `changed` or `unchanged`; `reading_type` is the step of the answer reader that gave the reading; `reader_reading` and `physician_reading` are A to D, or `none` for no valid answer; `agree` is 1 when the two readings are the same. The first seven columns join the file to `model_responses.csv.gz`.
 - A model panel entry is the pair of `panel` and `model_id`. Gemini 3.1 Pro was queried in both panels, giving 23 entries for 22 models.
 - A response without a valid answer counts as neither diagnosis. Response-level rates, the mixed models, the rater-clustered bootstrap and the crossed comparison with clinician participants count every response. The LLM cue effects by family, the prompt comparisons and the comparisons with the clinical adjudicators count valid answers only, and the prompt comparisons also leave out model-family pairs without a valid answer in a required version; `code/analysis/12_all_attempts.py` repeats them with every response (Supplementary Table S24).
+
+### Answer reader check
+
+A physician read 229 model outputs without seeing the reader's answer and recorded the option each output chose, or none. They were all 133 outputs whose label changed with the current reader and 96 unchanged outputs. The 96 were drawn at random within the harder reading types: `no_answer` 30, `json_field_cut` 20, `prose_letter` 20, `json_embedded` 10, `json_field` 10 and `prose_name` 6, every output of that last type (seed 20261028). Clean structured answers (`json`) were not sampled. The physician agreed with the reader on 208 of the 229 outputs (90.8%). The pattern for a bare letter after "so" that ends its sentence ("So B.") was added to the reader after this check; without it, agreement was 207 of 229 (90.4%). `code/analysis/14_parser_audit.py` reads each listed output again with the released reader and recomputes the agreement.
 
 ## Reproducing the results
 
@@ -79,13 +85,13 @@ The full run takes about a minute. All resampling uses fixed, arbitrary seeds, s
 |---|---|
 | `01_matched_comparison.R` | Table 2; Tables S3 to S9 and S11: rates with Wilson intervals, the mixed-effects models and the rater-clustered bootstrap |
 | `02_supplementary_tables.py` | Table 1; Tables S2, S10, S12, S13 |
-| `03_figures_comparison.py` | Figures 1 and 2; Figures S1 to S3 |
+| `03_figures_comparison.py` | Figures 1 and 2; Extended Data Figures 1 to 3 |
 | `04_robustness_matched.R` | Crossed resampling of case families, clinician participants and unique LLMs; clinician models with cue effects varying by family and participant |
 | `04_robustness_llm.py` | One run per unique LLM; the prompt comparison with one run per prompt; agreement across runs and answer orders |
 | `04_robustness_clinician.py` | Intervals for clinician confidence; allocation of case versions and spacing of repeated families |
 | `05_physician_validation.py` | Table 3; Tables S15 to S18; the sensitivity analysis with the six physicians alone |
 | `06_figure_3.py` | Figure 3 |
-| `07_explanation_screen.py` | Tables S14 and S19; Figure S4 |
+| `07_explanation_screen.py` | Tables S14 and S19; Extended Data Figure 4 |
 | `08_model_table.py` | Table S1 |
 | `09_control_experiment.py` | Tables S20 and S21: the irrelevant-control experiment, first arm |
 | `10_case_audit_sensitivity.py` | Table S22, lower panel: the main comparisons without the 6 and the 17 audited case families |
@@ -93,10 +99,11 @@ The full run takes about a minute. All resampling uses fixed, arbitrary seeds, s
 | `11_identical_text.py` | Table S23: the comparisons restricted to identical case text |
 | `12_all_attempts.py` | Table S24: the analyses that count valid answers only, repeated with every response |
 | `13_adjudicator_instruction_arm.py` | Extended Data Table 1: the second arm of the irrelevant-control experiment |
-| `adjudication.py`, `crossed_resampling.R` | Shared code: the adjudicators' ratings and their reweighting (05 and 10 to 13), and the crossed resampling (04 and 11) |
+| `14_parser_audit.py` | The agreement between the answer reader and the physician's reading of 229 outputs |
+| `adjudication.py`, `crossed_resampling.R`, `source_data.py` | Shared code: the adjudicators' ratings and their reweighting (05 and 10 to 13), the crossed resampling (04 and 11), and the source data files and PDF copies of the figures (03, 06 and 07) |
 | `code/records/trace_records.py` | The trace of every analysed main-run response through the collection records |
 
-Tables are written to `results/tables/`, figures to `results/figures/`, and estimates reported in the text to `results/estimates/`.
+Tables are written to `results/tables/`, figures to `results/figures/` as PNG and PDF, estimates reported in the text to `results/estimates/`, and the plotted values of each figure to `results/source_data/`, one workbook per figure with one sheet per panel.
 
 ## The irrelevant-control experiment
 

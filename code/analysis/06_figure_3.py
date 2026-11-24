@@ -6,7 +6,7 @@ carry a fixed-seed uniform jitter of up to 1.5 percentage points on each axis so
 LLMs, against the adjudicators' cue effect on all families.
 
 Reads results/tables/table_s16.csv, table_s17.csv and results/estimates/05_physician_validation.csv.
-Writes results/figures/figure_3.png.
+Writes results/figures/figure_3.png and .pdf, and results/source_data/source_data_figure_3.xlsx.
 """
 import os
 
@@ -20,6 +20,7 @@ from matplotlib.legend_handler import HandlerBase
 from matplotlib.lines import Line2D
 from matplotlib.patches import Rectangle
 
+import source_data
 from common import ESTIMATES, FIGURES, TABLES
 
 FIG_W, FIG_H, DPI = 6.25, 3.1, 300
@@ -171,5 +172,17 @@ for letter, x_in in (("A", 0.03), ("B", SPLIT + 0.02)):
     fig.text(x_in / FIG_W, (FIG_H - 0.15) / FIG_H, letter, fontsize=10, fontweight="bold", ha="left", va="top")
 
 fig.savefig(FIGURES / "figure_3.png", dpi=DPI, facecolor="white")
+source_data.save_pdf(fig, FIGURES / "figure_3.pdf", dpi=DPI, facecolor="white")
 plt.close(fig)
-print("wrote figure_3.png")
+
+panel_a = pd.DataFrame({"family": fam.family, "adjudicators_cue_effect_pp": x, "frontier_llms_cue_effect_pp": y,
+                        "intended_led_in_both_versions": lead.astype(int), "plotted_x": xp.round(3),
+                        "plotted_y": yp.round(3)})
+panel_b = pd.DataFrame([{"subset": k, "group": group, "families": int(sub.loc[k, f"{prefix}_families"]),
+                         "cue_effect_pp": sub.loc[k, f"{prefix}_cue_effect"], "ci_low": sub.loc[k, f"{prefix}_ci_low"],
+                         "ci_high": sub.loc[k, f"{prefix}_ci_high"]}
+                        for k, _ in ROWS for prefix, group in (("frontier", "Frontier LLMs"), ("all_llms", "All 22 LLMs"))]
+                       + [{"subset": "All families", "group": "Clinical adjudicators (line and band)", "families": len(fam),
+                           "cue_effect_pp": phys, "ci_low": phys_lo, "ci_high": phys_hi}])
+source_data.write("source_data_figure_3.xlsx", {"Panel A": panel_a, "Panel B": panel_b})
+print("wrote figure_3.png, figure_3.pdf and its source data")

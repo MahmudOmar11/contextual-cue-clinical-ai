@@ -1,4 +1,4 @@
-"""Explanation-text screen of the explanation run (Table S14, Figure S4).
+"""Explanation-text screen of the explanation run (Table S14, Extended Data Figure 4).
 
 Five models answered every case in both versions under the three prompts and
 added a one-sentence explanation and a 0-100 confidence. Each output is read with
@@ -13,8 +13,9 @@ with fixed keyword and regular-expression patterns for six markers:
 - high-confidence wrong answer: the model chose a diagnosis other than the
   intended one with confidence of 80 or more
 
-Outputs: table_s14.csv, table_s19.csv (two markers by model), figure_s4.png and
-estimates/07_explanation_screen.csv (the Figure S4 rates with 95% Wilson intervals).
+Outputs: table_s14.csv, table_s19.csv (two markers by model), extended_data_figure_4 (PNG and PDF; bars are the
+pooled rates with 95% Wilson intervals, dots the rate of each model), its source data, and
+estimates/07_explanation_screen.csv (the Extended Data Figure 4 rates with 95% Wilson intervals).
 """
 import re
 import string
@@ -24,8 +25,12 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
+from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
+
+import source_data
 
 from common import DATA, ESTIMATES, FIGURES, PROMPT_LABEL, PROMPTS, ROOT, TABLES, VERSIONS, bold_font, \
     explanation_responses, wilson
@@ -168,7 +173,7 @@ def table_s19(markers):
 
 
 def figure_estimates(markers):
-    """Rates with 95% Wilson intervals for the two Figure S4 markers."""
+    """Rates with 95% Wilson intervals for the two Extended Data Figure 4 markers."""
     rows = []
     for m in ["cue_associated_justification", "high_confidence_wrong"]:
         for prompt in PROMPTS:
@@ -181,9 +186,11 @@ def figure_estimates(markers):
 
 
 LIGHT, DARK = "#f4a582", "#b2182b"
+DOT, DOT_SEED = "#333333", 3
+MODEL_NAME = {m["openrouter_id"]: m["name"] for m in __import__("json").loads((ROOT / "config" / "models.json").read_text())["models"]}
 
 
-def figure_s4(markers):
+def extended_data_figure_4(markers):
     plt.rcParams.update({
         "font.family": "sans-serif",
         "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
@@ -197,32 +204,54 @@ def figure_s4(markers):
         ("high_confidence_wrong", "High-confidence wrong answers (%)", "B"),
     ]
     labels = [PROMPT_LABEL[p].replace(" prompt", "\nprompt") for p in PROMPTS]
+    rng = np.random.default_rng(DOT_SEED)
+    sheets = {}
     fig, axes = plt.subplots(1, 2, figsize=(10, 5))
     for ax, (marker, ylabel, letter) in zip(axes, panels):
+        bars, dots = [], []
         for gi, prompt in enumerate(PROMPTS):
             for version, color, offset in [("no_cue", LIGHT, -0.20), ("cue", DARK, 0.20)]:
                 g = markers[(markers.prompt == prompt) & (markers.version == version)]
                 p, lo, hi = (100 * v for v in wilson(int(g[marker].sum()), len(g)))
                 x = gi + offset
                 ax.bar(x, p, 0.38, color=color, edgecolor="white", linewidth=0.6, zorder=3)
+                per_model = g.groupby("model_id")[marker].agg(["sum", "size"])
+                rates = 100 * per_model["sum"] / per_model["size"]
+                ax.scatter(x + rng.uniform(-0.12, 0.12, len(rates)), rates, s=12, facecolors="white",
+                           edgecolors=DOT, linewidths=0.6, alpha=0.85, zorder=4)
                 ax.errorbar(x, p, yerr=[[p - lo], [hi - p]], fmt="none", ecolor="#222222",
-                            elinewidth=1.0, capsize=2.5, zorder=4)
-                ax.annotate(f"{p:.1f}", (x, hi), textcoords="offset points", xytext=(0, 3),
-                            ha="center", va="bottom", fontsize=8.5, zorder=5)
+                            elinewidth=1.0, capsize=2.5, zorder=5)
+                ax.annotate(f"{p:.1f}", (x, max(hi, rates.max())), textcoords="offset points", xytext=(0, 3),
+                            ha="center", va="bottom", fontsize=8.5, zorder=6)
+                condition = "Cue" if version == "cue" else "No cue"
+                bars.append({"element": "bar", "prompt": PROMPT_LABEL[prompt], "condition": condition, "model": "",
+                             "numerator": int(g[marker].sum()), "n": len(g), "percentage": round(p, 2),
+                             "wilson_low": round(lo, 2), "wilson_high": round(hi, 2)})
+                dots += [{"element": "dot", "prompt": PROMPT_LABEL[prompt], "condition": condition,
+                          "model": MODEL_NAME[m], "numerator": int(r["sum"]), "n": int(r["size"]),
+                          "percentage": round(100 * r["sum"] / r["size"], 2), "wilson_low": np.nan,
+                          "wilson_high": np.nan} for m, r in per_model.iterrows()]
+        sheets[f"Panel {letter}"] = pd.DataFrame(bars + dots)
         ax.set_xticks(range(len(PROMPTS)))
         ax.set_xticklabels(labels)
         ax.set_ylabel(ylabel)
-        ax.set_ylim(0, 60)
+        ax.set_ylim(0, 66)  # room above 60 for the highest model
+        ax.set_yticks(range(0, 61, 10))
+        ax.spines["left"].set_bounds(0, 60)
         ax.set_xlim(-0.6, len(PROMPTS) - 0.4)
         ax.yaxis.grid(True, color="#e6e6e6", zorder=0)
         ax.set_axisbelow(True)
         ax.text(-0.10, 1.04, letter, transform=ax.transAxes, fontsize=14, fontweight="bold",
                 fontfamily=bold_font(plt.rcParams["font.sans-serif"]), va="bottom")
-    handles = [Patch(facecolor=LIGHT, label="No cue"), Patch(facecolor=DARK, label="Cue")]
-    fig.legend(handles=handles, loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 1.02), fontsize=9.5)
+    handles = [Patch(facecolor=LIGHT, label="No cue"), Patch(facecolor=DARK, label="Cue"),
+               Line2D([0], [0], ls="none", marker="o", ms=4, mfc="white", mec=DOT, mew=0.6, alpha=0.85,
+                      label="Each model")]
+    fig.legend(handles=handles, loc="upper center", ncol=3, frameon=False, bbox_to_anchor=(0.5, 1.02), fontsize=9.5)
     fig.tight_layout(rect=[0, 0, 1, 0.95])
-    fig.savefig(FIGURES / "figure_s4.png", dpi=300, bbox_inches="tight")
+    fig.savefig(FIGURES / "extended_data_figure_4.png", dpi=300, bbox_inches="tight")
+    source_data.save_pdf(fig, FIGURES / "extended_data_figure_4.pdf", bbox_inches="tight")
     plt.close(fig)
+    source_data.write("source_data_extended_data_figure_4.xlsx", sheets)
 
 
 def main():
@@ -230,8 +259,8 @@ def main():
     table_s14(markers).to_csv(TABLES / "table_s14.csv", index=False)
     table_s19(markers).to_csv(TABLES / "table_s19.csv", index=False)
     figure_estimates(markers).to_csv(ESTIMATES / "07_explanation_screen.csv", index=False)
-    figure_s4(markers)
-    print("wrote table_s14.csv, table_s19.csv, figure_s4.png and estimates/07_explanation_screen.csv")
+    extended_data_figure_4(markers)
+    print("wrote table_s14.csv, table_s19.csv, extended_data_figure_4 and estimates/07_explanation_screen.csv")
 
 
 if __name__ == "__main__":

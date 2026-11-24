@@ -1,0 +1,7 @@
+estimate,value,ci_low,ci_high,n
+agreement_all_pct,90.8,,,229
+agreement_all_count,208,,,229
+agreement_changed_pct,94.0,,,133
+agreement_changed_count,125,,,133
+agreement_unchanged_pct,86.5,,,96
+agreement_unchanged_count,83,,,96
